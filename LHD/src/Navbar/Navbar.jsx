@@ -1,14 +1,22 @@
 const Navbar = ()=>{
   return(
-   <nav id='navbar' class='bg-orange-600 flex-1'>
-    <a href="#">home</a>
-    <a href="#">home</a>
-    <a href="#">home</a>
-    <a href="#">home</a>
-    <a href="#">home</a>
-    <a href="#">home</a>
-    <a href="#">home</a>
-   </nav>
+   <nav id='navbar' class='bg-orange-600 flex flex-1'>
+    <div>
+      home
+    </div>
+    <div>
+      home
+    </div>
+    <div>
+      home
+    </div>
+    <div>
+      home
+    </div>
+    <div>
+      home
+    </div>
+    </nav>
   );
 }
 
