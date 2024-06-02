@@ -3,9 +3,9 @@ const Navbar = ()=>{
    <nav id='navbar' class='bg-orange-600 flex flex-1 justify-between h-24 items-center'>
     <div>
       <img class='h-24 rounded-full aspect-square' src="src/assets/LHD HUMAN CARE logo.png"></img>
-      <div>
+      <div >
         LHD Human Care <br/>
-
+        <span>Crafting Health,Shaping Future</span>
       </div>
     </div>
     <div>
