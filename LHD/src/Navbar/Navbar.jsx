@@ -1,6 +1,6 @@
 const Navbar = ()=>{
   return(
-   <nav id='navbar' class=' flex flex-1 justify-between h-24 items-center z-10 relative'>
+   <nav id='navbar' class=' flex flex-1 justify-between h-24 items-center z-10 relative shadow-md'>
     <div class='flex items-center text-2xl mx-2'>
       <img class='h-24 rounded-full aspect-square' src="src/assets/LHD HUMAN CARE logo.png"></img>
       <div class='flex-row flex-1 mx-2'>
