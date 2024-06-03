@@ -1,27 +1,29 @@
 const Navbar = ()=>{
   return(
    <nav id='navbar' class='bg-orange-600 flex flex-1 justify-between h-24 items-center'>
-    <div>
+    <div class='flex items-center text-2xl'>
       <img class='h-24 rounded-full aspect-square' src="src/assets/LHD HUMAN CARE logo.png"></img>
-      <div >
-        LHD Human Care <br/>
-        <span>Crafting Health,Shaping Future</span>
+      <div class='flex-row flex-1 mx-2'>
+       <div> LHD Human Care </div>
+        <div class='text-base'>Crafting Health,Shaping Future</div>
       </div>
     </div>
+    <div class='flex flex-row flex-1 items-center justify-evenly'>
     <div>
-      home
+      Our Vision
     </div>
     <div>
-      home
+      Corporate Profile
     </div>
     <div>
-      home
+      Our Products
     </div>
     <div>
-      home
+      Our network
     </div>
     <div>
-      home
+      Contact Us
+    </div>
     </div>
     </nav>
   );
