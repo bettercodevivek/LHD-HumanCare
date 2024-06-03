@@ -5,7 +5,7 @@ import Hero from './Hero/Hero';
 
 function App() {
   return (
-    <div class='bg-black text-white font-serif antialiased tracking-wide'>
+    <div class='bg-white text-black font-serif antialiased tracking-wide'>
     <Navbar />
     <Hero />
     </div>
