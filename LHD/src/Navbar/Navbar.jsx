@@ -8,21 +8,31 @@ const Navbar = ()=>{
         <div class='text-base'>Crafting Health,Shaping Future</div>
       </div>
     </div>
-    <div class='flex flex-row flex-1 items-center justify-center gap-x-12'>
+    <div class='flex flex-row flex-1 items-center justify-center gap-x-12 text-lg'>
     <div>
-      Our Vision
+      <a href='#' class='group transition-all duration-300 ease-in-out'>
+        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Vision</span>
+      </a>
     </div>
     <div>
-      Corporate Profile
+      <a href='#' class='group transition-all duration-300 ease-in-out'>
+        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>Corporate Profile</span>
+      </a>
     </div>
     <div>
-      Our Products
+      <a href='#' class='group transition-all duration-300 ease-in-out'>
+        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Products</span>
+      </a>
     </div>
     <div>
-      Our network
+      <a href='#' class='group transition-all duration-300 ease-in-out'>
+        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Network</span>
+      </a>
     </div>
     <div>
-      Contact Us
+      <a href='#' class='group transition-all duration-300 ease-in-out'>
+        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>Contact Us</span>
+      </a>
     </div>
     </div>
     </nav>
