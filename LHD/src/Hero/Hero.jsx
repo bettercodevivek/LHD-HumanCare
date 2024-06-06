@@ -1,30 +1,13 @@
-import React, { useEffect } from 'react';
-import ImageSlide from '../ImageSlide/ImageSlide';
-import { useState  } from 'react';
+
 const Hero = () =>{   
-    const [currentState,setcurrentState]=useState(0);
-    useEffect(()=>{
-       const timer=setTimeout(()=>{
-        if(currentState===2){
-            setcurrentState(currentState+1);
-        }
-        else if(currentState===2){
-           setcurrentState(0);
-        }
-       },2000)
-       return() => {
-        clearTimeout(timer)
-    }
-    },currentState)
-    const bgImageStyle={
-        backgroundImage:`url(${ImageSlide[currentState].url})`,
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        height:'100%'
-    }
+    // const ImageSlide = [
+    //     {url:'https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg'},
+    //     {url:'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg'},
+    //     {url:'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg'}
+    // ]
     return(
-        <div class='h-dvh w-11/12 relative left-16 top-24 z-0 blur-0 rounded-3xl'>
-            <div style={bgImageStyle}></div>
+        <div>
+                <img class='h-dvh w-11/12 relative left-16 top-24 z-0 opacity-80 blur-0 rounded-3xl' src="https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg"></img>
            <div class='absolute top-60 w- left-32 w-3/6'>
            <div class='flex flex-row items-center gap-4'><h1 class='font-bold text-6xl'>LHD Human Care</h1>
            <img class='h-12 w-20 animate-bounce' src='src/assets/injection-svgrepo-com.svg'></img> </div> <br/>
