@@ -1,4 +1,6 @@
 import React from 'react';
+import ImageSlide from '../ImageSlide/ImageSlide';
+import { useState  } from 'react';
 const Hero = () =>{   
     return(
         <div>
