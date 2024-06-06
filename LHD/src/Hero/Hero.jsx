@@ -5,16 +5,13 @@ const Hero = () =>{
     const [currentState,setcurrentState]=useState(0);
     useEffect(()=>{
        const timer=setTimeout(()=>{
-        if(currentState===1){
+        if(currentState===2){
             setcurrentState(currentState+1);
         }
         else if(currentState===2){
            setcurrentState(0);
         }
-        else{
-            setcurrentState(currentState+1);
-        }
-       },3000)
+       },2000)
        return() => {
         clearTimeout(timer)
     }
