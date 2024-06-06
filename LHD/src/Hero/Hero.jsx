@@ -4,7 +4,20 @@ import { useState  } from 'react';
 const Hero = () =>{   
     const [currentState,setcurrentState]=useState(0);
     useEffect(()=>{
-       const timer=setTimeout()
+       const timer=setTimeout(()=>{
+        if(currentState===1){
+            setcurrentState(currentState+1);
+        }
+        else if(currentState===2){
+           setcurrentState(0);
+        }
+        else{
+            setcurrentState(currentState+1);
+        }
+       },3000)
+       return() => {
+        clearTimeout(timer)
+    }
     },currentState)
     const bgImageStyle={
         backgroundImage:`url(${ImageSlide[currentState].url})`,
