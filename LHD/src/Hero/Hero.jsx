@@ -1,13 +1,35 @@
-
+import { useState ,useEffect } from "react";
 const Hero = () =>{   
-    // const ImageSlide = [
-    //     {url:'https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg'},
-    //     {url:'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg'},
-    //     {url:'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg'}
-    // ]
+
+    const ImageSlide = [
+        'https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg',
+        'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg',
+        'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg'
+    ]
+   
+
+        const [currentIndex,setIndex]=useState(0);
+
+        useEffect(()=>{
+            const interval =setInterval(()=>{
+               setIndex((prevIndex)=>(prevIndex+1)% ImageSlide.length);
+            },2000)
+
+            return()=>clearInterval(interval);
+        },[])
+
     return(
         <div>
-                <img class='h-dvh w-11/12 relative left-16 top-24 z-0 opacity-80 blur-0 rounded-3xl' src="https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg"></img>
+      <div className="w-full h-96 overflow-hidden relative">
+        {ImageSlide.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
            <div class='absolute top-60 w- left-32 w-3/6'>
            <div class='flex flex-row items-center gap-4'><h1 class='font-bold text-6xl'>LHD Human Care</h1>
            <img class='h-12 w-20 animate-bounce' src='src/assets/injection-svgrepo-com.svg'></img> </div> <br/>
