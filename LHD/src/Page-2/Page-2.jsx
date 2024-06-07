@@ -1,9 +1,17 @@
 import React from "react";
-
+import {motion} from 'framer-motion';
 const Page2=()=>{
 
-    const Card = ({ title, description, imageUrl }) => {
+    const Card = ({ title, description, imageUrl,link }) => {
         return (
+          <motion.a 
+      href={link} 
+      className=" hover:bg-gray-50 transition-all duration-2000 transform hover:scale-105"
+      aria-label={title}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, ease: 'easeOut' }}
+    >
           <div className="bg-blue-100 rounded-2xl flex flex-wrap flex-col items-center p-12 shadow-lg h-min transition-transform transform hover:scale-105 hover:cursor-pointer ">
             <img 
               src={imageUrl} 
@@ -15,6 +23,7 @@ const Page2=()=>{
               <p className="text-gray-700 text-justify">{description}</p>
             </div>
           </div>
+          </motion.a>
         );
       };
 
