@@ -26,7 +26,7 @@ return(
         <Card 
           title="Card 1" 
           description="Description for card 1" 
-          imageUrl="https://via.placeholder.com/150" 
+          imageUrl="src/assets/card1-icon.svg" 
         />
       </div>
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
