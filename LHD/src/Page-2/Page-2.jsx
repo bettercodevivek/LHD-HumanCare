@@ -1,14 +1,33 @@
 import React from "react";
 
 const Page2=()=>{
+
+    const Card = ({ title, description }) => {
+        return (
+          <div className="bg-white shadow-md rounded-lg p-6 m-2">
+            <h2 className="text-xl font-bold mb-2">{title}</h2>
+            <p className="text-gray-700">{description}</p>
+          </div>
+        );
+      };
+
 return(
  <div>
     <h1 class='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
-     <div class='flex flex-col items-center justify-evenly'>
-     <div class='bg-slate-600 h-2/4 aspect-auto w-2/4 '> hello </div>
-     <div class='bg-slate-600 '> hello </div>
-     <div class='bg-slate-600 '> hello </div>
-     </div>
+    <div className="flex flex-wrap justify-center items-center min-h-screen bg-white">
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <Card title="Card 1" description="Description for card 1" />
+      </div>
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <Card title="Card 2" description="Description for card 2" />
+      </div>
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <Card title="Card 3" description="Description for card 3" />
+      </div>
+      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <Card title="Card 4" description="Description for card 4" />
+      </div>
+    </div>
  </div>
 );
 }
