@@ -8,7 +8,7 @@ const Page2=()=>{
             <img 
               src={imageUrl} 
               alt={title} 
-              className="w-16 h-16 rounded-full mr-4"
+              className="aspect-square h-24 rounded-full mr-4"
             />
             <div>
               <h2 className="text-xl font-bold mb-2">{title}</h2>
