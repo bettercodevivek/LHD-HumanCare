@@ -8,7 +8,7 @@ const Page2=()=>{
             <img 
               src={imageUrl} 
               alt={title} 
-              className="aspect-square h-24 rounded-full mr-4"
+              className="aspect-square h-16 rounded-full mr-4"
             />
             <div>
               <h2 className="text-xl font-bold mb-2">{title}</h2>
@@ -21,7 +21,7 @@ const Page2=()=>{
 return(
  <div>
     <h1 class='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
-    <div className="flex flex-wrap justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex flex-wrap justify-center items-center min-h-screen bg-white">
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <Card 
           title="Card 1" 
@@ -40,13 +40,6 @@ return(
         <Card 
           title="Card 3" 
           description="Description for card 3" 
-          imageUrl="https://via.placeholder.com/150" 
-        />
-      </div>
-      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <Card 
-          title="Card 4" 
-          description="Description for card 4" 
           imageUrl="https://via.placeholder.com/150" 
         />
       </div>
