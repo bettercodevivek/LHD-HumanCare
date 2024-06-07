@@ -13,7 +13,7 @@ const Hero = () =>{
         useEffect(()=>{
             const interval =setInterval(()=>{
                setIndex((prevIndex)=>(prevIndex+1)% ImageSlide.length);
-            },3000)
+            },4000)
 
             return()=>clearInterval(interval);
         },[])
