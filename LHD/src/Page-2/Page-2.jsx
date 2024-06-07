@@ -31,8 +31,8 @@ return(
       </div>
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <Card 
-          title=" Our Vision" 
-          description="At LHD Human Care, we envision a world where advanced science and compassionate care come together to create innovative solutions that improve the quality of life for everyone. Our commitment to pioneering research, sustainable practices, and equitable healthcare drives us to break boundaries and set new standards in the pharmaceutical industry." 
+          title="Our Vision" 
+          description="At LHD Human Care, we envision a world where advanced science and compassionate care come together to create innovative solutions that improve the quality of life for everyone. Our commitment to pioneering research, sustainable practices, and equitable healthcare drives us to break boundaries and set new standards in the pharma industry. We aspire to be a trusted leader, empowering healthier lives" 
           imageUrl="https://via.placeholder.com/150" 
         />
       </div>
