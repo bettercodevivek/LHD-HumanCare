@@ -35,7 +35,7 @@ const Hero = () =>{
            <img class='h-12 w-20 animate-bounce' src='src/assets/injection-svgrepo-com.svg'></img> </div> <br/>
             <h2 class='font-bold text-4xl '>Crafting Health,Shaping Future</h2>
            </div>
-           <div class='flex flex-row items-center gap-2 relative bottom-44 left-32'>
+           <div class='flex flex-row items-center gap-2 relative -top-48 left-32'>
            <div> <button class=' relative bg-black text-white border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-inherit hover:text-black'>Start Discovery</button></div>
            <div><button class=' relative bg-inherit border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-black hover:text-white'>Contact Us</button></div>
            </div>
