@@ -4,7 +4,7 @@ const Page2=()=>{
 
     const Card = ({ title, description, imageUrl }) => {
         return (
-          <div className="bg rounded-2xl flex flex-col items-center p-12">
+          <div className="bg-blue-100 rounded-2xl flex flex-col items-center p-12 shadow-lg">
             <img 
               src={imageUrl} 
               alt={title} 
