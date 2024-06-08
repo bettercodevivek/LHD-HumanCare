@@ -29,13 +29,13 @@ return(
      </div>
 
      <div>
-      <Card title={'Strong API Legacy'}
+      <Card title={'Our Vision'}
       description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
 
      <div>
-      <Card title={'Strong API Legacy'}
+      <Card title={'Kind Care Initiative'}
       description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
