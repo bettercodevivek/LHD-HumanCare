@@ -21,70 +21,60 @@ const Page3 = () => {
     const carouselItems = [
         {
             id: 1,
-            image: 'https://via.placeholder.com/300',
-            title: 'Item 1',
+            image: 'https://i.postimg.cc/s24ZWdM0/brain-upper-view-outline-svgrepo-com.png',
+            title: 'Neurology',
             description: 'This is a description for item 1.',
             link: '#'
         },
         {
             id: 2,
-            image: 'https://via.placeholder.com/300',
-            title: 'Item 2',
+            image: 'https://i.postimg.cc/K8LTZgxb/hand-palm-outline-with-scratch-wound-with-blood-droplet-svgrepo-com.png',
+            title: 'Diabetology',
             description: 'This is a description for item 2.',
             link: '#'
         },
         {
             id: 3,
-            image: 'https://via.placeholder.com/300',
-            title: 'Item 3',
+            image: 'https://i.postimg.cc/VsGn48Dx/liver-svgrepo-com.png',
+            title: 'Hepatology',
             description: 'This is a description for item 3.',
             link: '#'
         },
         {
             id: 4,
-            image: 'https://via.placeholder.com/300',
-            title: 'Item 4',
+            image: 'https://i.postimg.cc/yYD9bbGk/stomach-svgrepo-com.png',
+            title: 'GastroEnterology',
             description: 'This is a description for item 4.',
             link: '#'
         },
         {
             id: 5,
-            image: 'https://via.placeholder.com/300',
-            title: 'Item 5',
+            image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
+            title: 'Vitaminology',
             description: 'This is a description for item 5.',
             link: '#'
         }
     ];
 
     return (
-        <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md">
-            <button
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
-                onClick={prevSlide}
-            >
-                ❮
-            </button>
-            <button
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
-                onClick={nextSlide}
-            >
-                ❯
-            </button>
-            <div className="carousel-track-container relative overflow-hidden w-full">
+        <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md h-dvh top-28">
+             <h1 className="text-4xl font-bold text-center"> Our Products</h1>
+           
+            <div className="relative overflow-hidden w-full">
                 <div
-                    className="carousel-track flex transition-transform duration-500 ease-in-out"
+                    className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${(100 / 3) * currentSlide}%)` }}
                 >
                     {carouselItems.map((item, index) => (
                         <div
                             key={index}
-                            className="carousel-item min-w-[calc(100%/3)] flex-shrink-0 box-border p-4"
+                            className=" min-w-[calc(100%/3)] flex-shrink-0 box-border p-4"
                         >
-                            <div className="bg-white p-6 rounded-lg shadow-lg">
+                            <div className="bg-inherit p-6 rounded-3xl shadow-lg flex flex-col items-center">
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-48 object-cover rounded-lg mb-4"
+                                    className="w-28 h-28 object-cover aspect-square rounded-full mb-4"
                                 />
                                 <h2 className="text-lg font-bold mb-2">{item.title}</h2>
                                 <p className="text-gray-700 mb-4">{item.description}</p>
@@ -99,7 +89,7 @@ const Page3 = () => {
                     ))}
                 </div>
             </div>
-            <div className="carousel-indicators flex justify-center mt-4">
+            <div className="flex justify-center mt-4">
                 {carouselItems.map((_, index) => (
                     <span
                         key={index}
@@ -118,6 +108,6 @@ export default Page3;
 
 
 
-/* <h1 className="text-4xl font-bold text-center"> Our Products</h1> */
+
        
             
