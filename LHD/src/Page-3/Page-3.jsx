@@ -20,18 +20,7 @@ const Page3 = () => {
 
     return (
         <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md">
-            <button
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
-                onClick={prevSlide}
-            >
-                ❮
-            </button>
-            <button
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
-                onClick={nextSlide}
-            >
-                ❯
-            </button>
+       
             <div className="carousel-track-container relative overflow-hidden w-full">
                 <div
                     className="carousel-track flex transition-transform duration-500 ease-in-out"
