@@ -1,10 +1,10 @@
 import React from "react";
 const Page2=()=>{
 
-    const Card = ({ title, description, imageUrl,link }) => {
+    const Card = ({ title, description, imageUrl}) => {
         return (
      
-          <div className="bg-blue-100 rounded-2xl flex flex-wrap flex-col items-center p-12 shadow-lg h-min transition-transform transform hover:scale-105 hover:cursor-pointer ">
+          <div className="bg-blue-100 rounded-2xl flex flex-wrap flex-col items-center p-12 shadow-lg hover:cursor-pointer ">
             <img 
               src={imageUrl} 
               alt={title} 
