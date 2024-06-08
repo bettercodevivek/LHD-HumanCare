@@ -1,5 +1,4 @@
 import React from 'react';
-import TestimonialCard from './TestimonialCard'; // Import the TestimonialCard component
 
 const Page4 = () => {
  
@@ -31,21 +30,24 @@ const Page4 = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gray-100">
+    <div>
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Recommended By Leading Doctors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map(testimonial => (
-            <TestimonialCard
-              key={testimonial.id}
-              image={testimonial.image}
-              name={testimonial.name}
-              description={testimonial.description}
-            />
+            <div key={testimonial.id} className="max-w-xs mx-auto bg-white rounded-lg overflow-hidden shadow-lg">
+              <img className="w-full" src={testimonial.image} alt={testimonial.name} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{testimonial.name}</div>
+                <p className="text-gray-700 text-base">{testimonial.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
