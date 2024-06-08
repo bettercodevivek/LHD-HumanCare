@@ -35,8 +35,8 @@ const Page4 = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Recommended By Leading Doctors</h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map(testimonial => (
-            <div key={testimonial.id} className="max-w-xs mx-auto bg-white rounded-lg overflow-hidden shadow-xl">
-              <img className="w-full" src={testimonial.image} alt={testimonial.name} />
+            <div key={testimonial.id} className="max-w-xs mx-auto flex flex-col items-center  overflow-hidden rounded-lg shadow-xl">
+              <img className="h-28 aspect-square rounded-full mt-4" src={testimonial.image} alt={testimonial.name} />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{testimonial.name}</div>
                 <p className="text-gray-700 text-base">{testimonial.description}</p>
