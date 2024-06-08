@@ -1,4 +1,5 @@
 import { useState ,useEffect } from "react";
+import CountUp from 'react-countup';
 const Hero = () =>{   
 
     const ImageSlide = [
@@ -41,7 +42,8 @@ const Hero = () =>{
            </div>
             <div class='relative bg-inherit backdrop-blur-lg shadow-lg flex flex-row flex-1 items-center h-44 w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
                 <div class=''>
-                   <span class='font-bold text-4xl'>28</span>  <br></br>
+                   <span class='font-bold text-4xl'>
+                    <CountUp end={28}></CountUp> </span>  <br></br>
                     Years of Experience
                 </div>
                 <div class=''>
