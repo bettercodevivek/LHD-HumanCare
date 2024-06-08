@@ -19,7 +19,9 @@ const Page3 = () => {
     }, []);
 
     return (
-        <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md">
+        <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md h-dvh top-28">
+
+<h1 className="text-4xl font-bold text-center"> Our Products</h1>
        
             <div className="carousel-track-container relative overflow-hidden w-full">
                 <div
@@ -60,13 +62,6 @@ export default Page3;
 
 
 
-// const Page3=()=>{
-//     return(
-//          <div className="relative top-28 h-dvh ">
-//            <h1 className="text-4xl font-bold text-center"> Our Products</h1>
 
-//          </div>
-//     );
-// }
+        
 
-// export default Page3;
