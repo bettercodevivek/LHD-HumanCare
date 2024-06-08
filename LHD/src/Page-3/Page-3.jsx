@@ -1,7 +1,7 @@
 const Page3=()=>{
     return(
-         <div>
-            
+         <div className="relative top-16 h-dvh ">
+            hello
          </div>
     );
 }
