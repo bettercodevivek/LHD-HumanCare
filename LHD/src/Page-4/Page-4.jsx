@@ -1,20 +1,51 @@
 import React from 'react';
+import TestimonialCard from './TestimonialCard'; // Import the TestimonialCard component
 
-const Page4 = ({ image, name, description }) => {
+const Page4 = () => {
+ 
+  const testimonials = [
+    {
+      id: 1,
+      image: 'https://via.placeholder.com/150',
+      name: 'John Doe',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      id: 2,
+      image: 'https://via.placeholder.com/150',
+      name: 'Jane Doe',
+      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      id: 3,
+      image: 'https://via.placeholder.com/150',
+      name: 'Alice Smith',
+      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    },
+    {
+      id: 4,
+      image: 'https://via.placeholder.com/150',
+      name: 'Bob Johnson',
+      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    },
+  ];
+
   return (
-    <div className="max-w-sm w-full lg:max-w-full lg:flex">
-      <div
-        className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-        style={{ backgroundImage: `url('${image}')` }}
-        title={name}
-      ></div>
-      <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-        <div className="mb-8">
-          <div className="text-gray-900 font-bold text-xl mb-2">{name}</div>
-          <p className="text-gray-700 text-base">{description}</p>
+    <section className="py-16 px-4 bg-gray-100">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {testimonials.map(testimonial => (
+            <TestimonialCard
+              key={testimonial.id}
+              image={testimonial.image}
+              name={testimonial.name}
+              description={testimonial.description}
+            />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
