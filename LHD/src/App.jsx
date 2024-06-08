@@ -6,6 +6,7 @@ import Page2 from './Page-2/Page-2';
 import Page3 from './Page-3/Page-3';
 import Page4 from './Page-4/Page-4';
 import Footer from './Footer/Footer';
+import Counter from './Counter/Counter';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Page2 />
     <Page3 />
     <Page4 />
+    <Counter />
     <Footer />
     </div>
   );
