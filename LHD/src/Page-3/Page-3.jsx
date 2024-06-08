@@ -60,7 +60,7 @@ const Page3 = () => {
         <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-md h-dvh top-28">
              <h1 className="text-4xl font-bold text-center"> Our Products</h1>
            
-            <div className="relative overflow-hidden w-full">
+            <div className="relative overflow-hidden w-full top-8">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${(100 / 3) * currentSlide}%)` }}
@@ -70,7 +70,7 @@ const Page3 = () => {
                             key={index}
                             className=" min-w-[calc(100%/3)] flex-shrink-0 box-border p-4"
                         >
-                            <div className="bg-inherit p-6 rounded-3xl shadow-lg flex flex-col items-center">
+                            <div className="bg-inherit p-6 rounded-3xl  flex flex-col items-center">
                                 <img
                                     src={item.image}
                                     alt={item.title}
@@ -89,7 +89,7 @@ const Page3 = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center mt-4 relative top-12">
                 {carouselItems.map((_, index) => (
                     <span
                         key={index}
