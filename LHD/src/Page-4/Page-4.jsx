@@ -30,10 +30,9 @@ const Page4 = () => {
   ];
 
   return (
-    <div>
-    <section className="py-16 px-4 bg-white">
+    <div className='relative top-24 bg-red-400 h-dvh'>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Recommended By Leading Doctors</h2>
+        <h2 className="text-3xl font-bold text-center">Recommended By Leading Doctors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className="max-w-xs mx-auto bg-white rounded-lg overflow-hidden shadow-lg">
@@ -46,7 +45,6 @@ const Page4 = () => {
           ))}
         </div>
       </div>
-    </section>
     </div>
   );
 };
