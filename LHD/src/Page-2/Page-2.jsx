@@ -1,17 +1,9 @@
 import React from "react";
-import {motion} from 'framer-motion';
 const Page2=()=>{
 
     const Card = ({ title, description, imageUrl,link }) => {
         return (
-          <motion.a 
-      href={link} 
-      className=" hover:bg-gray-50 transition-all duration-2000 transform hover:scale-105"
-      aria-label={title}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, ease: 'easeOut' }}
-    >
+     
           <div className="bg-blue-100 rounded-2xl flex flex-wrap flex-col items-center p-12 shadow-lg h-min transition-transform transform hover:scale-105 hover:cursor-pointer ">
             <img 
               src={imageUrl} 
@@ -23,7 +15,6 @@ const Page2=()=>{
               <p className="text-gray-700 text-justify">{description}</p>
             </div>
           </div>
-          </motion.a>
         );
       };
 
@@ -38,7 +29,7 @@ return(
           imageUrl="src/assets/card1-icon.svg" 
         />
       </div>
-      <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+      <div className="w-full max-h-min sm:w-1/2 lg:w-1/3 p-4">
         <Card 
           title="Our Vision" 
           description="At LHD Human Care, we envision a world where advanced science and compassionate care come together to create innovative solutions that improve the quality of life for everyone. Our commitment to pioneering research, sustainable practices, and equitable healthcare drives us to break boundaries and set new standards in the pharma industry. We aspire to be a trusted leader, empowering healthier lives" 
