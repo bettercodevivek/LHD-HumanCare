@@ -4,7 +4,7 @@ const Page2=()=>{
     const Card = ({ title, description, imageUrl}) => {
         return (
      
-          <div className="bg-orange-100 rounded-2xl flex flex-col items-center p-12 shadow-lg hover:cursor-pointer ">
+          <div className="bg-purple-200 rounded-2xl flex flex-col items-center p-12 shadow-lg hover:cursor-pointer ">
             <img 
               src={imageUrl} 
               alt={title} 
@@ -20,7 +20,6 @@ const Page2=()=>{
 
 return(
  <div className="h-max relative top-12 ">
-  <img className="" src='https://i.postimg.cc/rwDNhXVZ/roberto-sorin-RS0-h-py-Byk-unsplash.jpg'></img>
     <h1 className='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
     <div className="grid grid-cols-2 justify-center gap-8 mt-16 mr-32 ml-32">
      <div>
