@@ -19,7 +19,7 @@ const Page2=()=>{
       };
 
 return(
- <div className="h-max relative top-12 bg-green-500">
+ <div className="h-max relative top-12 ">
     <h1 className='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
     <div className="grid grid-cols-2 justify-center gap-8 mt-16 mr-8 ml-8">
      <div>

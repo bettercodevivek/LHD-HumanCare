@@ -57,7 +57,7 @@ const Page3 = () => {
     ];
 
     return (
-        <div className="relative w-full overflow-hidden bg-yellow-500 rounded-lg h-dvh top-28">
+        <div className="relative w-full overflow-hidden rounded-lg h-dvh top-28">
              <h1 className="text-4xl font-bold text-center"> Our Products</h1>
            
             <div className="relative overflow-hidden w-full top-8">
