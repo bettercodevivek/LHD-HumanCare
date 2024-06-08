@@ -6,8 +6,8 @@ const Page4 = () => {
     {
       id: 1,
       image: 'https://via.placeholder.com/150',
-      name: 'John Doe',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      name: 'Dr.Vishwajeet Bembi',
+      description: ' I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 2,
@@ -30,10 +30,10 @@ const Page4 = () => {
   ];
 
   return (
-    <div className='relative top-24 bg-red-400 h-dvh'>
+    <div className='relative top-24 bg-red-400'>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center">Recommended By Leading Doctors</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h2 className="text-4xl font-bold text-center mb-12">Recommended By Leading Doctors</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className="max-w-xs mx-auto bg-white rounded-lg overflow-hidden shadow-lg">
               <img className="w-full" src={testimonial.image} alt={testimonial.name} />
