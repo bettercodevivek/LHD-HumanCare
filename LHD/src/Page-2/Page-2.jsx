@@ -19,9 +19,9 @@ const Page2=()=>{
       };
 
 return(
- <div className="h-screen relative top-12">
+ <div className="h-dvh relative top-12">
     <h1 class='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
-    <div className=" grid grid-cols-2 gap-8 bg-white relative top-16">
+    <div className=" grid grid-cols-2 gap-8 bg-white relative top-16 items-center">
       <div className=" ">
         <Card 
           title="Strong API Legacy" 
