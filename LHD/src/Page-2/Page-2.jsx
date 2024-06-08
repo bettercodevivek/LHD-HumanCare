@@ -4,7 +4,7 @@ const Page2=()=>{
     const Card = ({ title, description, imageUrl}) => {
         return (
      
-          <div className="bg-blue-100 rounded-2xl flex flex-wrap flex-col items-center p-12 shadow-lg hover:cursor-pointer ">
+          <div className="bg-blue-100 rounded-2xl flex flex-col items-center p-12 shadow-lg hover:cursor-pointer ">
             <img 
               src={imageUrl} 
               alt={title} 
@@ -21,7 +21,31 @@ const Page2=()=>{
 return(
  <div className="h-dvh relative top-12">
     <h1 class='text-4xl text-center font-bold'> Why choose LHD Human Care ? </h1>
-   
+    <div className="grid grid-cols-2 justify-center gap-16 mt-16">
+     <div>
+      <Card title={'Strong API Legacy'}
+      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      imageUrl={'src/assets/card1-icon.svg'}></Card>
+     </div>
+
+     <div>
+      <Card title={'Strong API Legacy'}
+      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      imageUrl={'src/assets/card1-icon.svg'}></Card>
+     </div>
+
+     <div>
+      <Card title={'Strong API Legacy'}
+      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      imageUrl={'src/assets/card1-icon.svg'}></Card>
+     </div>
+
+     <div>
+      <Card title={'Strong API Legacy'}
+      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      imageUrl={'src/assets/card1-icon.svg'}></Card>
+     </div>
+     </div>
    </div>
 );
 }
