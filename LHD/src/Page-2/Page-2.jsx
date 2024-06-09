@@ -35,8 +35,8 @@ return(
      </div>
 
      <div>
-      <Card title={'Kind Care Initiative'}
-      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      <Card title={'"Health for all" initiative'}
+      description={'Through our "Health for All" initiative, we are committed to making healthcare accessible to underserved communities. We conduct free medical checkup camps where our dedicated team of doctors provides comprehensive health assessments. During these camps, we also distribute our medicines at no cost, ensuring that those in need receive the essential care and treatments they deserve. Our goal is to bridge the gap in healthcare access and improve the well-being of individuals across communities.'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
 
