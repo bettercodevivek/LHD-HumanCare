@@ -38,7 +38,8 @@ const Footer = () => {
                 <div className="flex justify-between items-center mt-8">
                     <div className="text-md">&copy; 2024 LHD Human Care. All rights reserved.</div>
                     <div className="text-md">Designed and Developed by </div>
-                    <button onClick={goToTop} className="bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700">Back to Top</button>
+                    <button onClick={goToTop} className="bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700">
+                        <img className='h-8' src='src/assets/arrow-sm-up-svgrepo-com.svg'></img></button>
                 </div>
             </div>
         </footer>
