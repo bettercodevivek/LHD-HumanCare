@@ -41,8 +41,8 @@ return(
      </div>
 
      <div>
-      <Card title={'Strong API Legacy'}
-      description={'With over [XX] years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'}
+      <Card title={'Experience'}
+      description={'With 46 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our extensive experience is marked by a steadfast commitment to quality, innovation, and patient care. Over the decades, we have continuously advanced our expertise to develop effective and safe medications, earning the trust of millions worldwide. Our journey reflects a legacy of excellence and a future dedicated to enhancing health and improving lives'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
      </div>
