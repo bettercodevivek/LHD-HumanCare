@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="bg-blue-900 text-gray-200 py-12 relative mt-12">
             <div className="container mx-auto px-4">
                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8">
+                <div className="flex flex-row flex-1 justify-start md:grid-cols-3 gap-y-8">
                      <img src="src/assets/LHD Human Care Logo.png" alt="Company Logo" className="h-20 mb-4 aspect-square rounded-full shadow-2xl" />
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Address</h3>
