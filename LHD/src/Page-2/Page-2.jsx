@@ -36,7 +36,7 @@ return(
 
      <div>
       <Card title={'"Health for all" initiative'}
-      description={'Through our "Health for All" initiative, we are committed to making healthcare accessible to underserved communities. We conduct free medical checkup camps where our dedicated team of doctors provides comprehensive health assessments. During these camps, we also distribute our medicines at no cost, ensuring that those in need receive the essential care and treatments they deserve. Our goal is to bridge the gap in healthcare access and improve the well-being of individuals across communities.'}
+      description={'Through our "Health for All" initiative, we are committed to making healthcare accessible to underserved communities. We conduct free medical checkup camps where our dedicated team of doctors provides comprehensive health assessments. During these camps, we also distribute our medicines at no cost, ensuring that those in need receive the essential care and treatments they deserve. Our goal is to bridge the gap in healthcare access.'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
 
