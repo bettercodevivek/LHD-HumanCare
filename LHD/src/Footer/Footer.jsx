@@ -36,9 +36,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex justify-between items-center mt-8">
-                    <div className="text-md">&copy; 2024 LHD Human Care. All rights reserved.</div>
-                    <div className="text-md">Designed and Developed by </div>
-                    <button onClick={goToTop} className="bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700">
+                    <div className="text-lg">&copy; 2024 LHD Human Care. All rights reserved.</div>
+                    <div className="text-lg">Designed and Developed by <a className='text-black font-bold underline' target='_blank' href='https://www.linkedin.com/in/vivek-singh-77849329a/'>BetterCodeVivek</a></div>
+                    <button onClick={goToTop} className="bg-blue-600 text-white py-3 px-6 aspect-square rounded-full hover:bg-blue-700">
                         <img className='h-8' src='src/assets/arrow-sm-up-svgrepo-com.svg'></img></button>
                 </div>
             </div>
