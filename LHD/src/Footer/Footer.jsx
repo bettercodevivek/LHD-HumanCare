@@ -16,9 +16,13 @@ const Footer = () => {
                         <p>Pharma City, PC 12345</p>
                     </div>
                     <div>
-                        <h3 className="text-xl font-semibold mb-4">Contact</h3>
-                        <p>Phone: 123-456-7890</p>
-                        <p>Email:lhdhumancare@gmail.com</p>
+                        <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+                        <div className='flex flex-row items-center'>
+                            <img className='h-8 pr-4' src='src/assets/phone-call-svgrepo-com.svg'></img>
+                            +91 8299239297</div>
+                            <div className='flex flex-row items-center'>
+                            <img className='h-8 pr-4' src='src/assets/mail-svgrepo-com.svg'></img>
+                            <a href='mailto:lhdhumancare@gmail.com'>lhdhumancare@gmail.com</a></div>
                     </div>
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
