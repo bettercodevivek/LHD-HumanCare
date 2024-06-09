@@ -1,12 +1,62 @@
-const Footer=()=>{
-    return(
-    <div className="relative top-12 h-dvh bg-sky-300">
-        <div className="flex flex-col ">
-        <h1 className="text-lg relative">Locate Us</h1>
-        <iframe className="aspect-square shadow-xl border-solid border-black w-1/4 h-1/4 relative top-8 left-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.951046296!2d76.76356261822156!3d28.644287349748502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1717864213431!5m2!1sen!2sin" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-    </div>
-    );
-}
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Company Info */}
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold">About Us</h2>
+          <p className="text-sm">
+            With 46 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our journey reflects a legacy of excellence and a future dedicated to enhancing health and improving lives.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold">Quick Links</h2>
+          <ul className="space-y-2">
+            <li><a href="#home" className="hover:underline">Home</a></li>
+            <li><a href="#about" className="hover:underline">About Us</a></li>
+            <li><a href="#services" className="hover:underline">Services</a></li>
+            <li><a href="#contact" className="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold">Contact Us</h2>
+          <p className="text-sm">
+            123 Health Street, Wellness City, 45678
+          </p>
+          <p className="text-sm">
+            Email: <a href="mailto:info@pharma.com" className="hover:underline">info@pharma.com</a>
+          </p>
+          <p className="text-sm">
+            Phone: <a href="tel:+1234567890" className="hover:underline">+1 234 567 890</a>
+          </p>
+        </div>
+      </div>
+      
+      {/* Social Media Links */}
+      <div className="mt-8 text-center">
+        <a href="#facebook" className="mx-2 text-white hover:text-blue-400">
+          <i className="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="#twitter" className="mx-2 text-white hover:text-blue-300">
+          <i className="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="#linkedin" className="mx-2 text-white hover:text-blue-500">
+          <i className="fab fa-linkedin fa-lg"></i>
+        </a>
+      </div>
+
+      {/* Copyright */}
+      <div className="mt-4 text-center text-sm">
+        <p>&copy; 2024 Pharma Co. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

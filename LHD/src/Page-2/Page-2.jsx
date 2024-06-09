@@ -42,7 +42,7 @@ return(
 
      <div>
       <Card title={'Experience'}
-      description={'With 46 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our extensive experience is marked by a steadfast commitment to quality, innovation, and patient care. Over the decades, we have continuously advanced our expertise to develop effective and safe medications, earning the trust of millions worldwide. Our journey reflects a legacy of excellence and a future dedicated to enhancing health and improving lives'}
+      description={'With 46 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our extensive experience is marked by a steadfast commitment to quality, innovation, and patient care. Over the decades, we have continuously advanced our expertise to develop effective and safe medications, earning the trust of millions worldwide. Our journey reflects a legacy of excellence.'}
       imageUrl={'src/assets/card1-icon.svg'}></Card>
      </div>
      </div>
