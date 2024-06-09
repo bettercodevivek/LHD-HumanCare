@@ -40,23 +40,22 @@ const Hero = () =>{
            <div> <button class=' relative bg-black text-white border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-inherit hover:text-black'>Start Discovery</button></div>
            <div><button class=' relative bg-inherit border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-black hover:text-white'>Contact Us</button></div>
            </div>
-            <div class='relative bg-inherit backdrop-blur-lg shadow-lg flex flex-row  items-center h-44 w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
+            <div class='relative bg-inherit backdrop-blur-lg shadow-lg flex flex-row items-center h-44 w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
                 <div class=''>
                    <span class='font-bold text-4xl'>
-                    <CountUp end={28} delay={4}></CountUp> </span>  <br></br>
+                    <CountUp end={46} delay={4}></CountUp> </span>  <br></br>
                     Years of Experience
                 </div>
                 <div class=''>
-                   <span class='font-bold text-4xl'><CountUp end={10000} delay={4}></CountUp>+</span> <br/>
+                   <span class='font-bold text-4xl'><CountUp end={100000} delay={4}></CountUp>+</span> <br/>
                     Active Clients</div>
+                    <div class=''>
+                   <span class='font-bold text-4xl'><CountUp end={700} delay={4}></CountUp>+</span> <br/>
+                    Employees</div>
                 <div class=''><span class='font-bold text-4xl'>All North Indian</span> <br/>
                 States Covered</div>
             </div>
-            <div class=''>
-                   <span class='font-bold text-4xl'>
-                    All North Indian </span>  <br></br>
-                    States Covered
-                </div>
+           
         </div>
     );
 }
