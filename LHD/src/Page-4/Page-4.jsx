@@ -12,14 +12,14 @@ const Page4 = () => {
     {
       id: 2,
       image: 'https://via.placeholder.com/150',
-      name: 'Jane Doe',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: 'Dr.Rohit Kamboj',
+      description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 3,
       image: 'https://via.placeholder.com/150',
-      name: 'Alice Smith',
-      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Dr.Vikul Tyagi',
+      description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 4,
