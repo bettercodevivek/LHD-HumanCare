@@ -8,9 +8,10 @@ const Footer = () => {
     return (
         <footer className="bg-blue-900 text-gray-200 py-12 relative mt-12">
             <div className="container mx-auto px-4">
+               
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8">
+                     <img src="src/assets/LHD Human Care Logo.png" alt="Company Logo" className="h-20 mb-4 aspect-square rounded-full shadow-2xl" />
                     <div>
-                        <img src="src/assets/LHD Human Care Logo.png" alt="Company Logo" className="h-20 mb-4 aspect-square rounded-full" />
                         <h3 className="text-xl font-semibold mb-4">Address</h3>
                         <p>123 Pharma Street</p>
                         <p>Pharma City, PC 12345</p>
@@ -30,7 +31,7 @@ const Footer = () => {
                             <li className="mb-2"><a href="#" className="hover:text-blue-400">Home</a></li>
                             <li className="mb-2"><a href="#" className="hover:text-blue-400">About Us</a></li>
                             <li className="mb-2"><a href="#" className="hover:text-blue-400">Products</a></li>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Services</a></li>
+                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Corporate Profile</a></li>
                             <li className="mb-2"><a href="#" className="hover:text-blue-400">Contact Us</a></li>
                         </ul>
                     </div>
