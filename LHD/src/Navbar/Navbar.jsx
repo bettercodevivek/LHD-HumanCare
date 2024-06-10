@@ -2,7 +2,7 @@ const Navbar = ()=>{
   return(
    <nav id='navbar' className=' flex flex-1 justify-between h-20 w-dvw items-center z-10 fixed top-0 left-0 bg-white'>
     <div className='flex items-center text-2xl mx-2'>
-      <img className='h-16 rounded-full aspect-square mx-16' src="src/assets/LHD Human Care Logo.png"></img>
+      <img className='h-16  aspect-square mx-16' src="src/assets/LHD Human Care Logo.png"></img>
       <div className='flex-row flex-1 -mx-12'>
        <div> LHD Human Care </div>
         <div className='text-base'>Crafting Health,Shaping Future</div>
