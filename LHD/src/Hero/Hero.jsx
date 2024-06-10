@@ -42,17 +42,17 @@ const Hero = () =>{
            </div>
             <div class='relative bg-inherit backdrop-blur-lg shadow-lg flex flex-row items-center h-44 w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
                 <div class=''>
-                   <span class='font-bold sm:text-2xl'>
+                   <span class='font-bold sm:text-3xl'>
                     <CountUp end={46} delay={4}></CountUp> </span>  <br></br>
                     Years of Experience
                 </div>
                 <div class=''>
-                   <span class='font-bold sm:text-2xl'><CountUp end={100000} delay={4}></CountUp>+</span> <br/>
+                   <span class='font-bold sm:text-3xl'><CountUp end={100000} delay={4}></CountUp>+</span> <br/>
                     Active Clients</div>
                     <div class=''>
-                   <span class='font-bold sm:text-2xl'><CountUp end={700} delay={4}></CountUp>+</span> <br/>
+                   <span class='font-bold sm:text-3xl'><CountUp end={700} delay={4}></CountUp>+</span> <br/>
                     Employees</div>
-                <div class=''><span class='font-bold sm:text-2xl'>All North Indian</span> <br/>
+                <div class=''><span class='font-bold sm:text-3xl'>All North Indian</span> <br/>
                 States Covered</div>
             </div>
            
