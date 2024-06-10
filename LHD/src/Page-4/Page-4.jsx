@@ -7,24 +7,28 @@ const Page4 = () => {
       id: 1,
       image: 'https://via.placeholder.com/150',
       name: 'Dr.Vishwajeet Bembi',
+      designation:'',
       description: ' I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 2,
       image: 'https://via.placeholder.com/150',
       name: 'Dr.Rohit Kamboj',
+      designation:'',
       description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 3,
       image: 'https://via.placeholder.com/150',
       name: 'Dr.Vikul Tyagi',
+      designation:'',
       description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 4,
       image: 'https://via.placeholder.com/150',
       name: 'Bob Johnson',
+      designation:'',
       description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     },
   ];
