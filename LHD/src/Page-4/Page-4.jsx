@@ -7,7 +7,7 @@ const Page4 = () => {
       id: 1,
       image: 'https://via.placeholder.com/150',
       name: 'Dr.Vishwajeet Bembi',
-      designation:'',
+      designation:'MD(Medicine) DIP.CARD. Physician and Critical Care Specialist, Director , Nutema Hospital, Meerut',
       description: ' I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
@@ -27,7 +27,7 @@ const Page4 = () => {
     {
       id: 4,
       image: 'https://via.placeholder.com/150',
-      name: 'Bob Johnson',
+      name: 'Dr. HK Dogra',
       designation:'',
       description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     },
@@ -43,6 +43,7 @@ const Page4 = () => {
               <img className="h-28 aspect-square rounded-full mt-4" src={testimonial.image} alt={testimonial.name} />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{testimonial.name}</div>
+                <div className="font-bold text-md mb-2">{testimonial.designation}</div>
                 <p className="text-gray-700 text-base">{testimonial.description}</p>
               </div>
             </div>
