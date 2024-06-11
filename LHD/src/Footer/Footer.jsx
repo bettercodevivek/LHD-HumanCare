@@ -6,7 +6,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-12 mt-12">
+        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-8 mt-12">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
@@ -21,7 +21,8 @@ const Footer = () => {
                     <h3 className="text-lg font-bold mb-4 text-gradient">Contact Us</h3>
                     <ul className="space-y-2 text-gray-300">
                         <li>Email: <a href="mailto:lhdhumancare@gmail.com" className="hover:text-white">lhdhumancare@gmail.com</a></li>
-                        <li>Phone: <a href="tel:+12345678901" className="hover:text-white">+1-234-567-8901</a></li>
+                        <li>Phone: <a href="tel:+917310916525" className="hover:text-white">+91 7310916525</a></li>
+                        <li>Phone: <a href="tel:+919837559026" className="hover:text-white">+91 9837559026</a></li>
                     </ul>
                 </div>
 
@@ -31,9 +32,9 @@ const Footer = () => {
                     <ul className="space-y-2 text-gray-300">
                         <li><a href="#" className="hover:text-white">Home</a></li>
                         <li><a href="#" className="hover:text-white">About Us</a></li>
-                        <li><a href="#" className="hover:text-white">Products</a></li>
-                        <li><a href="#" className="hover:text-white">Services</a></li>
-                        <li><a href="#" className="hover:text-white">Contact</a></li>
+                        <li><a href="#" className="hover:text-white"> Our Products</a></li>
+                        <li><a href="#" className="hover:text-white">Corporate Profile</a></li>
+                        <li><a href="#" className="hover:text-white">Career with us</a></li>
                     </ul>
                 </div>
 
@@ -48,9 +49,9 @@ const Footer = () => {
             <div className="text-center mt-12">
                 <button
                     onClick={scrollToTop}
-                    className=" hover:to-blue-500 text-white py-2 px-6 rounded-full transform hover:scale-105 transition-transform duration-300"
+                    className="bg-sky-300 hover:to-blue-500 text-white  rounded-full transform hover:scale-105 transition-transform duration-300"
                 >
-                    Back to Top
+                    <img className='h-16' src='src/assets/arrow-sm-up-svgrepo-com.svg'></img>
                 </button>
             </div>
         </footer>
