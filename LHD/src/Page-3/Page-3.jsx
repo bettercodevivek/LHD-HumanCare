@@ -23,7 +23,7 @@ const Page3 = () => {
             id: 1,
             image: 'https://i.postimg.cc/s24ZWdM0/brain-upper-view-outline-svgrepo-com.png',
             title: 'Neurology',
-            description: 'This is a description for item 1.',
+            description: 'Advancing brain health with innovative treatments and expert neurological care.',
             link: '#'
         },
         {
