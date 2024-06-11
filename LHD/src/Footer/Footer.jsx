@@ -1,51 +1,61 @@
 import React from 'react';
 
 const Footer = () => {
-    const goToTop = () => {
+    const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
-        <footer className="bg-blue-900 text-gray-200 py-12 relative mt-12">
-            <div className="container mx-auto px-4">
-               
-                <div className="flex flex-row flex-1 justify-around md:grid-cols-3 gap-y-8">
-                     <img src="src/assets/LHD Human Care Logo.png" alt="Company Logo" className="h-20 mb-4 aspect-square rounded-full shadow-2xl" />
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4">Address</h3>
-                        <p>123 Pharma Street</p>
-                        <p>Pharma City, PC 12345</p>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-                        <div className='flex flex-row items-center'>
-                            <img className='h-8 pr-4' src='src/assets/phone-call-svgrepo-com.svg'></img>
-                            +91 8299239297</div>
-                            <div className='flex flex-row items-center'>
-                            <img className='h-8 pr-4' src='src/assets/mail-svgrepo-com.svg'></img>
-                            <a href='mailto:lhdhumancare@gmail.com'>lhdhumancare@gmail.com</a></div>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-                        <ul>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Home</a></li>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">About Us</a></li>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Products</a></li>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Corporate Profile</a></li>
-                            <li className="mb-2"><a href="#" className="hover:text-blue-400">Contact Us</a></li>
-                        </ul>
-                    </div>
+        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-12">
+            <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                {/* Logo Section */}
+                <div className="flex flex-col items-center md:items-start">
+                    <img src='src/assets/LHD Human Care Logo.png' alt="Pharma Company Logo" className="h-16 mb-4 transform hover:scale-110 transition-transform duration-300" />
+                    <p className="text-sm text-gray-400">
+                        Pioneering healthcare solutions for a better future.
+                    </p>
                 </div>
-                <div className="flex flex-col justify-between items-center relative top-24 ">
-                    <div className="text-lg">&copy; 2024 LHD Human Care. All rights reserved.</div>
-                    <div className="text-lg">Designed and Developed by <a className='text-black font-bold underline' target='_blank' href='https://www.linkedin.com/in/vivek-singh-77849329a/'>BetterCodeVivek</a></div>
+
+                {/* Contact Section */}
+                <div className="text-center md:text-left">
+                    <h3 className="text-lg font-bold mb-4 text-gradient bg-gradient-to-r from-blue-400 to-purple-600">Contact Us</h3>
+                    <ul className="space-y-2 text-gray-300">
+                        <li>Email: <a href="mailto:contact@pharmaco.com" className="hover:text-white">contact@pharmaco.com</a></li>
+                        <li>Phone: <a href="tel:+12345678901" className="hover:text-white">+1-234-567-8901</a></li>
+                        <li>Address: 1234 Pharma St, Medicine City, 56789</li>
+                    </ul>
                 </div>
-                <button onClick={goToTop} className="bg-blue-600 text-white py-3 px-6 aspect-square rounded-full hover:bg-blue-700">
-                <img className='h-8' src='src/assets/arrow-sm-up-svgrepo-com.svg'></img></button>
+
+                {/* Quick Links Section */}
+                <div className="text-center md:text-left">
+                    <h3 className="text-lg font-bold mb-4 text-gradient bg-gradient-to-r from-green-400 to-blue-600">Quick Links</h3>
+                    <ul className="space-y-2 text-gray-300">
+                        <li><a href="#" className="hover:text-white">Home</a></li>
+                        <li><a href="#" className="hover:text-white">About Us</a></li>
+                        <li><a href="#" className="hover:text-white">Products</a></li>
+                        <li><a href="#" className="hover:text-white">Services</a></li>
+                        <li><a href="#" className="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                {/* Developer Credits Section */}
+                <div className="text-center md:text-left">
+                    <p className="text-sm text-gray-400">&copy; 2024 PharmaCo. All rights reserved.</p>
+                    <p className="text-sm text-gray-400">Developed by <a href="#" className="text-gradient bg-gradient-to-r from-purple-400 to-pink-600 hover:underline">Your Name</a></p>
+                </div>
+            </div>
+
+            {/* Back to Top Button */}
+            <div className="text-center mt-12">
+                <button
+                    onClick={scrollToTop}
+                    className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white py-2 px-6 rounded-full transform hover:scale-105 transition-transform duration-300"
+                >
+                    Back to Top
+                </button>
             </div>
         </footer>
     );
 };
 
 export default Footer;
-
