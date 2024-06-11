@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Navbar from './Navbar/Navbar'
 import Slideshow from './Hero/Hero';
 import Page2 from './Page-2/Page-2';

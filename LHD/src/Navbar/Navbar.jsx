@@ -1,42 +1,47 @@
-const Navbar = ()=>{
-  return(
-   <nav id='navbar' className=' flex flex-1 justify-between h-20 w-dvw items-center z-10 fixed top-0 left-0 bg-white'>
-    <div className='flex items-center text-2xl mx-2'>
-      <img className='h-16  aspect-square mx-16' src="src/assets/LHD Human Care Logo.png"></img>
-      <div className='flex-row flex-1 -mx-12'>
-       <div> LHD Human Care </div>
-        <div className='text-base'>Crafting Health,Shaping Future</div>
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className='bg-white fixed top-0 left-0 w-full h-20 flex items-center justify-between px-4 shadow-lg z-50'>
+      <div className='flex items-center space-x-4'>
+        <img className='h-12 w-12' src='/assets/LHD Human Care Logo.png' alt='LHD Human Care Logo' />
+        <div className='hidden sm:flex flex-col'>
+          <span className='text-2xl'>LHD Human Care</span>
+          <span className='text-base'>Crafting Health, Shaping Future</span>
+        </div>
       </div>
-    </div>
-    <div class='flex flex-row flex-1 items-center justify-center gap-x-12 text-lg'>
-    <div>
-      <a href='#' className='group transition-all duration-300 ease-in-out'>
-        <span class='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Vision</span>
-      </a>
-    </div>
-    <div>
-      <a href='#' className='group transition-all duration-300 ease-in-out'>
-        <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>Corporate Profile</span>
-      </a>
-    </div>
-    <div>
-      <a href='#' className='group transition-all duration-300 ease-in-out'>
-        <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Products</span>
-      </a>
-    </div>
-    <div>
-      <a href='#' className='group transition-all duration-300 ease-in-out'>
-        <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> Our Network</span>
-      </a>
-    </div>
-    <div>
-      <a href='#' className='group transition-all duration-300 ease-in-out'>
-        <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>Contact Us</span>
-      </a>
-    </div>
-    </div>
+      <div className='hidden sm:flex space-x-8 text-lg'>
+        <Link to='/vision' className='hover:text-blue-500 transition-colors duration-300'>Our Vision</Link>
+        <Link to='/profile' className='hover:text-blue-500 transition-colors duration-300'>Corporate Profile</Link>
+        <Link to='/products' className='hover:text-blue-500 transition-colors duration-300'>Our Products</Link>
+        <Link to='/network' className='hover:text-blue-500 transition-colors duration-300'>Our Network</Link>
+        <Link to='/contact' className='hover:text-blue-500 transition-colors duration-300'>Contact Us</Link>
+      </div>
+      <div className='sm:hidden'>
+        <button onClick={toggleMenu} className='text-2xl text-black'>
+          {isMenuOpen ? '✖' : '☰'}
+        </button>
+      </div>
+      {isMenuOpen && (
+        <div className='absolute top-20 left-0 w-full bg-white shadow-lg sm:hidden'>
+          <div className='flex flex-col items-center'>
+            <Link to='/vision' className='w-full text-center py-2 hover:bg-gray-200 transition-colors duration-300' onClick={toggleMenu}>Our Vision</Link>
+            <Link to='/profile' className='w-full text-center py-2 hover:bg-gray-200 transition-colors duration-300' onClick={toggleMenu}>Corporate Profile</Link>
+            <Link to='/products' className='w-full text-center py-2 hover:bg-gray-200 transition-colors duration-300' onClick={toggleMenu}>Our Products</Link>
+            <Link to='/network' className='w-full text-center py-2 hover:bg-gray-200 transition-colors duration-300' onClick={toggleMenu}>Our Network</Link>
+            <Link to='/contact' className='w-full text-center py-2 hover:bg-gray-200 transition-colors duration-300' onClick={toggleMenu}>Contact Us</Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
-}
+};
 
 export default Navbar;
