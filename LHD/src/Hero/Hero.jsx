@@ -4,8 +4,11 @@ const Hero = () =>{
 
     const ImageSlide = [
         'https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg',
-        'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg',
-        'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg'
+         'https://i.postimg.cc/7LxSPp0W/robert-collins-l-P-Fb-Bk-Mn1c-unsplash.jpg',
+          'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg',
+        'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg'
+       
+      
     ]
    
 
