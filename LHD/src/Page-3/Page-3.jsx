@@ -37,21 +37,21 @@ const Page3 = () => {
             id: 3,
             image: 'https://i.postimg.cc/VsGn48Dx/liver-svgrepo-com.png',
             title: 'Hepatology',
-            description: 'This is a description for item 3.',
+            description: 'Leading the way in liver health with advanced treatments and compassionate care.',
             link: '#'
         },
         {
             id: 4,
             image: 'https://i.postimg.cc/yYD9bbGk/stomach-svgrepo-com.png',
             title: 'GastroEnterology',
-            description: 'This is a description for item 4.',
+            description: 'Your partner in digestive health, providing expert care for a healthy gut',
             link: '#'
         },
         {
             id: 5,
             image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
             title: 'Vitaminology',
-            description: 'This is a description for item 5.',
+            description: 'Unlock the power of vitamins for optimal health and wellness.',
             link: '#'
         }
     ];
@@ -68,16 +68,16 @@ const Page3 = () => {
                     {carouselItems.map((item, index) => (
                         <div
                             key={index}
-                            className=" min-w-[calc(100%/3)] flex-shrink-0 box-border p-4"
+                            className=" min-w-[calc(100%/3)] flex-shrink-0 box-border  p-4"
                         >
-                            <div className="bg-inherit p-6 rounded-3xl  flex flex-col items-center">
+                            <div className="bg-inherit p-6 rounded-3xl w-5/6  flex flex-col items-center text-wrap">
                                 <img
                                     src={item.image}
                                     alt={item.title}
                                     className="w-28 h-28 object-cover aspect-square rounded-full mb-4"
                                 />
                                 <h2 className="text-lg font-bold mb-2">{item.title}</h2>
-                                <p className="text-gray-700 mb-4">{item.description}</p>
+                                <p className="text-gray-700 text-center mb-4">{item.description}</p>
                                 <a
                                     href={item.link}
                                     className="text-indigo-500 hover:text-indigo-600"
