@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
-                    <img src='src/assets/LHD Human Care Logo.png' alt="Pharma Company Logo" className="h-16 mb-4 transform hover:scale-110 transition-transform duration-300" />
+                    <img src='src/assets/LHD Human Care Logo.png' alt="Pharma Company Logo" className="h-16 rounded-lg mb-4 transform hover:scale-110 transition-transform duration-300" />
                     <p className="text-sm text-gray-400">
                         Pioneering healthcare solutions for a better future.
                     </p>
