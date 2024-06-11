@@ -5,31 +5,31 @@ const Page4 = () => {
   const testimonials = [
     {
       id: 1,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://i.postimg.cc/J7Dyc1qL/Dr-Vishwajeet-Bembi-Medicine1.jpg',
       name: 'Dr.Vishwajeet Bembi',
       designation:'MD(Medicine) DIP.CARD. Physician and Critical Care Specialist, Director , Nutema Hospital, Meerut',
       description: ' I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 2,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://i.postimg.cc/vDww57vc/IMG-20240610-WA0006.jpg',
       name: 'Dr.Rohit Kamboj',
-      designation:'',
+      designation:'Neurosurgeon',
       description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 3,
-      image: 'https://via.placeholder.com/150',
-      name: 'Dr.Vikul Tyagi',
-      designation:'',
+      image: 'https://i.postimg.cc/Y9VHCBGN/IMG-20240610-WA0007.jpg',
+      name: 'Dr.Avdesh Vashishtha',
+      designation:'MBBS MD DNB Critical Care',
       description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch HealthCare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
     },
     {
       id: 4,
-      image: 'https://via.placeholder.com/150',
+      image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
       name: 'Dr. HK Dogra',
-      designation:'',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      designation:'Orthopedician',
+      description: 'I’ve been prescribing XYZ Pharma’s medications for years and have witnessed significant patient improvements. Their CardioWell heart medication has effectively managed chronic conditions with remarkable results. XYZ Pharma consistently provides high-quality, reliable products that I trust for my patients care. Their dedication to innovation and support is exceptional. I highly recommend XYZ Pharma for its outstanding contributions to patient health',
     },
   ];
 

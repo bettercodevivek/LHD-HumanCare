@@ -38,8 +38,8 @@ const Footer = () => {
                 </div>
 
                 {/* Developer Credits Section */}
-                <div className="text-center md:text-left">
-                    <p className="text-sm text-gray-400">&copy; 2024 PharmaCo. All rights reserved.</p>
+                <div className="text-center md:text-left md:relative md:top-52">
+                    <p className="text-sm text-gray-400">&copy; 2024 LHD Human Care. All rights reserved.</p>
                     <p className="text-sm text-gray-400"> Designed & Developed by <a target='_blank' href="https://www.linkedin.com/in/vivek-singh-77849329a/" className="text-gradient  hover:underline">BetterCodeVivek</a></p>
                 </div>
             </div>
