@@ -7,6 +7,7 @@ import Products from './Components/Products';
 import Contact from './Components/Contact';
 import Network from './Components/Network';
 import Hero from './Pages/Hero';
+import Page2 from './Pages/Page2';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Hero />
+      <Page2 />
     </Router>
     
   );
