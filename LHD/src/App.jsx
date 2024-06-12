@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Network from './Components/Network';
 import Hero from './Pages/Hero';
 import Page2 from './Pages/Page2';
+import Page3 from './Pages/Page3';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       </Routes>
       <Hero />
       <Page2 />
+      <Page3/>
     </Router>
     
   );
