@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Vision from './Vision';
-import Profile from './Profile';
-import Products from './Products';
-import Network from './Network';
-import Contact from './Contact';
+import Navbar from './Components/Navbar';
+import Vision from './Components/Vision';
+import Profile from './Components/Profile';
+import Products from './Components/Products';
+import Contact from './Components/Contact';
+import Network from './Components/Network';
+import Hero from './Pages/Hero';
 
 const App = () => {
   return (
@@ -18,7 +19,9 @@ const App = () => {
         <Route path="/network" element={<Network />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Hero />
     </Router>
+    
   );
 };
 

@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id='navbar' className='fixed top-0 left-0 w-full bg-white z-10 shadow-md'>
+    <nav id='navbar' className='fixed top-0 left-0 w-full bg-white z-10'>
       <div className='container mx-auto flex items-center justify-between h-20 px-6'>
         <div className='flex items-center'>
           <img className='h-16 aspect-square mx-4' src="src/assets/LHD Human Care Logo.png" alt="LHD Logo" />
