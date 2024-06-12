@@ -30,6 +30,20 @@ const Page4 = () => {
       designation: 'Orthopedician',
       description: 'I’ve been prescribing LHD Human Care’s medications for years and have witnessed significant patient improvements. Their dedication to innovation and support is exceptional. I highly recommend LHD Human Care for its outstanding contributions to patient health.',
     },
+    {
+      id: 5,
+      image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
+      name: 'Dr. HK Dogra',
+      designation: 'Orthopedician',
+      description: 'I’ve been prescribing LHD Human Care’s medications for years and have witnessed significant patient improvements. Their dedication to innovation and support is exceptional. I highly recommend LHD Human Care for its outstanding contributions to patient health.',
+    },
+    {
+      id: 6,
+      image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
+      name: 'Dr. HK Dogra',
+      designation: 'Orthopedician',
+      description: 'I’ve been prescribing LHD Human Care’s medications for years and have witnessed significant patient improvements. Their dedication to innovation and support is exceptional. I highly recommend LHD Human Care for its outstanding contributions to patient health.',
+    },
   ];
 
   return (
@@ -38,7 +52,7 @@ const Page4 = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">
           Recommended By Leading Doctors
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-sky-100 mx-auto flex flex-col items-center overflow-hidden rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
               <img className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-full mb-4" src={testimonial.image} alt={testimonial.name} />
