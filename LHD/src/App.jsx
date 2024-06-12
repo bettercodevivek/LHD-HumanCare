@@ -1,23 +1,25 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar'
-import Slideshow from './Hero/Hero';
-import Page2 from './Page-2/Page-2';
-import Page3 from './Page-3/Page-3';
-import Page4 from './Page-4/Page-4';
-import Footer from './Footer/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Vision from './Vision';
+import Profile from './Profile';
+import Products from './Products';
+import Network from './Network';
+import Contact from './Contact';
 
-
-function App() {
+const App = () => {
   return (
-    <div class='bg-white text-black font-serif antialiased tracking-wide overflow-x-hidden overflow-y-hidden'>
-    <Navbar />
-    <Slideshow/>
-    <Page2 />
-    <Page3 />
-    <Page4 />
-    <Footer />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Vision />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/network" element={<Network />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
