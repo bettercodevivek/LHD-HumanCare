@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='hidden md:flex space-x-8'>
           <Link to="/" className='group transition-all duration-300 ease-in-out'>
             <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Our Vision
+              Home
             </span>
           </Link>
           <Link to="/profile" className='group transition-all duration-300 ease-in-out'>
@@ -34,9 +34,9 @@ const Navbar = () => {
               Our Products
             </span>
           </Link>
-          <Link to="/network" className='group transition-all duration-300 ease-in-out'>
+          <Link to="/vision" className='group transition-all duration-300 ease-in-out'>
             <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Our Network
+              Our Vision
             </span>
           </Link>
           <Link to="/contact" className='group transition-all duration-300 ease-in-out'>

@@ -7,8 +7,6 @@ const Hero = () =>{
          'https://i.postimg.cc/7LxSPp0W/robert-collins-l-P-Fb-Bk-Mn1c-unsplash.jpg',
           'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg',
         'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg'
-       
-      
     ]
    
 
@@ -23,7 +21,7 @@ const Hero = () =>{
         },[])
 
     return(
-        <div className="relative">
+        <div className="relative h-full -top-4">
       <div className="h-vh aspect-video w-11/12 relative left-16 top-24 z-0 opacity-80 blur-0 rounded-3xl">
         {ImageSlide.map((image, index) => (
           <div

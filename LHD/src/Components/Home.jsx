@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Network = () => {
+const Home = () => {
   return <h2 className="p-4">Our Vision</h2>;
 };
 
-export default Network;
+export default Home;

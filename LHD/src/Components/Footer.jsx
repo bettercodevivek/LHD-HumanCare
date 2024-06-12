@@ -13,7 +13,7 @@ const Footer = () => {
                     <img
                         src='src/assets/LHD Human Care Logo.png'
                         alt="Pharma Company Logo"
-                        className="h-12 sm:h-16 mb-4 transform hover:scale-110 transition-transform duration-300"
+                        className="h-12 sm:h-16 rounded-lg mb-4 transform hover:scale-110 transition-transform duration-300"
                     />
                     <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
                         Pioneering healthcare solutions for a better future.
