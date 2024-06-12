@@ -15,6 +15,7 @@ import Page4 from './Pages/Page4';
 const App = () => {
   return (
     <Router>
+      <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,7 +29,9 @@ const App = () => {
       <Page3/>
       <Page4/>
       <Footer/>
+      </div>
     </Router>
+    
     
   );
 };
