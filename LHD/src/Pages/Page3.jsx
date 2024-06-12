@@ -92,7 +92,7 @@ const Page3 = () => {
         {carouselItems.map((_, index) => (
           <span
             key={index}
-            className={`indicator w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 bg-gray-400 rounded-full mx-1 cursor-pointer ${
+            className={`indicator w-3 h-3 sm:w-4 sm:h-4 md:w-4 md:h-4 aspect-square bg-gray-400 rounded-full mx-1 cursor-pointer ${
               currentSlide === index ? 'bg-gray-800' : ''
             }`}
             onClick={() => setCurrentSlide(index)}
