@@ -21,8 +21,8 @@ const Hero = () =>{
         },[])
 
     return(
-        <div className="relative h-full -top-4">
-      <div className="h-vh aspect-video w-11/12 relative left-16 top-24 z-0 opacity-80 blur-0 rounded-3xl">
+        <div className="relative bg-green-500 h-full -top-4">
+      <div className="h-vh aspect-video w-11/12 relative left-16 top-16 z-0 opacity-80 blur-0 rounded-3xl">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
@@ -32,7 +32,7 @@ const Hero = () =>{
           </div>
         ))}
       </div>
-           <div class='absolute top-60 left-32'>
+           <div class='relative bg-yellow-700 top-60 left-32'>
            <div class='flex flex-row items-center gap-4'><h1 class='font-bold text-6xl'>LHD Human Care</h1>
            <img class='h-12 w-20 animate-bounce' src='src/assets/injection-svgrepo-com.svg'></img> </div> <br/>
             <h2 class='font-bold text-4xl '>Crafting Health,Shaping Future</h2>
