@@ -32,16 +32,12 @@ const Hero = () =>{
           </div>
         ))}
       </div>
-           <div class='relative bg-yellow-700 top-60 left-32'>
-           <div class='flex flex-row items-center gap-4'><h1 class='font-bold text-6xl'>LHD Human Care</h1>
-           <img class='h-12 w-20 animate-bounce' src='src/assets/injection-svgrepo-com.svg'></img> </div> <br/>
-            <h2 class='font-bold text-4xl '>Crafting Health,Shaping Future</h2>
-           </div>
+          
            <div class='flex flex-row items-center gap-2 relative -top-60 left-32'>
            <div> <button class='  bg-black text-white border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-inherit hover:text-black'>Start Discovery</button></div>
            <div><button class=' bg-inherit border-2 px-8 py-4 border-solid border-black rounded-lg hover:bg-black hover:text-white'>Contact Us</button></div>
            </div>
-            <div class='relative bg-inherit backdrop-blur-lg shadow-lg flex flex-row items-center h-44 w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
+            <div class='relative bg-orange-600 backdrop-blur-lg shadow-lg flex flex-row items-center flex-wrap md:h-44 lg:h-44  w-4/5 left-36 -top-8 rounded-3xl justify-around border-2'>
                 <div class=''>
                    <span class='font-bold sm:text-3xl'>
                     <CountUp end={46} delay={4}></CountUp> </span>  <br></br>

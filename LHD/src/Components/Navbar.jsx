@@ -20,6 +20,11 @@ export default function Navbar() {
                             className="h-16"
                             alt="Logo"
                         />
+                        <div className="flex flex-col items-start ml-4">
+                          <div className="text-xl md:text-2xl lg:text-2xl">LHD Human Care</div>
+                          <div>Crafting Health,Shaping Future</div>
+                         
+                        </div>
                     </Link>
 
                     {/* Toggle button for mobile view */}
