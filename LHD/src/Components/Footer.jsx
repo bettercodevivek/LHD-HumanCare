@@ -6,7 +6,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-8 mt-8">
+        <footer className="relative top-16 md:top-0 lg:top-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-8 mt-8">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="text-center mt-12">
                 <button
                     onClick={scrollToTop}
-                    className="bg-sky-300 hover:bg-blue-500 text-white p-2 rounded-full transform hover:scale-105 transition-transform duration-300"
+                    className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-full transform hover:scale-105 transition-transform duration-300"
                 >
                     <img className="h-8 sm:h-12" src='src/assets/arrow-sm-up-svgrepo-com.svg' alt="Back to top" />
                 </button>

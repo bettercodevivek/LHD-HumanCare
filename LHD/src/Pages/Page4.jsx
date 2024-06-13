@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Page4 = () => {
   const testimonials = [
     {
@@ -45,25 +47,20 @@ const Page4 = () => {
   ];
 
   return (
-    <div className='relative top-0 sm:px-48 md:px-48'>
-      <div className="max-w-7xl mx-auto py-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">
-          Recommended By Leading Doctors
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-sky-100 mx-auto flex flex-col items-center overflow-hidden rounded-3xl shadow-lg p-4 sm:p-6 md:p-8">
-              <img className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-full mb-4" src={testimonial.image} alt={testimonial.name} />
-              <div className="text-center">
-                <div className="font-bold text-lg sm:text-xl md:text-2xl mb-2">{testimonial.name}</div>
-                <div className="font-semibold text-sm sm:text-base md:text-lg mb-2">{testimonial.designation}</div>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg">
-                  {testimonial.description}
-                </p>
-              </div>
+    <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 relative top-24 lg:top-8 md:top-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Recommended By Leading Doctors</h2>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:px-48 lg:px-48">
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="bg-blue-500 rounded-lg overflow-hidden shadow-lg flex flex-col items-center py-4">
+            <img className="w-32 h-32 object-cover object-center rounded-full" src={testimonial.image} alt={testimonial.name} />
+            <div className="p-6">
+              <div className="font-bold text-lg mb-2">{testimonial.name}</div>
+              <div className="text-sm mb-4">{testimonial.designation}</div>
+              <p className="text-white text-base">{testimonial.description}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
