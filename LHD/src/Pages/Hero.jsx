@@ -21,7 +21,7 @@ const Hero = () =>{
         },[])
 
     return(
-        <div className="relative bg-green-500 h-full -top-4">
+        <div className="relative  h-full -top-4">
       <div className="h-vh aspect-video w-11/12 relative left-16 top-16 z-0 opacity-80 blur-0 rounded-3xl">
         {ImageSlide.map((image, index) => (
           <div
