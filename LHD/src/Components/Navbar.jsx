@@ -1,77 +1,85 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {Link,NavLink} from 'react-router-dom';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar() {
+    return (
+        <header className="shadow sticky z-50 top-0">
+            <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+                <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                    <Link to="/" className="flex items-center">
+                        <img
+                            src="src/assets/LHD Human Care Logo.png"
+                            className="h-16"
+                            alt="Logo"
+                        />
+                    </Link>
+                  
+                    <div
+                        className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                        id="mobile-menu-2"
+                    >
+                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                            <li>
+                                <NavLink to='/home'
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+                            <li>
+                                <NavLink to='/profile'
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Corporate Profile
+                                </NavLink>
+                            </li>
 
-  return (
-    <nav id='navbar' className='fixed top-0 left-0 w-full bg-white z-10'>
-      <div className='container mx-auto flex items-center justify-between h-20 px-6'>
-        <div className='flex items-center'>
-          <img className='h-16 aspect-square mx-4' src="src/assets/LHD Human Care Logo.png" alt="LHD Logo" />
-          <div className='flex flex-col'>
-            <div className='text-2xl font-bold'>LHD Human Care</div>
-            <div className='text-base text-gray-600'>Crafting Health, Shaping Future</div>
-          </div>
-        </div>
-        <div className='hidden md:flex space-x-8'>
-          <Link to="/" className='group transition-all duration-300 ease-in-out'>
-            <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Home
-            </span>
-          </Link>
-          <Link to="/profile" className='group transition-all duration-300 ease-in-out'>
-            <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Corporate Profile
-            </span>
-          </Link>
-          <Link to="/products" className='group transition-all duration-300 ease-in-out'>
-            <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Our Products
-            </span>
-          </Link>
-          <Link to="/vision" className='group transition-all duration-300 ease-in-out'>
-            <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Our Vision
-            </span>
-          </Link>
-          <Link to="/contact" className='group transition-all duration-300 ease-in-out'>
-            <span className='bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
-              Contact Us
-            </span>
-          </Link>
-        </div>
-        <div className='md:hidden'>
-          <button onClick={toggleMenu} className='text-lg focus:outline-none'>
-            {isOpen ? 'Close' : 'Menu'}
-          </button>
-        </div>
-      </div>
-      {isOpen && (
-        <div className='md:hidden flex flex-col items-center bg-white shadow-md py-4'>
-          <Link to="/" onClick={toggleMenu} className='block py-2 text-lg'>
-            Our Vision
-          </Link>
-          <Link to="/profile" onClick={toggleMenu} className='block py-2 text-lg'>
-            Corporate Profile
-          </Link>
-          <Link to="/products" onClick={toggleMenu} className='block py-2 text-lg'>
-            Our Products
-          </Link>
-          <Link to="/network" onClick={toggleMenu} className='block py-2 text-lg'>
-            Our Network
-          </Link>
-          <Link to="/contact" onClick={toggleMenu} className='block py-2 text-lg'>
-            Contact Us
-          </Link>
-        </div>
-      )}
-    </nav>
-  );
-};
 
-export default Navbar;
+                            <li>
+                                <NavLink to='/vision'
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Our Vision
+                                </NavLink>
+                            </li>
+
+
+                            <li>
+                                <NavLink to='/products'
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Our Products
+                                </NavLink>
+                            </li>
+
+
+                            <li>
+                                <NavLink to='/contact'
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-600" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Contact Us
+                                </NavLink>
+                            </li>
+
+
+                           
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    );
+}
+
