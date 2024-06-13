@@ -15,7 +15,7 @@ import Page4 from './Pages/Page4';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='font-poppins'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
