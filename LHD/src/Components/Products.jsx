@@ -1,46 +1,46 @@
-// ProductsPage.js
-
 import React from 'react';
 
-const productsList = [
-  {
-    id: 1,
-    name: 'Product A',
-    imageSrc: '/product-a.jpg', // Replace with actual image path
-  },
-  {
-    id: 2,
-    name: 'Product B',
-    imageSrc: '/product-b.jpg', // Replace with actual image path
-  },
-  {
-    id: 3,
-    name: 'Product C',
-    imageSrc: '/product-c.jpg', // Replace with actual image path
-  },
-  // Add more products as needed
-];
-
 const Products = () => {
+  // Sample data for products
+  const sections = [
+    {
+      id: 1,
+      title: 'Electronics',
+      products: [
+        { id: 1, name: 'Laptop', image: 'https://via.placeholder.com/300' },
+        { id: 2, name: 'Smartphone', image: 'https://via.placeholder.com/300' },
+        // Add more products as needed
+      ],
+    },
+    {
+      id: 2,
+      title: 'Clothing',
+      products: [
+        { id: 3, name: 'T-Shirt', image: 'https://via.placeholder.com/300' },
+        { id: 4, name: 'Jeans', image: 'https://via.placeholder.com/300' },
+        // Add more products as needed
+      ],
+    },
+    // Add more sections as needed
+  ];
+
   return (
-    <div className="bg-gray-100 min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-900">Our Products</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productsList.map(product => (
-            <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src={product.imageSrc}
-                alt={product.name}
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">{product.name}</h2>
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-bold text-center mb-8">Products</h1>
+
+      {sections.map((section) => (
+        <section key={section.id} className="py-8">
+          <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {section.products.map((product) => (
+              <div key={product.id} className="bg-white p-4 shadow-md rounded-lg">
+                <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-2" />
+                <p className="text-gray-800 font-semibold">{product.name}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 };
