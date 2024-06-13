@@ -28,7 +28,7 @@ const Page3 = () => {
     {
       id: 2,
       image: 'https://i.postimg.cc/K8LTZgxb/hand-palm-outline-with-scratch-wound-with-blood-droplet-svgrepo-com.png',
-      title: 'Diabetology',
+      title: 'Pediatrics',
       description: 'This is a description for item 2.',
       link: '#'
     },
@@ -52,7 +52,8 @@ const Page3 = () => {
       title: 'Vitaminology',
       description: 'Unlock the power of vitamins for optimal health and wellness.',
       link: '#'
-    }
+    },
+
   ];
 
   return (
@@ -62,7 +63,7 @@ const Page3 = () => {
       <div className="relative overflow-hiddens w-full mt-16 mb-12">
         <div
           className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${(100 / (totalSlides < 3 ? totalSlides : 3)) * currentSlide}%)` }}
+          style={{ transform: `translateX(-${(100 / (totalSlides < 2 ? totalSlides : 2)) * currentSlide}%)` }}
         >
           {carouselItems.map((item, index) => (
             <div
