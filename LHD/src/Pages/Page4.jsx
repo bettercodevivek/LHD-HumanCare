@@ -28,7 +28,7 @@ const Page4 = () => {
       image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
       name: 'Dr. HK Dogra',
       designation: 'Orthopedician',
-      description: 'I’ve been prescribing LHD Human Care’s medications for years and have witnessed significant patient improvements. Their dedication to innovation and support is exceptional. I highly recommend LHD Human Care for its outstanding contributions to patient health.',
+      description: 'As a Orthopedician dedicated to providing the highest standard of care, I am consistently impressed by the exceptional quality of medications from LHD Human Care. Their unwavering commitment to pharmaceutical excellence and innovative therapeutic solutions has profoundly enriched the health outcomes of my patients. The efficacy and reliability of their products are unparalleled, making LHD Human Care a beacon of trust and excellence in the medical community.',
     },
     {
       id: 5,
