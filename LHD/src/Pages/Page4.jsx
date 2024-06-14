@@ -14,14 +14,14 @@ const Page4 = () => {
       image: 'https://i.postimg.cc/vDww57vc/IMG-20240610-WA0006.jpg',
       name: 'Dr. Rohit Kamboj',
       designation: 'Neurosurgeon',
-      description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch healthcare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
+      description: 'As a healthcare professional, I have had the opportunity to prescribe medications from LHD Human Care for several years. Their commitment to quality and patient well-being is evident in the consistent results I see in my patients. The innovative treatments and reliable efficacy of their products have significantly improved patient outcomes in my practice. I highly recommend LHD Human Care for their dedication to advancing healthcare.',
     },
     {
       id: 3,
       image: 'https://i.postimg.cc/Y9VHCBGN/IMG-20240610-WA0007.jpg',
       name: 'Dr. Avdesh Vashishtha',
       designation: 'MBBS MD DNB Critical Care',
-      description: 'I have been prescribing medications from LHD Human Care for several years and I am consistently impressed with their commitment to drug quality and excellence. Their rigorous testing procedures and dedication to patient safety make them a trusted partner in delivering top-notch healthcare. I highly recommend LHD Human Care for their unwavering standards and exceptional service.',
+      description: 'I have been prescribing medications from LHD Human Care for over a decade and have consistently witnessed exceptional results in my patients. Their innovative formulations and commitment to rigorous quality control make them a trusted partner in healthcare. I am confident in recommending LHD Human Care for their outstanding contributions to patient care and well-being.',
     },
     {
       id: 4,
@@ -55,8 +55,8 @@ const Page4 = () => {
           <div key={testimonial.id} className="bg-amber-500 rounded-3xl overflow-hidden shadow-lg flex flex-col items-center py-4">
             <img className="w-32 h-32 object-cover object-center rounded-full" src={testimonial.image} alt={testimonial.name} />
             <div className="p-6">
-              <div className="font-bold text-lg mb-2 text-center">{testimonial.name}</div>
-              <div className="text-sm mb-4 text-center">{testimonial.designation}</div>
+              <div className="font-bold text-lg mb-2 text-center text-white">{testimonial.name}</div>
+              <div className="text-sm mb-4 text-center text-white">{testimonial.designation}</div>
               <p className="text-white text-base text-justify">{testimonial.description}</p>
             </div>
           </div>

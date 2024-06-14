@@ -6,7 +6,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="relative top-16 md:top-0 lg:top-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-8 mt-8">
+        <footer className="relative top-16 md:top-0 lg:top-0 bg-gradient-to-r from-orange-600 via-amber-700 to-amber-600 text-white py-8 mt-8">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
