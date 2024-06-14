@@ -77,7 +77,7 @@ const Page3 = () => {
           {carouselItems.map((item, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-orange-500"
+              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-orange-400"
               style={{ flexBasis: '100%' }}
             >
               <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
