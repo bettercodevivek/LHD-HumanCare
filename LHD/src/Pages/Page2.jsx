@@ -31,11 +31,11 @@ return (
   <div className="min-h-screen  flex items-center justify-center px-8 md:px-24 lg:px-24">
     <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {cardData.map((card, index) => (
-        <div key={index} className="flex flex-col items-center p-4 bg-blue-500 text-white rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+        <div key={index} className="flex flex-col items-center p-4 bg-white text-black rounded-3xl shadow-xl hover:cursor-pointer hover:bg-amber-500  hover:text-white transition-shadow duration-300 h-full">
           <img src={card.image} alt={card.title} className=" w-28 h-28 border-solid border-2 rounded-full" />
           <div className="flex flex-col justify-between flex-grow p-4">
-            <h2 className="text-xl text-center font-semibold text-white mb-2">{card.title}</h2>
-            <p className="text-white text-justify mb-4">{card.description}</p>
+            <h2 className="text-xl text-center font-semibold mb-2">{card.title}</h2>
+            <p className=" text-justify mb-4">{card.description}</p>
           </div>
         </div>
       ))}

@@ -77,7 +77,7 @@ const Page3 = () => {
           {carouselItems.map((item, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-blue-500"
+              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-orange-100"
               style={{ flexBasis: '100%' }}
             >
               <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
@@ -90,7 +90,7 @@ const Page3 = () => {
                 <p className="text-sm md:text-base text-gray-600 mb-4">{item.description}</p>
                 <a
                   href={item.link}
-                  className="text-indigo-600 hover:text-indigo-700 text-sm md:text-base font-medium underline"
+                  className="text-orange-500 hover:text-blue-500 text-sm md:text-base font-medium underline"
                 >
                   See Products
                 </a>
