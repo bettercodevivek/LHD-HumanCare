@@ -12,11 +12,11 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 bg-white shadow">
-            <nav className="bg-green-500 border-b border-gray-200 px-4 lg:px-8 py-2.5">
+            <nav className="bg-white border-b border-gray-200 px-4 lg:px-8 py-2.5">
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="src/assets/LHD Human Care Logo.png"
+                            src="https://i.postimg.cc/5Nkv8M1p/LHD-Human-Care-Logo.png"
                             className="h-16"
                             alt="Logo"
                         />

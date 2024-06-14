@@ -2,7 +2,7 @@ const Page2=()=>{
 
 const cardData = [
   {
-    image: 'https://i.postimg.cc/fTFtJjjr/card1-icon.png',
+    image: 'https://i.postimg.cc/kgK4Dr52/3-molecules-svgrepo-com.png',
     title: 'Strong API Legacy',
     description: 'With over 46 years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry. Explore our legacy of excellence'
   },
