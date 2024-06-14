@@ -64,7 +64,7 @@ const Page3 = () => {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8  relative md:top-16 lg:top-16">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">Our Products</h1>
       
       <div className="relative overflow-hidden rounded-lg shadow-lg lg:h-96 h-full">
