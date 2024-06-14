@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const Page3 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 6; // Updated totalSlides to match the number of carouselItems
+  const totalSlides = 6; 
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
@@ -13,7 +14,7 @@ const Page3 = () => {
   };
 
   useEffect(() => {
-    const autoSlide = setInterval(nextSlide, 3000);
+    const autoSlide = setInterval(nextSlide, 4000); // Slide interval set to 4 seconds
     return () => clearInterval(autoSlide);
   }, []);
 
@@ -63,56 +64,59 @@ const Page3 = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 relative top-12 lg:h-dvh">
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">Our Products</h1>
       
-      <div className="relative overflow-hidden rounded-lg shadow-lg ">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
+      <div className="relative overflow-hidden rounded-lg shadow-lg lg:h-96 h-full">
+        <motion.div
+          className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${100 * currentSlide}%)` }}
+          animate={{ x: `-${currentSlide * 100}%` }}
+          transition={{ duration: 1 }} // Transition duration set to 1 second
         >
           {carouselItems.map((item, index) => (
             <div
               key={index}
-              className="min-w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center"
+              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-blue-500"
+              style={{ flexBasis: '100%' }}
             >
-              <div className="bg-white rounded-xl  p-6 text-center">
+              <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-4"
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full mx-auto mb-4 shadow-lg"
                 />
                 <h2 className="text-lg md:text-xl font-semibold mb-2">{item.title}</h2>
                 <p className="text-sm md:text-base text-gray-600 mb-4">{item.description}</p>
                 <a
                   href={item.link}
-                  className="text-indigo-600 hover:text-indigo-700 text-sm md:text-base"
+                  className="text-indigo-600 hover:text-indigo-700 text-sm md:text-base font-medium underline"
                 >
                   See Products
                 </a>
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
         <button
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 opacity-75 hover:opacity-100 transition-opacity duration-300"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
           onClick={prevSlide}
         >
           &#10094;
         </button>
         <button
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 opacity-75 hover:opacity-100 transition-opacity duration-300"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
           onClick={nextSlide}
         >
           &#10095;
         </button>
       </div>
 
-      <div className="flex justify-center mt-4 space-x-2 relative top-16">
+      <div className="flex justify-center mt-8 space-x-2">
         {carouselItems.map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 md:w-4 md:h-4 bg-gray-400 rounded-full cursor-pointer ${currentSlide === index ? 'bg-blue-600' : ''}`}
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full cursor-pointer ${currentSlide === index ? 'bg-blue-600' : 'bg-gray-400'}`}
             onClick={() => setCurrentSlide(index)}
           />
         ))}
