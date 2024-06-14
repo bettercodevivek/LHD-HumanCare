@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
                     <img
-                        src='src/assets/LHD Human Care Logo.png'
+                        src='https://i.postimg.cc/5Nkv8M1p/LHD-Human-Care-Logo.png'
                         alt="Pharma Company Logo"
                         className="h-12 sm:h-16 rounded-lg mb-4 transform hover:scale-110 transition-transform duration-300"
                     />
@@ -57,7 +57,7 @@ const Footer = () => {
                     onClick={scrollToTop}
                     className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-full transform hover:scale-105 transition-transform duration-300"
                 >
-                    <img className="h-8 sm:h-12" src='src/assets/arrow-sm-up-svgrepo-com.svg' alt="Back to top" />
+                    Back to top
                 </button>
             </div>
         </footer>
