@@ -44,7 +44,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
                                     }
                                 >
                                     Home
@@ -53,7 +53,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/profile'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
                                     }
                                 >
                                     Corporate Profile
@@ -62,7 +62,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/vision'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
                                     }
                                 >
                                     Our Vision
@@ -71,7 +71,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/products'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
                                     }
                                 >
                                     Our Products
@@ -80,7 +80,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
                                     }
                                 >
                                     Contact Us

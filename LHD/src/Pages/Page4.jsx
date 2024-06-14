@@ -52,12 +52,12 @@ const Page4 = () => {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:px-48 lg:px-48">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-blue-500 rounded-lg overflow-hidden shadow-lg flex flex-col items-center py-4">
+          <div key={testimonial.id} className="bg-amber-500 rounded-3xl overflow-hidden shadow-lg flex flex-col items-center py-4">
             <img className="w-32 h-32 object-cover object-center rounded-full" src={testimonial.image} alt={testimonial.name} />
             <div className="p-6">
-              <div className="font-bold text-lg mb-2">{testimonial.name}</div>
-              <div className="text-sm mb-4">{testimonial.designation}</div>
-              <p className="text-white text-base">{testimonial.description}</p>
+              <div className="font-bold text-lg mb-2 text-center">{testimonial.name}</div>
+              <div className="text-sm mb-4 text-center">{testimonial.designation}</div>
+              <p className="text-white text-base text-justify">{testimonial.description}</p>
             </div>
           </div>
         ))}
