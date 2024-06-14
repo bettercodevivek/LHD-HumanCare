@@ -42,7 +42,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex lg:items-center lg:space-x-8">
                         <ul className="flex space-x-6 items-center font-medium">
                             <li>
-                                <NavLink to='/home'
+                                <NavLink to='/'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-700`
                                     }
