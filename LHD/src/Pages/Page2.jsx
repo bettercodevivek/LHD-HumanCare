@@ -32,7 +32,7 @@ const Page2 = () => {
       <div className="min-h-screen flex items-center justify-center px-8 md:px-24 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {cardData.map((card, index) => (
-            <div key={index} className="flex flex-col p-4 bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 text-white rounded-3xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+            <div key={index} className="flex flex-col p-4 bg-white text-black rounded-3xl shadow-lg hover:bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-105">
               <div className="flex items-center space-x-4">
                 <img src={card.image} alt={card.title} className="w-20 h-20 sm:w-24 sm:h-24 border-solid border-2 border-white rounded-full" />
                 <h2 className="text-lg sm:text-xl font-semibold">{card.title}</h2>

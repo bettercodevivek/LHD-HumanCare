@@ -1,45 +1,83 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const productCategories = {
+  Neurology: [
+    { id: 1, title: 'Paxtin-Plus', imageUrl: 'https://i.postimg.cc/hPYJ20d8/IMGL9766.jpg' },
+    { id: 2, title: 'Welpose-TF', imageUrl: 'https://i.postimg.cc/pXrhQSpX/IMGL9842.jpg' },
+    { id: 3, title: 'Valpolit CR-500', imageUrl: 'https://i.postimg.cc/j2gW0Hkb/IMGL9854.jpg' },
+    { id: 4, title: 'Penotin-GB', imageUrl: 'https://i.postimg.cc/NGp2HtGz/IMGL9864.jpg' },
+    { id: 5, title: 'Ceribro', imageUrl: 'https://i.postimg.cc/Z5yW2y8G/IMGL9910.jpg' },
+    { id: 6, title: 'Sarval-500', imageUrl: 'https://i.postimg.cc/CKTRgLJz/IMGL9979.jpg' },
+    // Add more products as needed
+  ],
+  Orthopaedics: [
+    { id: 7, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/CLZDpKbV/IMGL9736.jpg' },
+    { id: 8, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/Qd1TVn64/IMGL9875.jpg' },
+    { id: 9, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/sfHSLWQc/IMGL9922.jpg' },
+    { id: 10, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/VvhCbyQT/IMGL9926.jpg' },
+    { id: 11, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/DzhbGdH2/IMGL9970.jpg' },
+    // Add more products as needed
+  ],
+  Gastroenterology: [
+    { id: 12, title: 'Novel', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 13, title: 'Biography', imageUrl: 'https://via.placeholder.com/300' },
+    // Add more products as needed
+  ],
+  // Add more categories and products as needed
+};
 
 const Products = () => {
-  // Sample data for products
-  const sections = [
-    {
-      id: 1,
-      title: 'Electronics',
-      products: [
-        { id: 1, name: 'Laptop', image: 'https://via.placeholder.com/300' },
-        { id: 2, name: 'Smartphone', image: 'https://via.placeholder.com/300' },
-        // Add more products as needed
-      ],
-    },
-    {
-      id: 2,
-      title: 'Clothing',
-      products: [
-        { id: 3, name: 'T-Shirt', image: 'https://via.placeholder.com/300' },
-        { id: 4, name: 'Jeans', image: 'https://via.placeholder.com/300' },
-        // Add more products as needed
-      ],
-    },
-    // Add more sections as needed
-  ];
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Products</h1>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-extrabold text-center mb-4 text-amber-500">Our Products</h1>
 
-      {sections.map((section) => (
-        <section key={section.id} className="py-8">
-          <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {section.products.map((product) => (
-              <div key={product.id} className="bg-white p-4 shadow-md rounded-lg">
-                <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-2" />
-                <p className="text-gray-800 font-semibold">{product.name}</p>
+      {Object.entries(productCategories).map(([category, products]) => (
+        <div key={category} className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4 text-amber-500">{category}</h2>
+          <Slider {...sliderSettings}>
+            {products.map((product) => (
+              <div key={product.id} className="px-2">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md">
+                  <img className="w-full h-48 object-cover object-center" src={product.imageUrl} alt={product.title} />
+                  <div className="p-4">
+                    <p className="text-amber-500 text-lg font-semibold">{product.title}</p>
+                  </div>
+                </div>
               </div>
             ))}
-          </div>
-        </section>
+          </Slider>
+        </div>
       ))}
     </div>
   );
