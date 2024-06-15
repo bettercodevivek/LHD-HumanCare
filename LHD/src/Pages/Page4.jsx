@@ -28,23 +28,39 @@ const Page4 = () => {
       image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
       name: 'Dr. HK Dogra',
       designation: 'Orthopedician',
-      description: 'As a Orthopedician dedicated to providing the highest standard of care, I am consistently impressed by the exceptional quality of medications from LHD Human Care. Their unwavering commitment to pharmaceutical excellence and innovative therapeutic solutions has profoundly enriched the health outcomes of my patients. The efficacy and reliability of their products are unparalleled, making LHD Human Care a beacon of trust and excellence in the medical community.',
+      description: 'As an Orthopedician dedicated to providing the highest standard of care, I am consistently impressed by the exceptional quality of medications from LHD Human Care. Their unwavering commitment to pharmaceutical excellence and innovative therapeutic solutions has profoundly enriched the health outcomes of my patients. The efficacy and reliability of their products are unparalleled, making LHD Human Care a beacon of trust and excellence in the medical community.',
+    },
+    {
+      id: 5,
+      image: 'https://i.postimg.cc/1zxVvTPD/IMG-20240615-WA0017.jpg',
+      name: 'Dr. Neeraj Chaudhary',
+      designation: 'MBBS MD Medicine',
+      description: 'In my years of medical practice, LHD Human Care has consistently demonstrated a remarkable dedication to the highest standards of pharmaceutical excellence. Their innovative approach to drug development and unwavering commitment to patient safety have made a significant impact on my practice. The efficacy and reliability of their medications ensure optimal health outcomes for my patients, and their contribution to the medical field is truly commendable.',
+    },
+    {
+      id: 6,
+      image: 'https://i.postimg.cc/G2d8Cy42/IMG-20240615-WA0018.jpg',
+      name: 'Dr. Arpit Srivastava',
+      designation: 'Orthopedician',
+      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
     },
   ];
 
   return (
     <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 relative top-24 lg:top-8 md:top-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Recommended By Leading Doctors</h2>
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12  text-amber-500">Recommended By Leading Doctors</h2>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:px-48 lg:px-48">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-amber-500 rounded-3xl overflow-hidden shadow-lg flex flex-col items-center py-4">
-            <img className="w-32 h-32 object-cover object-center rounded-full" src={testimonial.image} alt={testimonial.name} />
-            <div className="p-6">
-              <div className="font-bold text-lg mb-2 text-center text-white">{testimonial.name}</div>
-              <div className="text-sm mb-4 text-center text-white">{testimonial.designation}</div>
-              <p className="text-white text-base text-justify">{testimonial.description}</p>
+          <div key={testimonial.id} className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-2xl overflow-hidden drop-shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-md">
+            <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3 p-4">
+              <img className="w-20 h-20 sm:w-24 sm:h-24 object-cover object-center rounded-full border-2 border-white shadow-md" src={testimonial.image} alt={testimonial.name} />
+              <div className="text-center sm:text-left">
+                <div className="font-bold text-lg text-white">{testimonial.name}</div>
+                <div className="text-xs text-white opacity-80">{testimonial.designation}</div>
+              </div>
             </div>
+            <p className="text-white text-sm md:text-md lg:text-md text-justify px-4 py-3">{testimonial.description}</p>
           </div>
         ))}
       </div>

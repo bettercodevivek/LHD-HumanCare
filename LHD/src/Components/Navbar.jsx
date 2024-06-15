@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://i.postimg.cc/5Nkv8M1p/LHD-Human-Care-Logo.png"
+                            src="https://i.postimg.cc/Y0S5LMn7/LHD-Human-Care-Logo-1.png"
                             className="h-16"
                             alt="Logo"
                         />

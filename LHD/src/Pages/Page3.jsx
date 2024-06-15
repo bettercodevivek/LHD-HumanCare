@@ -64,8 +64,8 @@ const Page3 = () => {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8  relative md:top-16 lg:top-16">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">Our Products</h1>
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 top-12 relative md:top-16 lg:top-16">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-amber-500 text-center mb-8">Our Products</h1>
       
       <div className="relative overflow-hidden rounded-lg shadow-lg lg:h-96 h-full">
         <motion.div
@@ -77,7 +77,7 @@ const Page3 = () => {
           {carouselItems.map((item, index) => (
             <div
               key={index}
-              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-orange-400"
+              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600"
               style={{ flexBasis: '100%' }}
             >
               <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
