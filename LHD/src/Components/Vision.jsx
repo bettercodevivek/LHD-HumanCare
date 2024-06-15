@@ -33,19 +33,11 @@ As we look to the future, we remain dedicated to shaping a healthier world throu
       </div>
 
       <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-amber-500">Our Founders</h1>
-        <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-          Meet the visionaries behind our journey and their commitment to innovation.
-        </p>
-      </div>
-
       {/* Founders Section */}
       <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800">Our Founders</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-amber-500">Our Founders</h1>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
           Meet the visionaries behind our journey and their commitment to innovation.
         </p>
