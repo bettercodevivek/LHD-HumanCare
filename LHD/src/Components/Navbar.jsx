@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
-    // State to manage the visibility of the sidebar
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    // Toggle function to handle sidebar visibility
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
@@ -26,7 +24,6 @@ export default function Navbar() {
                         </div>
                     </Link>
 
-                    {/* Toggle button for mobile view */}
                     <button
                         onClick={toggleSidebar}
                         type="button"
@@ -38,7 +35,6 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    {/* Navigation links */}
                     <div className="hidden lg:flex lg:items-center lg:space-x-8">
                         <ul className="flex space-x-6 items-center font-medium">
                             <li>
@@ -91,10 +87,9 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            {/* Sidebar and Overlay */}
-            <div className={`fixed inset-0 z-40 ${isSidebarOpen ? 'block' : 'hidden'}`}>
+            <div className={`fixed inset-0 z-40 transition-opacity ${isSidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
                 <div className="fixed inset-0 bg-black opacity-50" onClick={toggleSidebar}></div>
-                <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-md transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} duration-300 ease-in-out">
+                <div className={`fixed inset-y-0 left-0 w-64 bg-white shadow-md transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <button
                         onClick={toggleSidebar}
                         type="button"

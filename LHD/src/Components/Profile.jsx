@@ -6,7 +6,7 @@ const Profile = () => {
       {/* Header Section */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto p-6">
-          <h1 className="text-3xl font-bold text-amber-500">LHD Human Care</h1>
+          <h1 className="text-3xl font-bold text-center text-amber-500">LHD Human Care</h1>
         </div>
       </header>
 
@@ -27,12 +27,12 @@ const Profile = () => {
       <section id="about" className="bg-white py-16">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-3xl font-bold text-amber-500 mb-4">About Us</h2>
-            <p className="text-gray-700 mb-4">
+            <h2 className="text-3xl font-bold text-amber-500 mb-4 text-center">About Us</h2>
+            <p className="text-gray-700 mb-4 text-center">
               LHD Human Care is a leading pharmaceutical company dedicated to improving health and
               wellness through innovative medications and cutting-edge research.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-center">
               Our mission is to deliver high-quality pharmaceutical products that enhance patient
               outcomes and promote overall health. We are committed to research and development to
               find new and better ways to serve our patients.
