@@ -56,7 +56,7 @@ As we look to the future, we remain dedicated to shaping a healthier world throu
             <h2 className="text-2xl md:text-3xl text-amber-500 font-semibold mb-2">Late Shri Lallu Singh</h2>
             <p className="text-gray-600">Founder</p>
             <p className="mt-4 text-gray-700">
-              "Our mission is to bring innovative solutions that make a real difference in people's lives. We believe in the power of technology to transform industries and improve the world."
+              "Our mission is to bring innovative solutions that make a real difference in people's lives. We believe in the power of technology to transform Pharmaceuitcal Field and improve the world."
             </p>
           </div>
         </div>
