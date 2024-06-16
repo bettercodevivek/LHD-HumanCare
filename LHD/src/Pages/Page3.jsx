@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Page3 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 6; 
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
-  };
+  const totalSlides = 6;
 
   useEffect(() => {
-    const autoSlide = setInterval(nextSlide, 4000); // Slide interval set to 4 seconds
+    const autoSlide = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    }, 4000); // Slide interval set to 4 seconds
     return () => clearInterval(autoSlide);
   }, []);
 
@@ -63,50 +57,62 @@ const Page3 = () => {
     },
   ];
 
+  const variants = {
+    enter: { opacity: 0, x: 100 },
+    center: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -100 },
+  };
+
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 top-12 relative md:top-16 lg:top-16">
       <h1 className="text-3xl md:text-4xl font-extrabold text-amber-500 text-center mb-8">Our Products</h1>
       
       <div className="relative overflow-hidden rounded-lg shadow-lg lg:h-96 h-full">
-        <motion.div
-          className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${100 * currentSlide}%)` }}
-          animate={{ x: `-${currentSlide * 100}%` }}
-          transition={{ duration: 1 }} // Transition duration set to 1 second
-        >
-          {carouselItems.map((item, index) => (
-            <div
-              key={index}
-              className="w-full flex-shrink-0 p-4 md:p-8 flex justify-center items-center bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600"
-              style={{ flexBasis: '100%' }}
-            >
-              <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full mx-auto mb-4 shadow-lg"
-                />
-                <h2 className="text-lg md:text-xl font-semibold mb-2">{item.title}</h2>
-                <p className="text-sm md:text-base text-gray-600 mb-4">{item.description}</p>
-                <a
-                  href={item.link}
-                  className="text-orange-500 hover:text-blue-500 text-sm md:text-base font-medium underline"
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={currentSlide}
+            className="absolute w-full flex justify-center items-center"
+            initial="enter"
+            animate="center"
+            exit="exit"
+            variants={variants}
+            transition={{ duration: 0.8 }}
+          >
+            {carouselItems.map((item, index) => (
+              index === currentSlide && (
+                <div
+                  key={index}
+                  className="w-full p-4 md:p-8 flex justify-center items-center bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600"
                 >
-                  See Products
-                </a>
-              </div>
-            </div>
-          ))}
-        </motion.div>
+                  <div className="bg-white rounded-xl shadow-xl p-6 text-center transform transition-transform duration-500 hover:scale-105">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full mx-auto mb-4 shadow-lg"
+                    />
+                    <h2 className="text-lg md:text-xl font-semibold mb-2">{item.title}</h2>
+                    <p className="text-sm md:text-base text-gray-600 mb-4">{item.description}</p>
+                    <a
+                      href={item.link}
+                      className="text-orange-500 hover:text-blue-500 text-sm md:text-base font-medium underline"
+                    >
+                      See Products
+                    </a>
+                  </div>
+                </div>
+              )
+            ))}
+          </motion.div>
+        </AnimatePresence>
         <button
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-          onClick={prevSlide}
+          onClick={() => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)}
         >
           &#10094;
         </button>
         <button
           className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-          onClick={nextSlide}
+          onClick={() => setCurrentSlide((prev) => (prev + 1) % totalSlides)}
         >
           &#10095;
         </button>

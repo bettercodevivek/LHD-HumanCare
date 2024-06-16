@@ -11,39 +11,48 @@ const Page4 = () => {
     },
     {
       id: 2,
+      image: 'https://i.postimg.cc/VL1cJnkX/1-1-1024x1024.png',
+      name: 'Dr.Vikul Tyagi',
+      designation: 'MBBS MS MCH , Neurology',
+      description: 'In my professional journey as a healthcare provider, LHD Human Care stands out as a beacon of pharmaceutical innovation and excellence. Their steadfast commitment to groundbreaking research and meticulous quality control has consistently delivered transformative results for my patients. The potency and reliability of their therapeutic solutions are unparalleled. I unequivocally recommend them for their exceptional contribution to the advancement of global healthcare.',
+    },
+
+    {
+      id: 3,
       image: 'https://i.postimg.cc/vDww57vc/IMG-20240610-WA0006.jpg',
       name: 'Dr. Rohit Kamboj',
       designation: 'Neurosurgeon',
       description: 'As a healthcare professional, I have had the opportunity to prescribe medications from LHD Human Care for several years. Their commitment to quality and patient well-being is evident in the consistent results I see in my patients. The innovative treatments and reliable efficacy of their products have significantly improved patient outcomes in my practice. I highly recommend LHD Human Care for their dedication to advancing healthcare.',
     },
     {
-      id: 3,
+      id: 4,
       image: 'https://i.postimg.cc/Y9VHCBGN/IMG-20240610-WA0007.jpg',
       name: 'Dr. Avdesh Vashishtha',
       designation: 'MBBS MD DNB Critical Care',
       description: 'I have been prescribing medications from LHD Human Care for over a decade and have consistently witnessed exceptional results in my patients. Their innovative formulations and commitment to rigorous quality control make them a trusted partner in healthcare. I am confident in recommending LHD Human Care for their outstanding contributions to patient care and well-being.',
     },
     {
-      id: 4,
+      id: 5,
       image: 'https://i.postimg.cc/D0XKWpL9/IMG-20240610-WA0008.jpg',
       name: 'Dr. HK Dogra',
       designation: 'Orthopedician',
       description: 'As an Orthopedician dedicated to providing the highest standard of care, I am consistently impressed by the exceptional quality of medications from LHD Human Care. Their unwavering commitment to pharmaceutical excellence and innovative therapeutic solutions has profoundly enriched the health outcomes of my patients. The efficacy and reliability of their products are unparalleled, making LHD Human Care a beacon of trust and excellence in the medical community.',
     },
     {
-      id: 5,
+      id: 6,
       image: 'https://i.postimg.cc/1zxVvTPD/IMG-20240615-WA0017.jpg',
       name: 'Dr. Neeraj Chaudhary',
       designation: 'MBBS MD Medicine',
       description: 'In my years of medical practice, LHD Human Care has consistently demonstrated a remarkable dedication to the highest standards of pharmaceutical excellence. Their innovative approach to drug development and unwavering commitment to patient safety have made a significant impact on my practice. The efficacy and reliability of their medications ensure optimal health outcomes for my patients, and their contribution to the medical field is truly commendable.',
     },
     {
-      id: 6,
+      id: 7,
       image: 'https://i.postimg.cc/G2d8Cy42/IMG-20240615-WA0018.jpg',
       name: 'Dr. Arpit Srivastava',
       designation: 'Orthopedician',
       description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
     },
+   
   ];
 
   return (

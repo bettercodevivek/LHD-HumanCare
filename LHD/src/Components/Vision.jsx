@@ -48,7 +48,7 @@ As we look to the future, we remain dedicated to shaping a healthier world throu
         {/* Founder 1 */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
           <img
-            src="https://i.postimg.cc/HLq0726k/IMG-20240611-WA0001-1.jpg"
+            src="https://i.postimg.cc/4yPZsqH7/IMG-9480.avif"
             alt="Founder 1"
             className="w-full md:w-1/2 h-auto md:h-96 object-cover object-center"
           />

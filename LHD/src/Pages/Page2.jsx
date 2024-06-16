@@ -5,7 +5,7 @@ const Page2 = () => {
     {
       image: 'https://i.postimg.cc/dQWZT6Hm/chemistry-svgrepo-com.png',
       title: 'Strong API Legacy',
-      description: 'With over 46 years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'
+      description: 'With over 48 years of expertise, our robust API portfolio stands as a testament to our commitment to quality and innovation. Trusted by healthcare providers and pharmaceutical companies worldwide, we deliver consistent, high-quality Active Pharmaceutical Ingredients that form the foundation of effective and reliable medications. Explore our legacy of excellence and discover why we are a leader in the pharmaceutical industry.'
     },
     {
       image: 'https://i.postimg.cc/h4sVPd5k/vision-svgrepo-com.png',
@@ -20,7 +20,7 @@ const Page2 = () => {
     {
       image: 'https://i.postimg.cc/8Cvh1X24/experience-svgrepo-com.png',
       title: 'Experience',
-      description: 'With 46 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our extensive experience is marked by a steadfast commitment to quality, innovation, and patient care. Over the decades, we have continuously advanced our expertise to develop effective and safe medications, earning the trust of millions worldwide. Our journey reflects a legacy of excellence.'
+      description: 'With 48 years of unwavering dedication, we have established ourselves as a trusted leader in the pharmaceutical industry. Our extensive experience is marked by a steadfast commitment to quality, innovation, and patient care. Over the decades, we have continuously advanced our expertise to develop effective and safe medications, earning the trust of millions worldwide. Our journey reflects a legacy of excellence.'
     },
   ];
 

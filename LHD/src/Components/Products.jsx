@@ -22,8 +22,9 @@ const productCategories = {
     // Add more products as needed
   ],
   Gastroenterology: [
-    { id: 12, title: 'Novel', imageUrl: 'https://via.placeholder.com/300' },
-    { id: 13, title: 'Biography', imageUrl: 'https://via.placeholder.com/300' },
+    { id: 12, title: 'Penlit-D', imageUrl: 'https://i.postimg.cc/4xB5V5V6/IMGL9791.jpg' },
+    { id: 13, title: 'Zolit-RD', imageUrl: 'https://i.postimg.cc/6Qqh0vfD/IMGL9906.jpg' },
+    { id: 14, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/zGJ7yMbD/IMGL9973.jpg' },
     // Add more products as needed
   ],
   // Add more categories and products as needed

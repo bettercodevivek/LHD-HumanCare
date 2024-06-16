@@ -50,27 +50,27 @@ const Profile = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-200 py-16">
+      <section className="bg-white py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-amber-500 mb-12">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-amber-500 mb-2">Drug Development</h3>
-              <p className="text-gray-700">
+            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">Drug Development</h3>
+              <p className="text-white">
                 Innovative research and development of new medications to address unmet medical
                 needs.
               </p>
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-amber-500 mb-2">Clinical Trials</h3>
-              <p className="text-gray-700">
+            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">Clinical Trials</h3>
+              <p className="text-white">
                 Conducting rigorous clinical trials to ensure the safety and efficacy of our
                 products.
               </p>
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-amber-500 mb-2">Patient Support</h3>
-              <p className="text-gray-700">
+            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold text-white mb-2">Patient Support</h3>
+              <p className="text-white">
                 Providing comprehensive support and resources for patients using our medications.
               </p>
             </div>
@@ -78,41 +78,6 @@ const Profile = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-amber-500 mb-12">Meet Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
-              <img
-                src="https://i.postimg.cc/VvBFwCBL/IMG-20240611-WA0004-1.jpg"
-                alt="Team Member 1"
-                className="w-24 h-24 mx-auto object-cover rounded-full mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Mr. Dalbeer Singh</h3>
-              <p className="text-white">CEO</p>
-            </div>
-            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Team Member 2"
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Mr. Uday Chaudhary</h3>
-              <p className="text-white">General Manager</p>
-            </div>
-            <div className="p-6 bg-amber-500 rounded-lg shadow-lg">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Team Member 3"
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h3 className="text-xl font-semibold text-white mb-2">Dr.Harsh Chaudhary</h3>
-              <p className="text-white">Medical Consultant</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
