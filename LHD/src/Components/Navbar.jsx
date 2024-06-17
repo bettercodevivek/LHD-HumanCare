@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
+import { FiHome, FiUser, FiEye, FiBox, FiMail } from 'react-icons/fi'; // Adding icons
 
 export default function Navbar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -88,8 +89,8 @@ export default function Navbar() {
             </nav>
 
             <div className={`fixed inset-0 z-40 transition-opacity ${isSidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                <div className="fixed inset-0 bg-black opacity-50" onClick={toggleSidebar}></div>
-                <div className={`fixed inset-y-0 left-0 w-64 bg-white shadow-md transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm" onClick={toggleSidebar}></div>
+                <div className={`fixed inset-y-0 left-0 w-64 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-lg transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} rounded-r-xl`}>
                     <button
                         onClick={toggleSidebar}
                         type="button"
@@ -100,55 +101,55 @@ export default function Navbar() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    <ul className="flex flex-col p-4 space-y-4">
+                    <ul className="flex flex-col p-6 space-y-6">
                         <li>
                             <NavLink to='/home'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-100 hover:text-blue-700`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                Home
+                                <FiHome className="w-5 h-5" /> <span>Home</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/profile'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-100 hover:text-blue-700`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                Corporate Profile
+                                <FiUser className="w-5 h-5" /> <span>Corporate Profile</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/vision'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-100 hover:text-blue-700`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                Our Vision
+                                <FiEye className="w-5 h-5" /> <span>Our Vision</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/products'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-100 hover:text-blue-700`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                Our Products
+                                <FiBox className="w-5 h-5" /> <span>Our Products</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/contact'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-100 hover:text-blue-700`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                Contact Us
+                                <FiMail className="w-5 h-5" /> <span>Contact Us</span>
                             </NavLink>
                         </li>
                     </ul>
