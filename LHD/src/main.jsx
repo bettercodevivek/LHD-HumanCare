@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Vision from './Components/Vision.jsx';
 import Contact from './Components/Contact.jsx';
 import Layout from './Layout.jsx';
+import { Analytics } from "@vercel/analytics/react";
 import './index.css'
 
 
