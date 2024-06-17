@@ -49,7 +49,7 @@ const Page4 = () => {
       id: 7,
       image: 'https://i.postimg.cc/G2d8Cy42/IMG-20240615-WA0018.jpg',
       name: 'Dr. Arpit Srivastava',
-      designation: 'Orthopedician',
+      designation: 'MD(Internal Medicine), DM(Nephrology), SGPGIMS Lucknow',
       description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
     },
    

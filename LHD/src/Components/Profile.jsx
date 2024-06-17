@@ -78,6 +78,63 @@ const Profile = () => {
         </div>
       </section>
 
+      <div className="px-4 py-8 bg-white md:px-8 lg:px-16 text-white">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 text-amber-500">
+          Quality and R&D
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+          
+          
+          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <img src="https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg" alt="Quality Assurance" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold mb-2 ">Global Standards Compliance</h3>
+              <p className="">
+              We ensure our products meet stringent quality standards, adhering to regulations
+              </p>
+            </div>
+          </div>
+
+          
+          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <img src="https://i.postimg.cc/T1rpsrVC/lucas-vasques-9vn-ACv-X2748-unsplash-1.jpg" alt="Research & Development" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold mb-2 ">Extensive Testing</h3>
+              <p className="">
+              Each product undergoes over 100 quality control tests before release, ensuring safety and efficacy.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Continuous Improvement Card */}
+          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <img src="https://i.postimg.cc/020zd02N/louis-reed-pwc-KF7-L4-no-unsplash-1.jpg" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold mb-2 ">Product Excellence</h3>
+              <p className="">
+              Our commitment to quality has resulted in a 99.8% product approval rate across regulatory agencies nationwide.
+              </p>
+            </div>
+       
+          </div>
+
+            <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+            <div>
+              <img src="https://i.postimg.cc/ncJsDPx5/crystal-kwok-XUEdfp-PIh-Xg-unsplash-1.jpg" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold mb-2 ">State-of-the-Art Facilities</h3>
+              <p className="">
+              Our manufacturing sites are ISO 9001 and ISO 13485 certified, equipped with advanced technologies to maintain top-notch quality.
+              </p>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     </div>
   );
 };

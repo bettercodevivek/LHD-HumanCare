@@ -18,42 +18,42 @@ const Page3 = () => {
       image: 'https://i.postimg.cc/s24ZWdM0/brain-upper-view-outline-svgrepo-com.png',
       title: 'Neurology',
       description: 'Advancing brain health with innovative treatments and expert neurological care.',
-      link: '#'
+      link: '/products'
     },
     {
       id: 2,
       image: 'https://i.postimg.cc/K8LTZgxb/hand-palm-outline-with-scratch-wound-with-blood-droplet-svgrepo-com.png',
       title: 'Pediatrics',
       description: 'Dedicated to nurturing healthy children through compassionate and comprehensive care.',
-      link: '#'
+      link: '/products'
     },
     {
       id: 3,
       image: 'https://i.postimg.cc/VsGn48Dx/liver-svgrepo-com.png',
       title: 'Hepatology',
       description: 'Leading the way in liver health with advanced treatments and compassionate care.',
-      link: '#'
+      link: '/products'
     },
     {
       id: 4,
       image: 'https://i.postimg.cc/yYD9bbGk/stomach-svgrepo-com.png',
       title: 'Gastroenterology',
       description: 'Your partner in digestive health, providing expert care for a healthy gut.',
-      link: '#'
+      link: '/products'
     },
     {
       id: 5,
       image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
       title: 'Vitaminology',
       description: 'Unlock the power of vitamins for optimal health and wellness.',
-      link: '#'
+      link: '/products'
     },
     {
       id: 6,
       image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
       title: 'Orthopaedics',
       description: 'Dedicated to restoring mobility and improving quality of life through expert orthopedic care.',
-      link: '#'
+      link: '/products'
     },
   ];
 
