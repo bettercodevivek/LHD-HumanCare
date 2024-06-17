@@ -11,20 +11,46 @@ const productCategories = {
     { id: 4, title: 'Penotin-GB', imageUrl: 'https://i.postimg.cc/NGp2HtGz/IMGL9864.jpg' },
     { id: 5, title: 'Ceribro', imageUrl: 'https://i.postimg.cc/Z5yW2y8G/IMGL9910.jpg' },
     { id: 6, title: 'Sarval-500', imageUrl: 'https://i.postimg.cc/CKTRgLJz/IMGL9979.jpg' },
+    { id: 7, title: 'Paxtin CR-12.5', imageUrl: 'https://i.postimg.cc/tgpDC7KY/IMGL0065.jpg' },
+    { id: 8, title: 'Flupro-plus', imageUrl: 'https://i.postimg.cc/yNjjJsKn/IMGL0092.jpg' },
     // Add more products as needed
   ],
   Orthopaedics: [
-    { id: 7, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/CLZDpKbV/IMGL9736.jpg' },
-    { id: 8, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/Qd1TVn64/IMGL9875.jpg' },
-    { id: 9, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/sfHSLWQc/IMGL9922.jpg' },
-    { id: 10, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/VvhCbyQT/IMGL9926.jpg' },
-    { id: 11, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/DzhbGdH2/IMGL9970.jpg' },
+    { id: 9, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/FHT5vtq5/IMGL9875-min.jpg' },
+    { id: 10, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/C13p2j2R/IMGL9736-min.jpg' },
+    { id: 11, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/FHr5wFTV/IMGL9922-min.jpg' },
+    { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/VLccBWMT/IMGL9926-min.jpg' },
+    { id: 13, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/15c1WVrz/IMGL9970-min.jpg' },
+    { id: 14, title: 'Sylibon Tablets', imageUrl: 'https://i.postimg.cc/pThtk0sN/IMGL0027-min.jpg' },
+    { id: 15, title: 'Sylibon-plus Tablets', imageUrl: 'https://i.postimg.cc/PqFjWGzz/IMGL0031-min.jpg' },
+    { id: 16, title: 'Penomol-SP Tablets', imageUrl: 'https://i.postimg.cc/rs522D6Q/IMGL0091-min.jpg' },
     // Add more products as needed
   ],
   Gastroenterology: [
-    { id: 12, title: 'Penlit-D', imageUrl: 'https://i.postimg.cc/4xB5V5V6/IMGL9791.jpg' },
-    { id: 13, title: 'Zolit-RD', imageUrl: 'https://i.postimg.cc/6Qqh0vfD/IMGL9906.jpg' },
-    { id: 14, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/zGJ7yMbD/IMGL9973.jpg' },
+    { id: 17, title: 'Penlit-D', imageUrl: 'https://i.postimg.cc/4xB5V5V6/IMGL9791.jpg' },
+    { id: 18, title: 'Zolit-RD', imageUrl: 'https://i.postimg.cc/6Qqh0vfD/IMGL9906.jpg' },
+    { id: 19, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/zGJ7yMbD/IMGL9973.jpg' },
+    { id: 20, title: 'Sathicon-140', imageUrl: 'https://i.postimg.cc/g2YNGxFr/IMGL0005.jpg' },
+    { id: 21, title: 'Rentadin-300', imageUrl: 'https://i.postimg.cc/4xBwyXsP/IMGL0043.jpg' },
+    // Add more products as needed
+  ],
+  AntiBiotics: [
+    { id: 22, title: 'G-XL-250', imageUrl: 'https://i.postimg.cc/02SCYpxz/IMGL0019.jpg' },
+    { id: 23, title: 'G-XL-500', imageUrl: 'https://i.postimg.cc/PfPyqgRz/IMGL0034.jpg' },
+    { id: 24, title: 'Sinaxim-O', imageUrl: 'https://i.postimg.cc/c12mtDqq/IMGL0068.jpg' },
+    { id: 25, title: 'Licsef-500', imageUrl: 'https://i.postimg.cc/Njwkp5fp/IMGL0106.jpg' },
+    { id: 26, title: 'Emoxclav-625', imageUrl: 'https://i.postimg.cc/FHggqNYm/IMGL0110.jpg' },
+    { id: 27, title: 'Sinaxim-AZ', imageUrl: 'https://i.postimg.cc/tgqtGw66/IMGL0112.jpg' },
+    { id: 28, title: 'Lactipro', imageUrl: 'https://i.postimg.cc/SKgLSdLv/IMGL9885.jpg' },
+    { id: 29, title: 'Ofazol-OZ', imageUrl: 'https://i.postimg.cc/FR1y7SDs/IMGL9888.jpg' },
+    { id: 30, title: 'Litoxyl-CV', imageUrl: 'https://i.postimg.cc/hjw9xG58/IMGL9982.jpg' },
+    // Add more products as needed
+  ],
+  Hepatology: [
+    { id: 31, title: 'Livrofit-DS Syrup', imageUrl: 'https://i.postimg.cc/pTtvdQ2K/IMGL9868.jpg' },
+    { id: 32, title: 'Lacotil Syrup', imageUrl: 'https://i.postimg.cc/76MkJC6d/IMGL9943.jpg' },
+    { id: 33, title: 'Zodoliv-300', imageUrl: 'https://i.postimg.cc/KjGyPZ3z/IMGL9985.jpg' },
+    { id: 34, title: 'Livofit-DS', imageUrl: 'https://i.postimg.cc/tJBGDLFz/IMGL0016.jpg' },
     // Add more products as needed
   ],
   // Add more categories and products as needed
