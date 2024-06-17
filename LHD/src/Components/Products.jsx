@@ -10,9 +10,6 @@ const productCategories = {
     { id: 3, title: 'Valpolit CR-500', imageUrl: 'https://i.postimg.cc/j2gW0Hkb/IMGL9854.jpg' },
     { id: 4, title: 'Penotin-GB', imageUrl: 'https://i.postimg.cc/NGp2HtGz/IMGL9864.jpg' },
     { id: 5, title: 'Ceribro', imageUrl: 'https://i.postimg.cc/Z5yW2y8G/IMGL9910.jpg' },
-    { id: 6, title: 'Sarval-500', imageUrl: 'https://i.postimg.cc/CKTRgLJz/IMGL9979.jpg' },
-    { id: 7, title: 'Paxtin CR-12.5', imageUrl: 'https://i.postimg.cc/tgpDC7KY/IMGL0065.jpg' },
-    { id: 8, title: 'Flupro-plus', imageUrl: 'https://i.postimg.cc/yNjjJsKn/IMGL0092.jpg' },
     // Add more products as needed
   ],
   Orthopaedics: [
@@ -21,9 +18,7 @@ const productCategories = {
     { id: 11, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/FHr5wFTV/IMGL9922-min.jpg' },
     { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/VLccBWMT/IMGL9926-min.jpg' },
     { id: 13, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/15c1WVrz/IMGL9970-min.jpg' },
-    { id: 14, title: 'Sylibon Tablets', imageUrl: 'https://i.postimg.cc/pThtk0sN/IMGL0027-min.jpg' },
-    { id: 15, title: 'Sylibon-plus Tablets', imageUrl: 'https://i.postimg.cc/PqFjWGzz/IMGL0031-min.jpg' },
-    { id: 16, title: 'Penomol-SP Tablets', imageUrl: 'https://i.postimg.cc/rs522D6Q/IMGL0091-min.jpg' },
+
     // Add more products as needed
   ],
   Gastroenterology: [
@@ -40,10 +35,7 @@ const productCategories = {
     { id: 24, title: 'Sinaxim-O', imageUrl: 'https://i.postimg.cc/c12mtDqq/IMGL0068.jpg' },
     { id: 25, title: 'Licsef-500', imageUrl: 'https://i.postimg.cc/Njwkp5fp/IMGL0106.jpg' },
     { id: 26, title: 'Emoxclav-625', imageUrl: 'https://i.postimg.cc/FHggqNYm/IMGL0110.jpg' },
-    { id: 27, title: 'Sinaxim-AZ', imageUrl: 'https://i.postimg.cc/tgqtGw66/IMGL0112.jpg' },
-    { id: 28, title: 'Lactipro', imageUrl: 'https://i.postimg.cc/SKgLSdLv/IMGL9885.jpg' },
-    { id: 29, title: 'Ofazol-OZ', imageUrl: 'https://i.postimg.cc/FR1y7SDs/IMGL9888.jpg' },
-    { id: 30, title: 'Litoxyl-CV', imageUrl: 'https://i.postimg.cc/hjw9xG58/IMGL9982.jpg' },
+
     // Add more products as needed
   ],
   Hepatology: [
