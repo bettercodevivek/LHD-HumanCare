@@ -77,7 +77,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
         onClick={goToPrev}
         aria-label="Previous slide"
       >
@@ -93,7 +93,7 @@ const TestimonialSlider = ({ testimonials }) => {
         </svg>
       </button>
       <button
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
         onClick={goToNext}
         aria-label="Next slide"
       >
@@ -168,35 +168,35 @@ const Page4 = () => {
       image: 'https://i.postimg.cc/XvHXPz3Q/Dr-Deepti-Dogra-Gynae.jpg',
       name: 'Dr. Deepti Dogra',
       designation: 'MS MD DNB FAMS FART(Gold Medalist), Gynae Laparoscopic,Hysterscopic Surgeon and Fertility Specialist',
-      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
+      description: 'As a seasoned medical professional, I am continually astounded by the exemplary contributions of LHD Human Care to the realm of pharmaceutical sciences. Their unrelenting pursuit of avant-garde research and scrupulous adherence to the highest echelons of quality control have yielded therapeutic solutions of unparalleled efficacy. The clinical outcomes observed in my patients are a testament to the transformative power of their meticulously crafted medications. LHD Human Care epitomizes the quintessence of innovation, reliability, and ethical rigor in the pharmaceutical domain, and I unreservedly advocate for their integral role in the elevation of global healthcare standards.',
     },
     {
       id: 9,
       image: 'https://i.postimg.cc/xdTct2rX/Dr-Hariraj-Singh-Tomar-Cardio.jpg',
       name: 'Dr. Hariraj Singh',
       designation: 'Interventional Cardiologist at Nutema ( Formerly at Medanta,Delhi)',
-      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
+      description: 'In my distinguished tenure as a medical professional, I have been profoundly impressed by the unparalleled contributions of LHD Human Care to the field of pharmacology. Their relentless commitment to pioneering research and their scrupulous adherence to the highest standards of quality assurance have resulted in therapeutic formulations that are both efficacious and reliable. The extraordinary clinical outcomes I have observed in my patients are a direct testament to the transformative potency of their medications. LHD Human Care embodies the pinnacle of pharmaceutical innovation and ethical excellence',
     },
     {
       id: 10,
       image: '',
       name: 'Dr. Pankaj Badal',
       designation: 'MBBS MS, Consultant Eye Surgeon & Phaco Specialist',
-      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
+      description: 'n my extensive medical practice, I have consistently encountered the hallmark of pharmaceutical excellence embodied by LHD Human Care. Their indefatigable pursuit of groundbreaking research and their stringent adherence to the most rigorous quality control protocols have culminated in the development of medications that are both revolutionary and highly efficacious. The profound impact of their therapeutic interventions on patient outcomes is a testament to their unparalleled commitment to advancing healthcare. LHD Human Care represents the epitome of ethical innovation and clinical excellence, and I wholeheartedly advocate for their pivotal role in propelling the frontiers of modern medicine.',
     },
     {
       id: 11,
       image: 'https://i.postimg.cc/5thWjBmf/dr-abhishek-singh.png',
       name: 'Dr. Abhishek Singh',
       designation: 'MBBS DNB MCH MNAMS Orthopaedic Surgeon ',
-      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
+      description: 'In my extensive and illustrious career as a medical professional, I have encountered few companies that exemplify the pinnacle of pharmaceutical excellence as LHD Human Care does. Their unwavering dedication to avant-garde research and their meticulous adherence to rigorous quality control standards have consistently yielded therapeutic solutions of unparalleled efficacy and reliability. The transformative clinical outcomes observed in my patients stand as a testament to the profound impact of their meticulously engineered medications. LHD Human Care stands at the forefront of pharmaceutical innovation and ethical integrity, and I unreservedly endorse their pivotal role in the advancement of global healthcare standards.',
     },
     {
       id: 12,
       image: '',
       name: 'Dr. Khivendra Singh',
       designation: 'Physician',
-      description: 'In my extensive medical career, I have had the privilege of prescribing treatments from LHD Human Care, a paragon of pharmaceutical excellence. Their unparalleled dedication to pioneering drug research and meticulous attention to quality assurance have profoundly elevated the standard of care for my patients. The efficacy and reliability of their medications are extraordinary, consistently delivering remarkable health outcomes.',
+      description: 'As a veteran healthcare practitioner, I am continually astounded by the consummate excellence demonstrated by LHD Human Care in the realm of pharmaceutical innovation. Their unwavering commitment to avant-garde research and the meticulous precision with which they adhere to the highest echelons of quality assurance are truly commendable. The remarkable therapeutic efficacy and the consistency of outcomes observed in my patients underscore the transformative potential of their meticulously developed medications. LHD Human Care epitomizes the zenith of pharmaceutical integrity and scientific ingenuity, and I unequivocally endorse their indispensable contributions to the enhancement of global health standards.',
     },
   ];
 
