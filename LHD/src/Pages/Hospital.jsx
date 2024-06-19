@@ -114,41 +114,36 @@ const Hospital = () => {
   const testimonials = [
     {
       id: 1,
-      image: 'https://i.postimg.cc/B6cr2PJr/aiims-delhi.jpg',
-      name: 'AIIMS Delhi',
+      image: 'https://i.postimg.cc/FznNJkZ9/fortis-logo.gif',
+      name: 'Fortis Delhi',
     },
     {
       id: 2,
-      image: 'https://i.postimg.cc/tTj01NGd/aiims-rishikesh.jpg',
-      name: 'AIIMS Rishikesh',
-    },
-    {
-      id: 3,
       image: 'https://i.postimg.cc/TYyk65ZT/logo-icon.png',
       name: 'Nutema Hospital,Meerut',
     },
     {
-      id: 4,
+      id: 3,
       image: 'https://i.postimg.cc/kGGTD2GF/yashoda.jpg',
       name: 'Yashoda Hospital,Ghaziabad',
     },
     {
-      id: 5,
+      id: 4,
       image: 'https://i.postimg.cc/fLBHwczR/healers101.png',
       name: 'Healers Hospital,Bijnor',
     },
     {
-      id: 6,
+      id: 5,
       image: 'https://i.postimg.cc/rpWXFY3F/logo-medanta.jpg;',
       name: 'Medanta Hospital,New Delhi',
     },
     {
-        id: 7,
+        id: 6,
         image: 'https://i.postimg.cc/DfpCHPpC/optima.jpg',
         name: 'Optima Hospital,Meerut',
       },
       {
-        id: 8,
+        id: 7,
         image: 'https://i.postimg.cc/kGHfS7tr/rml.jpg',
         name: 'RML Hospital,New Delhi',
       },
