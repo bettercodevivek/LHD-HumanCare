@@ -22,7 +22,7 @@ const Page3 = () => {
     },
     {
       id: 2,
-      image: 'https://i.postimg.cc/K8LTZgxb/hand-palm-outline-with-scratch-wound-with-blood-droplet-svgrepo-com.png',
+      image: 'https://i.postimg.cc/3rvMrKss/baby-svgrepo-com.png',
       title: 'Pediatrics',
       description: 'Dedicated to nurturing healthy children through compassionate and comprehensive care.',
       link: '/products'
