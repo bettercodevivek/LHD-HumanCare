@@ -41,7 +41,7 @@ const Profile = () => {
           </div>
           <div>
             <img
-              src="https://i.postimg.cc/kXmhYL09/danilo-alvesd-a7-Od-G45pr-SM-unsplash-1.jpg"
+              src="https://i.postimg.cc/TPY5VNj6/danilo-alvesd-a7-Od-G45pr-SM-unsplash-1.webp"
               alt="LHD"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -88,7 +88,7 @@ const Profile = () => {
           
           <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
             <div>
-              <img src="https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg" alt="Quality Assurance" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <img src="https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.webp" alt="Quality Assurance" className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2 ">Global Standards Compliance</h3>
               <p className="">
               We ensure our products meet stringent quality standards, adhering to regulations
@@ -99,7 +99,7 @@ const Profile = () => {
           
           <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
             <div>
-              <img src="https://i.postimg.cc/T1rpsrVC/lucas-vasques-9vn-ACv-X2748-unsplash-1.jpg" alt="Research & Development" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <img src="https://i.postimg.cc/4xXYG2S9/lucas-vasques-9vn-ACv-X2748-unsplash-1.webp" alt="Research & Development" className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2 ">Extensive Testing</h3>
               <p className="">
               Each product undergoes over 100 quality control tests before release, ensuring safety and efficacy.
@@ -111,7 +111,7 @@ const Profile = () => {
           {/* Continuous Improvement Card */}
           <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
             <div>
-              <img src="https://i.postimg.cc/020zd02N/louis-reed-pwc-KF7-L4-no-unsplash-1.jpg" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <img src="https://i.postimg.cc/6QmqdW5r/louis-reed-pwc-KF7-L4-no-unsplash-1.webp" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2 ">Product Excellence</h3>
               <p className="">
               Our commitment to quality has resulted in a 99.8% product approval rate across regulatory agencies nationwide.
@@ -122,7 +122,7 @@ const Profile = () => {
 
             <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
             <div>
-              <img src="https://i.postimg.cc/ncJsDPx5/crystal-kwok-XUEdfp-PIh-Xg-unsplash-1.jpg" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <img src="https://i.postimg.cc/k54D669M/crystal-kwok-XUEdfp-PIh-Xg-unsplash-1.webp" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2 ">State-of-the-Art Facilities</h3>
               <p className="">
               Our manufacturing sites are ISO 9001 and ISO 13485 certified, equipped with advanced technologies to maintain top-notch quality.
