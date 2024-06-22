@@ -3,10 +3,10 @@ import CountUp from 'react-countup';
 const Hero = () =>{   
 
     const ImageSlide = [
-      'https://i.postimg.cc/7LxSPp0W/robert-collins-l-P-Fb-Bk-Mn1c-unsplash.jpg',
-        'https://i.postimg.cc/cCtYdKYJ/pexels-shvetsa-3683074.jpg',
-          'https://i.postimg.cc/SRP4PjCp/diana-polekhina-ZBst-HWt9v-Lc-unsplash.jpg',
-        'https://i.postimg.cc/3JRk6SbC/walter-otto-PT70-CT6m-ATQ-unsplash.jpg'
+      'https://i.postimg.cc/131zH7Qd/robert-collins-l-P-Fb-Bk-Mn1c-unsplash-1.webp',
+        'https://i.postimg.cc/DwQwYQfw/pexels-shvetsa-3683074-1.webp',
+          'https://i.postimg.cc/7PchCYQw/diana-polekhina-ZBst-HWt9v-Lc-unsplash.webp',
+        'https://i.postimg.cc/L61XjKrf/walter-otto-PT70-CT6m-ATQ-unsplash-1.webp'
     ]
    
 
