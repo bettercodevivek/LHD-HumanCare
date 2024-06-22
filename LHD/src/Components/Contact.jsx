@@ -6,7 +6,7 @@ const Contact = () => {
     {/* Background Image */}
     <div
       className="absolute inset-0 bg-cover bg-center bg-fixed "
-      style={{ backgroundImage: "url('https://i.postimg.cc/pLbN3P6G/madison-agardi-QNrjcp90t-Vc-unsplash-1.jpg')" }}
+      style={{ backgroundImage: "url('https://i.postimg.cc/5y1VzTv5/madison-agardi-QNrjcp90t-Vc-unsplash-1.webp')" }}
     ></div>
     
     {/* Overlay to make text more readable */}

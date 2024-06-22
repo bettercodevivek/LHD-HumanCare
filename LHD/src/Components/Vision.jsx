@@ -14,7 +14,7 @@ const Vision = () => {
       {/* Overview Section */}
       <div className="max-w-4xl mx-auto mb-12">
         <img
-          src="https://i.postimg.cc/0QXt3mng/Vision-img.jpg"
+          src="https://i.postimg.cc/c1mqjDwj/Vision-img.webp"
           alt="About Us"
           className="w-full h-auto rounded-lg shadow-lg mb-8"
         />
