@@ -41,7 +41,7 @@ const Hero = () =>{
         <span class="text-sm md:text-lg lg:text-lg sm:text-lg">Years of Experience</span>
     </div>
     <div class="text-center p-2">
-        <span class="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={100000} delay={3} />+</span> 
+        <span class="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={93000} delay={3} />+</span> 
         <br />
         <span class="text-sm md:text-lg lg:text-lg sm:text-lg">Active Clients</span>
     </div>
@@ -50,10 +50,11 @@ const Hero = () =>{
         <br />
         <span class="text-sm md:text-lg lg:text-lg sm:text-lg">Employees</span>
     </div>
-    <div class="text-center p-2">
-        <span class="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl">All North Indian</span> 
+
+   <div class="text-center p-2">
+        <span class="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={150} delay={3} />+</span> 
         <br />
-        <span class="text-sm md:text-lg lg:text-lg sm:text-lg">States Covered</span>
+        <span class="text-sm md:text-lg lg:text-lg sm:text-lg">Products</span>
     </div>
 </div>
 
