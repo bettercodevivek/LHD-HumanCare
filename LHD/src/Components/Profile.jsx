@@ -1,6 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Profile = () => {
+  const sectionRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeIn');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sectionRefs.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="bg-gray-100 min-h-screen p-6">
       {/* Header Section */}
@@ -11,7 +37,10 @@ const Profile = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-amber-500 text-white text-center py-20">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="bg-amber-500 text-white text-center py-20 opacity-0"
+      >
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-4">Welcome to LHD Human Care</h2>
           <p className="text-lg mb-6">
@@ -24,7 +53,11 @@ const Profile = () => {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="bg-white py-16">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        id="about"
+        className="bg-white py-16 opacity-0"
+      >
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-3xl font-bold text-amber-500 mb-4 text-center">About Us</h2>
@@ -35,8 +68,11 @@ const Profile = () => {
             <p className="text-gray-700 text-center">
               Our mission is to deliver high-quality pharmaceutical products that enhance patient
               outcomes and promote overall health. We are committed to research and development to
-              find new and better ways to serve our patients.
-              At LHD Human Care, we uphold the highest standards of ethics and integrity. We are committed to conducting our business with transparency, accountability, and respect for all stakeholders. Our ethical framework guides our decision-making processes and ensures that we consistently act in the best interests of our patients, employees, and communities.
+              find new and better ways to serve our patients. At LHD Human Care, we uphold the
+              highest standards of ethics and integrity. We are committed to conducting our business
+              with transparency, accountability, and respect for all stakeholders. Our ethical
+              framework guides our decision-making processes and ensures that we consistently act in
+              the best interests of our patients, employees, and communities.
             </p>
           </div>
           <div>
@@ -50,7 +86,10 @@ const Profile = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-white py-16">
+      <section
+        ref={(el) => sectionRefs.current.push(el)}
+        className="bg-white py-16 opacity-0"
+      >
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-amber-500 mb-12">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -78,63 +117,73 @@ const Profile = () => {
         </div>
       </section>
 
-      <div className="px-4 py-8 bg-white md:px-8 lg:px-16 text-white">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-amber-500">
-          Quality and R&D
-        </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-          
-          
-          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div>
-              <img src="https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.webp" alt="Quality Assurance" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-semibold mb-2 ">Global Standards Compliance</h3>
-              <p className="">
-              We ensure our products meet stringent quality standards, adhering to regulations
-              </p>
+      {/* Quality and R&D Section */}
+      <div
+        ref={(el) => sectionRefs.current.push(el)}
+        className="px-4 py-8 bg-white md:px-8 lg:px-16 text-white opacity-0"
+      >
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-amber-500">Quality and R&D</h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+            <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+              <div>
+                <img
+                  src="https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.webp"
+                  alt="Global Standards Compliance"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2">Global Standards Compliance</h3>
+                <p>We ensure our products meet stringent quality standards, adhering to regulations.</p>
+              </div>
             </div>
-          </div>
-
-          
-          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div>
-              <img src="https://i.postimg.cc/4xXYG2S9/lucas-vasques-9vn-ACv-X2748-unsplash-1.webp" alt="Research & Development" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-semibold mb-2 ">Extensive Testing</h3>
-              <p className="">
-              Each product undergoes over 100 quality control tests before release, ensuring safety and efficacy.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Continuous Improvement Card */}
-          <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div>
-              <img src="https://i.postimg.cc/6QmqdW5r/louis-reed-pwc-KF7-L4-no-unsplash-1.webp" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-semibold mb-2 ">Product Excellence</h3>
-              <p className="">
-              Our commitment to quality has resulted in a 99.8% product approval rate across regulatory agencies nationwide.
-              </p>
-            </div>
-       
-          </div>
 
             <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
-            <div>
-              <img src="https://i.postimg.cc/k54D669M/crystal-kwok-XUEdfp-PIh-Xg-unsplash-1.webp" alt="Continuous Improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-semibold mb-2 ">State-of-the-Art Facilities</h3>
-              <p className="">
-              Our manufacturing sites are ISO 9001 and ISO 13485 certified, equipped with advanced technologies to maintain top-notch quality.
-              </p>
+              <div>
+                <img
+                  src="https://i.postimg.cc/4xXYG2S9/lucas-vasques-9vn-ACv-X2748-unsplash-1.webp"
+                  alt="Extensive Testing"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2">Extensive Testing</h3>
+                <p>
+                  Each product undergoes over 100 quality control tests before release, ensuring
+                  safety and efficacy.
+                </p>
+              </div>
             </div>
-          
-          </div>
 
+            <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+              <div>
+                <img
+                  src="https://i.postimg.cc/6QmqdW5r/louis-reed-pwc-KF7-L4-no-unsplash-1.webp"
+                  alt="Product Excellence"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2">Product Excellence</h3>
+                <p>
+                  Our commitment to quality has resulted in a 99.8% product approval rate across
+                  regulatory agencies nationwide.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-3xl shadow-lg p-6 flex flex-col justify-between">
+              <div>
+                <img
+                  src="https://i.postimg.cc/k54D669M/crystal-kwok-XUEdfp-PIh-Xg-unsplash-1.webp"
+                  alt="State-of-the-Art Facilities"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2">State-of-the-Art Facilities</h3>
+                <p>
+                  Our manufacturing sites are ISO 9001 and ISO 13485 certified, equipped with
+                  advanced technologies to maintain top-notch quality.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
     </div>
   );
 };
