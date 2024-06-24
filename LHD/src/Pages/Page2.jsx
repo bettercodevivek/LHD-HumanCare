@@ -1,6 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Page2 = () => {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeIn');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const cardData = [
     {
       image: 'https://i.postimg.cc/dQWZT6Hm/chemistry-svgrepo-com.png',
@@ -32,7 +58,11 @@ const Page2 = () => {
       <div className="min-h-screen flex items-center justify-center px-8 md:px-24 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {cardData.map((card, index) => (
-            <div key={index} className="flex flex-col p-4 bg-white text-black rounded-3xl shadow-lg hover:bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+            <div
+              key={index}
+              ref={(el) => (cardRefs.current[index] = el)}
+              className="flex flex-col p-4 bg-white text-black rounded-3xl shadow-lg hover:bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:scale-105 opacity-0"
+            >
               <div className="flex items-center space-x-4">
                 <img src={card.image} alt={card.title} className="w-20 h-20 sm:w-24 sm:h-24 border-solid border-2 border-white rounded-full" />
                 <h2 className="text-lg sm:text-xl font-semibold">{card.title}</h2>

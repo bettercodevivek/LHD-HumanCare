@@ -78,7 +78,7 @@ As we look to the future, we remain dedicated to shaping a healthier world throu
         </div>
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
           <img
-            src="https://i.postimg.cc/vm5VTHKT/IMG-20240617-120514030-BURST000-COVER.webp"
+            src="https://i.postimg.cc/CK4x9ZtG/IMG-20240617-120514030-BURST000-COVER-page-0001-1.webp"
             alt="Founder 3"
             className="w-full md:w-1/2 h-auto md:h-96 object-cover object-center"
           />
