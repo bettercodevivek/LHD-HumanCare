@@ -76,6 +76,20 @@ As we look to the future, we remain dedicated to shaping a healthier world throu
             </p>
           </div>
         </div>
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+          <img
+            src="https://i.postimg.cc/vm5VTHKT/IMG-20240617-120514030-BURST000-COVER.webp"
+            alt="Founder 3"
+            className="w-full md:w-1/2 h-auto md:h-96 object-cover object-center"
+          />
+          <div className="p-6 flex flex-col justify-center md:w-1/2">
+            <h2 className="text-2xl md:text-3xl text-amber-500 font-semibold mb-2">Shri Atul Mishra</h2>
+            <p className="text-gray-600">General Manager</p>
+            <p className="mt-4 text-gray-700">
+            "We are dedicated to transforming the future through creativity and innovation. Each product we develop is a leap toward a brighter, more connected world."
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     </div>
