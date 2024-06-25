@@ -118,6 +118,11 @@ const Hospital = () => {
       name: 'Fortis Delhi',
     },
     {
+      id: 8,
+      image: 'https://i.postimg.cc/Hsf0c8B4/Vardhman_Mahavir_Medical_College_logo.svg.webp',
+      name: 'VMMC Hospital Safdarjung Delhi',
+    },
+    {
       id: 2,
       image: 'https://i.postimg.cc/TYyk65ZT/logo-icon.png',
       name: 'Nutema Hospital,Meerut',
