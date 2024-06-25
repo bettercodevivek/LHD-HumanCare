@@ -193,9 +193,9 @@ const Page4 = () => {
     },
     {
       id: 12,
-      image: '',
+      image: 'https://i.postimg.cc/Jn0qjnz5/IMG-20240625-WA0025.webp',
       name: 'Dr. Khivendra Singh',
-      designation: 'Physician',
+      designation: 'MBBS MD, Consultant Physician',
       description: 'As a veteran healthcare practitioner, I am continually astounded by the consummate excellence demonstrated by LHD Human Care in the realm of pharmaceutical innovation. Their unwavering commitment to avant-garde research and the meticulous precision with which they adhere to the highest echelons of quality assurance are truly commendable. The remarkable therapeutic efficacy and the consistency of outcomes observed in my patients underscore the transformative potential of their meticulously developed medications. LHD Human Care epitomizes the zenith of pharmaceutical integrity and scientific ingenuity, and I unequivocally endorse their indispensable contributions to the enhancement of global health standards.',
     },
   ];
