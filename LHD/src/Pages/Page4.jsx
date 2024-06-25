@@ -140,7 +140,7 @@ const Page4 = () => {
       image: 'https://i.postimg.cc/sg9dNn90/IMG-20240625-WA0029.webp',
       name: 'Dr. Pankaj Badal',
       designation: 'MBBS MS, Consultant Eye Surgeon & Phaco Specialist',
-      description: 'n my extensive medical practice, I have consistently encountered the hallmark of pharmaceutical excellence embodied by LHD Human Care. Their indefatigable pursuit of groundbreaking research and their stringent adherence to the most rigorous quality control protocols have culminated in the development of medications that are both revolutionary and highly efficacious. The profound impact of their therapeutic interventions on patient outcomes is a testament to their unparalleled commitment to advancing healthcare. LHD Human Care represents the epitome of ethical innovation and clinical excellence, and I wholeheartedly advocate for their pivotal role in propelling the frontiers of modern medicine.',
+      description: 'In my extensive medical practice, I have consistently encountered the hallmark of pharmaceutical excellence embodied by LHD Human Care. Their indefatigable pursuit of groundbreaking research and their stringent adherence to the most rigorous quality control protocols have culminated in the development of medications that are both revolutionary and highly efficacious. The profound impact of their therapeutic interventions on patient outcomes is a testament to their unparalleled commitment to advancing healthcare. LHD Human Care represents the epitome of ethical innovation and clinical excellence, and I wholeheartedly advocate for their pivotal role in propelling the frontiers of modern medicine.',
     },
     {
       id: 12,
