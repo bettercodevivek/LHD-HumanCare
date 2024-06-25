@@ -136,6 +136,13 @@ const Page4 = () => {
       description: 'As a healthcare professional, I have had the opportunity to prescribe medications from LHD Human Care for several years. Their commitment to quality and patient well-being is evident in the consistent results I see in my patients. The innovative treatments and reliable efficacy of their products have significantly improved patient outcomes in my practice. I highly recommend LHD Human Care for their dedication to advancing healthcare.',
     },
     {
+      id: 12,
+      image: 'https://i.postimg.cc/Jn0qjnz5/IMG-20240625-WA0025.webp',
+      name: 'Dr. Khivendra Singh',
+      designation: 'MBBS MD, Consultant Physician',
+      description: 'As a veteran healthcare practitioner, I am continually astounded by the consummate excellence demonstrated by LHD Human Care in the realm of pharmaceutical innovation. Their unwavering commitment to avant-garde research and the meticulous precision with which they adhere to the highest echelons of quality assurance are truly commendable. The remarkable therapeutic efficacy and the consistency of outcomes observed in my patients underscore the transformative potential of their meticulously developed medications. LHD Human Care epitomizes the zenith of pharmaceutical integrity and scientific ingenuity, and I unequivocally endorse their indispensable contributions to the enhancement of global health standards.',
+    },
+    {
       id: 4,
       image: 'https://i.postimg.cc/Y9VHCBGN/IMG-20240610-WA0007.jpg',
       name: 'Dr. Avdesh Vashishtha',
@@ -190,13 +197,6 @@ const Page4 = () => {
       name: 'Dr. Abhishek Singh',
       designation: 'MBBS DNB MCH MNAMS Orthopaedic Surgeon ',
       description: 'In my extensive and illustrious career as a medical professional, I have encountered few companies that exemplify the pinnacle of pharmaceutical excellence as LHD Human Care does. Their unwavering dedication to avant-garde research and their meticulous adherence to rigorous quality control standards have consistently yielded therapeutic solutions of unparalleled efficacy and reliability. The transformative clinical outcomes observed in my patients stand as a testament to the profound impact of their meticulously engineered medications. LHD Human Care stands at the forefront of pharmaceutical innovation and ethical integrity, and I unreservedly endorse their pivotal role in the advancement of global healthcare standards.',
-    },
-    {
-      id: 12,
-      image: 'https://i.postimg.cc/Jn0qjnz5/IMG-20240625-WA0025.webp',
-      name: 'Dr. Khivendra Singh',
-      designation: 'MBBS MD, Consultant Physician',
-      description: 'As a veteran healthcare practitioner, I am continually astounded by the consummate excellence demonstrated by LHD Human Care in the realm of pharmaceutical innovation. Their unwavering commitment to avant-garde research and the meticulous precision with which they adhere to the highest echelons of quality assurance are truly commendable. The remarkable therapeutic efficacy and the consistency of outcomes observed in my patients underscore the transformative potential of their meticulously developed medications. LHD Human Care epitomizes the zenith of pharmaceutical integrity and scientific ingenuity, and I unequivocally endorse their indispensable contributions to the enhancement of global health standards.',
     },
   ];
 
