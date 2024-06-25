@@ -43,9 +43,9 @@ const Page3 = () => {
     },
     {
       id: 5,
-      image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
-      title: 'Vitaminology',
-      description: 'Unlock the power of vitamins for optimal health and wellness.',
+      image: 'https://i.postimg.cc/htFcwQFh/doctor-female-svgrepo-com.png',
+      title: 'Gynaecology',
+      description: 'Expert care for all stages of women’s reproductive health, from routine exams to advanced treatments.',
       link: '/products'
     },
     {

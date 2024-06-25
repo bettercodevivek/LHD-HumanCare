@@ -136,6 +136,13 @@ const Page4 = () => {
       description: 'As a healthcare professional, I have had the opportunity to prescribe medications from LHD Human Care for several years. Their commitment to quality and patient well-being is evident in the consistent results I see in my patients. The innovative treatments and reliable efficacy of their products have significantly improved patient outcomes in my practice. I highly recommend LHD Human Care for their dedication to advancing healthcare.',
     },
     {
+      id: 10,
+      image: 'https://i.postimg.cc/sg9dNn90/IMG-20240625-WA0029.webp',
+      name: 'Dr. Pankaj Badal',
+      designation: 'MBBS MS, Consultant Eye Surgeon & Phaco Specialist',
+      description: 'n my extensive medical practice, I have consistently encountered the hallmark of pharmaceutical excellence embodied by LHD Human Care. Their indefatigable pursuit of groundbreaking research and their stringent adherence to the most rigorous quality control protocols have culminated in the development of medications that are both revolutionary and highly efficacious. The profound impact of their therapeutic interventions on patient outcomes is a testament to their unparalleled commitment to advancing healthcare. LHD Human Care represents the epitome of ethical innovation and clinical excellence, and I wholeheartedly advocate for their pivotal role in propelling the frontiers of modern medicine.',
+    },
+    {
       id: 12,
       image: 'https://i.postimg.cc/Jn0qjnz5/IMG-20240625-WA0025.webp',
       name: 'Dr. Khivendra Singh',
@@ -183,13 +190,6 @@ const Page4 = () => {
       name: 'Dr. Hariraj Singh',
       designation: 'Interventional Cardiologist at Nutema ( Formerly at Medanta,Delhi)',
       description: 'In my distinguished tenure as a medical professional, I have been profoundly impressed by the unparalleled contributions of LHD Human Care to the field of pharmacology. Their relentless commitment to pioneering research and their scrupulous adherence to the highest standards of quality assurance have resulted in therapeutic formulations that are both efficacious and reliable. The extraordinary clinical outcomes I have observed in my patients are a direct testament to the transformative potency of their medications. LHD Human Care embodies the pinnacle of pharmaceutical innovation and ethical excellence',
-    },
-    {
-      id: 10,
-      image: '',
-      name: 'Dr. Pankaj Badal',
-      designation: 'MBBS MS, Consultant Eye Surgeon & Phaco Specialist',
-      description: 'n my extensive medical practice, I have consistently encountered the hallmark of pharmaceutical excellence embodied by LHD Human Care. Their indefatigable pursuit of groundbreaking research and their stringent adherence to the most rigorous quality control protocols have culminated in the development of medications that are both revolutionary and highly efficacious. The profound impact of their therapeutic interventions on patient outcomes is a testament to their unparalleled commitment to advancing healthcare. LHD Human Care represents the epitome of ethical innovation and clinical excellence, and I wholeheartedly advocate for their pivotal role in propelling the frontiers of modern medicine.',
     },
     {
       id: 11,
