@@ -4,7 +4,7 @@ import Preloader from "./Components/Preloader";
 import 'aos/dist/aos.css';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet,ScrollRestoration } from "react-router-dom";
 
 
 export default function Layout(){
@@ -23,6 +23,7 @@ export default function Layout(){
             <Preloader/> 
         ) : (
             <>
+            <ScrollRestoration/>
                 <Navbar/>
                 <Outlet/>
                 <Footer/>
