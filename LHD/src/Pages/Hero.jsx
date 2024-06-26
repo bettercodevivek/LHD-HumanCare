@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-3xl">
               <h2 className="text-white text-2xl md:text-4xl lg:text-4xl font-bold">{headings[index]}</h2>
               <Link to="/products"> 
-                <button className="mt-4 px-4 py-2 bg-amber-500 text-white rounded-lg">
+                <button className="mt-4 px-4 py-2 bg-amber-500 text-sm text-white rounded-lg">
                   Check Our Products
                 </button>
               </Link>
