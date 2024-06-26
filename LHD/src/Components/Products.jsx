@@ -1,49 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
+import Modal from 'react-modal';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// Product data
 const productCategories = {
   Neurology: [
-    { id: 1, title: 'Paxtin-Plus', imageUrl: 'https://i.postimg.cc/hPYJ20d8/IMGL9766.jpg' },
-    { id: 2, title: 'Welpose-TF', imageUrl: 'https://i.postimg.cc/pXrhQSpX/IMGL9842.jpg' },
-    { id: 3, title: 'Valpolit CR-500', imageUrl: 'https://i.postimg.cc/j2gW0Hkb/IMGL9854.jpg' },
-    { id: 4, title: 'Penotin-GB', imageUrl: 'https://i.postimg.cc/NGp2HtGz/IMGL9864.jpg' },
-    { id: 5, title: 'Ceribro', imageUrl: 'https://i.postimg.cc/Z5yW2y8G/IMGL9910.jpg' },
-    // Add more products as needed
+    { id: 1, title: 'Paxtin-Plus', imageUrl: 'https://i.postimg.cc/d1cC7Wpv/IMGL9766-min.webp' },
+    { id: 2, title: 'Welpose-TF', imageUrl: 'https://i.postimg.cc/FRbL0yXS/IMGL9842-min.webp' },
+    { id: 3, title: 'Valpolit CR-500', imageUrl: 'https://i.postimg.cc/QdP1DNqF/IMGL9854-min.webp' },
+    { id: 4, title: 'Penotin-GB', imageUrl: 'https://i.postimg.cc/25ZvSpH2/IMGL9864-min.webp' },
+    { id: 5, title: 'Ceribro', imageUrl: 'https://i.postimg.cc/BbMPVJ6Q/IMGL9910-min.webp' },
   ],
   Orthopaedics: [
-    { id: 9, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/FHT5vtq5/IMGL9875-min.jpg' },
-    { id: 10, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/C13p2j2R/IMGL9736-min.jpg' },
-    { id: 11, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/FHr5wFTV/IMGL9922-min.jpg' },
-    { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/VLccBWMT/IMGL9926-min.jpg' },
-    { id: 13, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/15c1WVrz/IMGL9970-min.jpg' },
-
-    // Add more products as needed
+    { id: 9, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/hPNtPXHR/IMGL9736-min.webp' },
+    { id: 10, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/ZqSYp1bf/IMGL9875-min.webp' },
+    { id: 11, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/fTVbNcqv/IMGL9922-min.webp' },
+    { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/XYF7ZVbG/IMGL9926-min.webp' },
+    { id: 13, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/VNWfRD5z/IMGL9970-min.webp' },
   ],
   Gastroenterology: [
-    { id: 17, title: 'Penlit-D', imageUrl: 'https://i.postimg.cc/4xB5V5V6/IMGL9791.jpg' },
-    { id: 18, title: 'Zolit-RD', imageUrl: 'https://i.postimg.cc/6Qqh0vfD/IMGL9906.jpg' },
-    { id: 19, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/zGJ7yMbD/IMGL9973.jpg' },
-    { id: 20, title: 'Sathicon-140', imageUrl: 'https://i.postimg.cc/g2YNGxFr/IMGL0005.jpg' },
-    { id: 21, title: 'Rentadin-300', imageUrl: 'https://i.postimg.cc/4xBwyXsP/IMGL0043.jpg' },
-    // Add more products as needed
+    { id: 17, title: 'Penlit-D', imageUrl: 'https://i.postimg.cc/j2JB8Svy/IMGL9791-min.webp' },
+    { id: 18, title: 'Zolit-RD', imageUrl: 'https://i.postimg.cc/FR62gLb9/IMGL9906-min.webp' },
+    { id: 19, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/WtLCxcfC/IMGL9973-min.webp' },
+    { id: 20, title: 'Sathicon-140', imageUrl: 'https://i.postimg.cc/43WCyMmH/IMGL0005-min.webp' },
+    { id: 21, title: 'Rentadin-300', imageUrl: 'https://i.postimg.cc/4dyD959L/IMGL0043-min.webp' },
   ],
   AntiBiotics: [
-    { id: 22, title: 'G-XL-250', imageUrl: 'https://i.postimg.cc/02SCYpxz/IMGL0019.jpg' },
-    { id: 23, title: 'G-XL-500', imageUrl: 'https://i.postimg.cc/PfPyqgRz/IMGL0034.jpg' },
-    { id: 24, title: 'Sinaxim-O', imageUrl: 'https://i.postimg.cc/c12mtDqq/IMGL0068.jpg' },
-    { id: 25, title: 'Licsef-500', imageUrl: 'https://i.postimg.cc/Njwkp5fp/IMGL0106.jpg' },
-    { id: 26, title: 'Emoxclav-625', imageUrl: 'https://i.postimg.cc/FHggqNYm/IMGL0110.jpg' },
-
-    // Add more products as needed
+    { id: 22, title: 'G-XL-250', imageUrl: 'https://i.postimg.cc/cCw0vhqq/IMGL0112-min.webp' },
+    { id: 23, title: 'Sinaxim-AZ', imageUrl: 'https://i.postimg.cc/k4k7MZpF/IMGL0034-min.webp' },
+    { id: 24, title: 'Sinaxim-O', imageUrl: 'https://i.postimg.cc/LXqHpRN8/IMGL0068-min.webp' },
+    { id: 25, title: 'Licsef-500', imageUrl: 'https://i.postimg.cc/ZqsT20PQ/IMGL0106-min.webp' },
+    { id: 26, title: 'Emoxclav-625', imageUrl: 'https://i.postimg.cc/s2gjT5WS/IMGL0110-min.webp' },
   ],
   Hepatology: [
-    { id: 31, title: 'Livrofit-DS Syrup', imageUrl: 'https://i.postimg.cc/pTtvdQ2K/IMGL9868.jpg' },
-    { id: 32, title: 'Lacotil Syrup', imageUrl: 'https://i.postimg.cc/76MkJC6d/IMGL9943.jpg' },
-    { id: 33, title: 'Zodoliv-300', imageUrl: 'https://i.postimg.cc/KjGyPZ3z/IMGL9985.jpg' },
-    { id: 34, title: 'Livofit-DS', imageUrl: 'https://i.postimg.cc/tJBGDLFz/IMGL0016.jpg' },
-    // Add more products as needed
+    { id: 31, title: 'Livrofit-DS Syrup', imageUrl: 'https://i.postimg.cc/7PgFTfGy/IMGL9868-min.webp' },
+    { id: 32, title: 'Lacotil Syrup', imageUrl: 'https://i.postimg.cc/PJz0GRsq/IMGL9943-min.webp' },
+    { id: 33, title: 'Zodoliv-300', imageUrl: 'https://i.postimg.cc/zv14c1QM/IMGL9985-min.webp' },
+    { id: 34, title: 'Livofit-DS', imageUrl: 'https://i.postimg.cc/DyntQnL4/IMGL0016-min.webp' },
   ],
   Injections: [
     { id: 35, title: 'Sonpred-40', imageUrl: 'https://i.postimg.cc/dQLXCX82/IMGL0025.webp' },
@@ -53,12 +48,23 @@ const productCategories = {
     { id: 39, title: 'Cefakon-S', imageUrl: 'https://i.postimg.cc/y8XrBzHH/IMGL9757.webp' },
     { id: 40, title: 'L-ORTIL', imageUrl: 'https://i.postimg.cc/65ZmjvbT/IMGL9819.webp' },
     { id: 41, title: 'Zedpenem-1', imageUrl: 'https://i.postimg.cc/DwKYtwR6/IMGL9892.webp' },
-    // Add more products as needed
   ],
-  // Add more categories and products as needed
 };
 
 const Products = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const openModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedImage('');
+  };
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -98,7 +104,12 @@ const Products = () => {
             {products.map((product) => (
               <div key={product.id} className="px-2">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                  <img className="w-full h-48 object-cover object-center" src={product.imageUrl} alt={product.title} />
+                  <img
+                    className="w-full h-48 object-cover object-center cursor-pointer"
+                    src={product.imageUrl}
+                    alt={product.title}
+                    onClick={() => openModal(product.imageUrl)}
+                  />
                   <div className="p-4">
                     <p className="text-amber-500 text-lg font-semibold">{product.title}</p>
                   </div>
@@ -108,6 +119,28 @@ const Products = () => {
           </Slider>
         </div>
       ))}
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Product Image"
+        className="fixed inset-0 flex items-center justify-center pl-4 pr-8 bg-black bg-opacity-75 z-50"
+        overlayClassName="fixed inset-0 z-40"
+      >
+        <div className="bg-white p-4 rounded-lg max-w-full max-h-full overflow-auto relative flex flex-col items-center">
+          <img
+            src={selectedImage}
+            alt="Product"
+            className="max-h-80vh max-w-full object-contain"
+          />
+          <button
+            onClick={closeModal}
+            className="mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-700"
+          >
+            Close
+          </button>
+        </div>
+      </Modal>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Hero = () => {
   const ImageSlide = [
@@ -35,8 +36,13 @@ const Hero = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-3xl">
+            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-3xl">
               <h2 className="text-white text-2xl md:text-4xl lg:text-4xl font-bold">{headings[index]}</h2>
+              <Link to="/products"> 
+                <button className="mt-4 px-4 py-2 bg-amber-500 text-white rounded-lg">
+                  Check Our Products
+                </button>
+              </Link>
             </div>
           </div>
         ))}
