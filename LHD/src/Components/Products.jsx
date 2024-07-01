@@ -40,6 +40,12 @@ const productCategories = {
     { id: 33, title: 'Zodoliv-300', imageUrl: 'https://i.postimg.cc/zv14c1QM/IMGL9985-min.webp' },
     { id: 34, title: 'Livofit-DS', imageUrl: 'https://i.postimg.cc/DyntQnL4/IMGL0016-min.webp' },
   ],
+  Gynaecology: [
+    { id: 42, title: 'Cliptocin Capsules', imageUrl: 'https://i.postimg.cc/nzL7jfps/IMGL9800-min.webp' },
+    { id: 43, title: 'Clotec-MF', imageUrl: 'https://i.postimg.cc/rpjxwwXX/IMGL9946-min.webp' },
+    { id: 44, title: 'Pasmotil', imageUrl: 'https://i.postimg.cc/C5Bq7CZS/IMGL9949-min.webp' },
+    { id: 45, title: 'Fiufol-XT Suspension', imageUrl: 'https://i.postimg.cc/85nvLXzZ/IMGL9957-min.webp' },
+  ],
   Injections: [
     { id: 35, title: 'Sonpred-40', imageUrl: 'https://i.postimg.cc/dQLXCX82/IMGL0025.webp' },
     { id: 36, title: 'Zedpenem-SB', imageUrl: 'https://i.postimg.cc/MHQf0dG6/IMGL0060.webp' },
@@ -96,6 +102,7 @@ const Products = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-extrabold text-center mb-4 text-amber-500">Our Products</h1>
+      <h2 className="text-xl font-bold text-center mb-4 text-amber-500">Click on the products to view their full image</h2>
 
       {Object.entries(productCategories).map(([category, products]) => (
         <div key={category} className="mb-12">
