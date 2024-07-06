@@ -46,6 +46,12 @@ const productCategories = {
     { id: 44, title: 'Pasmotil', imageUrl: 'https://i.postimg.cc/C5Bq7CZS/IMGL9949-min.webp' },
     { id: 45, title: 'Fiufol-XT Suspension', imageUrl: 'https://i.postimg.cc/85nvLXzZ/IMGL9957-min.webp' },
   ],
+  Respiratory:[
+    { id: 46, title: 'Amofex-Plus', imageUrl: 'https://i.postimg.cc/65VBY47v/IMGL0088-min.webp' },
+    { id: 47, title: 'Litra-M', imageUrl: 'https://i.postimg.cc/J4C1N5h8/IMGL9896-min.webp' },
+    { id: 48, title: 'Euspore-200', imageUrl: 'https://i.postimg.cc/139sTR6Y/IMGL9914-min.webp' },
+    { id: 49, title: 'Mucobest', imageUrl: 'https://i.postimg.cc/vZ3bdRt8/IMGL9833-min.webp' },
+  ],
   Injections: [
     { id: 35, title: 'Sonpred-40', imageUrl: 'https://i.postimg.cc/dQLXCX82/IMGL0025.webp' },
     { id: 36, title: 'Zedpenem-SB', imageUrl: 'https://i.postimg.cc/MHQf0dG6/IMGL0060.webp' },
