@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Page3 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 6;
+  const totalSlides = 7;
 
   useEffect(() => {
     const autoSlide = setInterval(() => {
@@ -55,6 +55,14 @@ const Page3 = () => {
       description: 'Dedicated to restoring mobility and improving quality of life through expert orthopedic care.',
       link: '/products'
     },
+    {
+      id: 7,
+      image: 'https://i.postimg.cc/L6PTJfyG/lungs-organ-svgrepo-com.png',
+      title: 'Respiratory',
+      description: 'Dedicated to restoring breathing and improving quality of life through expert Respiratory care.',
+      link: '/products'
+    },
+
   ];
 
   const variants = {
