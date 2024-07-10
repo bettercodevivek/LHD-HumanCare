@@ -10,7 +10,6 @@ const Home = () => {
     <Page2/>
     <Page3/>
     <Hospital/>
-    <Page4/>
     </>
   );
 };
