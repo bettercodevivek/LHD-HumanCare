@@ -109,7 +109,7 @@ const Products = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-extrabold text-center mb-4 text-amber-500">Our Products</h1>
       <h2 className="text-xl font-bold text-center mb-4 text-amber-500">Click on the products to view their full image</h2>
-
+     <div className='flex items-center justify-center'> <a className='mt-4 animate-bounce bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='#download-button'>Check Our Product List</a></div>
       {Object.entries(productCategories).map(([category, products]) => (
         <div key={category} className="mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-amber-500">{category}</h2>
@@ -154,6 +154,20 @@ const Products = () => {
           </button>
         </div>
       </Modal>
+      <section>
+        <div>
+          <h1 className='font-extrabold text-3xl mb-8 text-amber-500 text-center'>Product List</h1>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4'>
+             <div><img className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/WzFmYQS2/LHD-New-page-0001.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/j2pHpZky/LHD-New-page-0002.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/cH5MmsR9/LHD-New-page-0003.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg' src='https://i.postimg.cc/ydNycJZ3/LHD-New-page-0004.webp'></img></div>
+          </div>
+          <div id='download-button' className='relative flex items-center justify-center top-8'>
+          <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='src/assets/LHD New_page-0001.pdf' download='Product list LHD Human Care'>Download Product List</a>
+         </div>
+        </div>
+      </section>
     </div>
   );
 };
