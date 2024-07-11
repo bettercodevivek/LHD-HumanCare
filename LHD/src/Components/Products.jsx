@@ -155,15 +155,15 @@ const Products = () => {
         </div>
       </Modal>
       <section>
-        <div>
-          <h1 className='font-extrabold text-3xl mb-8 text-amber-500 text-center'>Product List</h1>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4'>
+        <div >
+          <h1 id='download-button' className='font-extrabold text-3xl mb-8 text-amber-500 text-center'>Product List</h1>
+          <div  className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4'>
              <div><img className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/WzFmYQS2/LHD-New-page-0001.webp'></img></div>
              <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/j2pHpZky/LHD-New-page-0002.webp'></img></div>
              <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/cH5MmsR9/LHD-New-page-0003.webp'></img></div>
              <div> <img  className='border-black border-solid border-2 shadow-lg' src='https://i.postimg.cc/ydNycJZ3/LHD-New-page-0004.webp'></img></div>
           </div>
-          <div id='download-button' className='relative flex items-center justify-center top-8'>
+          <div  className='relative flex items-center justify-center top-8'>
           <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='/LHD New_page-0001.pdf' download='Product list LHD Human Care'>Download Product List</a>
          </div>
         </div>
