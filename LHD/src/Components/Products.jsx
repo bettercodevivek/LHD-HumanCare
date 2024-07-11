@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-// Product data
+
 const productCategories = {
   Neurology: [
     { id: 1, title: 'Paxtin-Plus', imageUrl: 'https://i.postimg.cc/d1cC7Wpv/IMGL9766-min.webp' },
@@ -111,7 +111,7 @@ const Products = () => {
       <h2 className="text-xl font-bold text-center mb-4 text-amber-500">Click on the products to view their full image</h2>
      <div className='flex items-center justify-center'> <a className='mt-4 animate-bounce bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='#download-button'>Check Our Product List</a></div>
       {Object.entries(productCategories).map(([category, products]) => (
-        <div key={category} className="mb-12">
+        <div key={category}  id={category} className="mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-amber-500">{category}</h2>
           <Slider {...sliderSettings}>
             {products.map((product) => (
@@ -158,13 +158,13 @@ const Products = () => {
         <div >
           <h1 id='download-button' className='font-extrabold text-3xl mb-8 text-amber-500 text-center'>Product List</h1>
           <div  className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4'>
-             <div><img className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/WzFmYQS2/LHD-New-page-0001.webp'></img></div>
-             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/j2pHpZky/LHD-New-page-0002.webp'></img></div>
-             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/cH5MmsR9/LHD-New-page-0003.webp'></img></div>
-             <div> <img  className='border-black border-solid border-2 shadow-lg' src='https://i.postimg.cc/ydNycJZ3/LHD-New-page-0004.webp'></img></div>
+             <div><img className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/x8Gpn6XD/LHD-New-page-0001-1.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/kMWpQgf1/LHD-New-page-0002-1.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg ' src='https://i.postimg.cc/6qxbkk5f/LHD-New-page-0003-1.webp'></img></div>
+             <div> <img  className='border-black border-solid border-2 shadow-lg' src='https://i.postimg.cc/zBgPPz5f/LHD-New-page-0004-1.webp'></img></div>
           </div>
           <div  className='relative flex items-center justify-center top-8'>
-          <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='/LHD New_page-0001.pdf' download='Product list LHD Human Care'>Download Product List</a>
+          <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='/LHD Product List.pdf' download='Product list LHD Human Care'>Download Product List</a>
          </div>
         </div>
       </section>
