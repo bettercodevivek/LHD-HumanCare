@@ -164,7 +164,7 @@ const Products = () => {
              <div> <img  className='border-black border-solid border-2 shadow-lg' src='https://i.postimg.cc/ydNycJZ3/LHD-New-page-0004.webp'></img></div>
           </div>
           <div id='download-button' className='relative flex items-center justify-center top-8'>
-          <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='src/assets/LHD New_page-0001.pdf' download='Product list LHD Human Care'>Download Product List</a>
+          <a  className='bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-full text-white px-4 py-4' href='public/LHD New_page-0001.pdf' download='Product list LHD Human Care'>Download Product List</a>
          </div>
         </div>
       </section>
