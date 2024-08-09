@@ -86,7 +86,7 @@ const Vision = () => {
           {/* Founder 2 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
             <img
-              src="https://i.postimg.cc/KjrJKsrM/IMG-20240611-WA0004-1.jpg"
+              src=""
               alt="Founder 2"
               className="w-full md:w-1/2 h-auto md:h-96 object-cover object-center"
             />
