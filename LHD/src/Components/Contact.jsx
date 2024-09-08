@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <div className="relative min-h-screen flex items-center justify-center text-white bg-black">
+        <div className="relative h-dvh flex items-center justify-center text-white bg-black">
             {/* Full-Screen Background Image */}
             <img
                 src="https://i.postimg.cc/hvsBJ4GB/nasa-Q1p7bh3-SHj8-unsplash-1.webp"
