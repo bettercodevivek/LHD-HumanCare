@@ -1,9 +1,12 @@
 import React from 'react';
+import './Preloader.css'; 
 
 const Preloader = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-200">
-      <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-amber-500"></div>
+    <div className="preloader-container">
+      <div className=" animate-fadeIn transition duration-1000 ease-in-out rounded-full h-32 w-32">
+        <img className="logo" src="https://i.postimg.cc/5yzJFyrz/LHD-Human-Care-Logo-1-removebg-preview.png" alt="Loading Logo" />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,21 @@
+@keyframes colorFill {
+    0% {
+      filter: grayscale(100%);
+    }
+    100% {
+      filter: grayscale(0%);
+    }
+  }
+  
+  .preloader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .logo {
+    animation: colorFill 4s ease-in-out;
+  }
+  

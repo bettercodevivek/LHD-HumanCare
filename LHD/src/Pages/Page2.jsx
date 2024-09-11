@@ -52,7 +52,7 @@ const Page2 = () => {
 
   return (
     <div className="relative top-16">
-      <h1 className="relative text-2xl md:text-3xl text-amber-500 lg:text-4xl text-center font-extrabold mb-8">
+      <h1 className="relative text-2xl md:text-3xl text-amber-500 lg:text-4xl text-center font-bold mb-8">
         Why choose LHD Human Care?
       </h1>
       <div className="min-h-screen flex items-center justify-center px-8 md:px-24 lg:px-24">
