@@ -29,14 +29,14 @@ const Hero = () => {
 
   return (
     <div className="relative h-full -top-4">
-      <div className="relative mx-auto top-16 z-0 opacity-80 rounded-3xl aspect-video w-full md:w-9/12 sm:w-11/12 lg:w-9/12 xl:w-9/12 2xl:w-7/12">
+      <div className="relative mx-auto top-16 z-0 opacity-80 rounded-2xl aspect-video w-11/12 md:w-11/12 sm:w-11/12 lg:w-11/12 xl:w-11/12 2xl:w-11/12">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
-            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-3xl">
+            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-2xl" />
+            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-2xl">
               <h2 className="text-white text-2xl md:text-4xl lg:text-4xl font-bold">{headings[index]}</h2>
               <Link to="/products"> 
                 <button className="mt-4 px-4 py-2 bg-amber-500 text-sm text-white rounded-lg">
@@ -48,7 +48,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative bg-inherit backdrop-blur-lg shadow-lg flex flex-wrap items-center justify-around w-11/12 sm:w-4/5 md:h-44 lg:h-44 mx-auto left-0 right-0 top-16 md:top-0 lg:top-0 -mt-8 rounded-3xl border-2">
+      <div className="relative bg-inherit backdrop-blur-lg shadow-lg flex flex-wrap items-center justify-around w-5/6 h-auto mx-auto sm:py-12 left-0 right-0 top-16 md:top-0 lg:top-0 -mt-8 rounded-3xl border-2">
         <div className="text-center p-2">
           <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={28} delay={3} /></span>
           <br />
