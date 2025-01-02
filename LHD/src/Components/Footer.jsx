@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* Logo Section */}
                 <div className="flex flex-col items-center md:items-start">
                     <img
-                        src='https://i.postimg.cc/1tt2wSYZ/LHD-Human-Care-Logo-1.webp'
+                        src='https://i.postimg.cc/Hsjt9vWH/HD-LHD-page-0001.webp'
                         alt="Pharma Company Logo"
                         className="h-12 sm:h-16 shadow-xl hover:cursor-pointer rounded-lg mb-4 transform hover:scale-110 transition-transform duration-300"
                     />
