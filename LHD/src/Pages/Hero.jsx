@@ -55,7 +55,7 @@ const Hero = () => {
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Years of Experience</span>
         </div>
         <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={93000} delay={3} />+</span>
+          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={10000} delay={3} />+</span>
           <br />
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Active Clients</span>
         </div>
