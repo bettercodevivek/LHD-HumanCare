@@ -4,8 +4,8 @@ import './Preloader.css';
 const Preloader = () => {
   return (
     <div className="preloader-container">
-      <div className=" animate-fadeIn transition duration-1000 ease-in-out rounded-full h-64 w-64">
-        <img className="logo" src="https://i.postimg.cc/g0yy2fsy/HD-LHD-page-0001-removebg-preview.png" alt="Loading Logo" />
+      <div className=" animate-fadeIn transition duration-1000 ease-in-out rounded-full h-36 w-36">
+        <img className="logo" src="https://i.postimg.cc/5yzJFyrz/LHD-Human-Care-Logo-1-removebg-preview.png" alt="Loading Logo" />
       </div>
     </div>
   );
