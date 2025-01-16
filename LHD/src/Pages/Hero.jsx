@@ -50,7 +50,7 @@ const Hero = () => {
 
       <div className="relative bg-inherit backdrop-blur-lg shadow-lg flex flex-wrap items-center justify-around w-5/6 h-auto mx-auto sm:py-12 left-0 right-0 top-16 md:top-0 lg:top-0 -mt-8 rounded-3xl border-2">
         <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={28} delay={3} /></span>
+          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={17} delay={3} /></span>
           <br />
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Years of Experience</span>
         </div>
@@ -59,11 +59,11 @@ const Hero = () => {
           <br />
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Active Clients</span>
         </div>
-        <div className="text-center p-2">
+        {/* <div className="text-center p-2">
           <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={700} delay={3} />+</span>
           <br />
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Employees</span>
-        </div>
+        </div> */}
         <div className="text-center p-2">
           <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={150} delay={3} />+</span>
           <br />
