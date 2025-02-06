@@ -39,7 +39,7 @@ export default function Contact() {
                         Mail Us
                     </a>
                     <a
-                        href="tel:+919837559026"
+                        href="tel:+917454800540"
                         className="px-12 py-4 bg-gradient-to-r from-amber-700 to-orange-900 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
                     >
                         Call Us
