@@ -43,7 +43,7 @@ const Footer = () => {
 
                 {/* Developer Credits Section */}
                 <div className="text-center font-semibold md:text-left">
-                    <p className="text-sm text-black">&copy; 2024 LHD Human Care. All rights reserved.</p>
+                    <p className="text-sm text-black">&copy; 2025 LHD Human Care. All rights reserved.</p>
                     <p className="text-sm text-black">
                         Designed & Developed by <a target='_blank' href="https://www.vevywebsolutions.online/" className="text-white hover:underline">Vevy Web Solutions</a>
                     </p>

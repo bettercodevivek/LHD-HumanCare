@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {FaWhatsapp, FaPhoneAlt} from "react-icons/fa"
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
@@ -69,6 +70,14 @@ const Hero = () => {
           <br />
           <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Products</span>
         </div>
+      </div>
+      <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+        <a href="tel:+919068389292" className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-colors duration-300">
+          <FaPhoneAlt size={24} />
+        </a>
+        <a href="https://wa.me/919068389292" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+          <FaWhatsapp size={24} />
+        </a>
       </div>
     </div>
   );
