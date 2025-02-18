@@ -42,7 +42,7 @@ export default function Contact() {
                 <div className="bg-amber-500 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                     <FaMapMarkerAlt className="text-4xl text-blue-600 mb-4" />
                     <h2 className="text-2xl font-semibold mb-2">Our Location</h2>
-                    <p className="text-white">123 Pharma Street, New Delhi, India</p>
+                    <p className="text-white"> New Delhi, India</p>
                 </div>
 
                 {/* Email */}
