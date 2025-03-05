@@ -66,7 +66,7 @@ const Page3 = () => {
 
   return (
     <div className="container relative top-16 mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-amber-500 text-center mb-8">Our Products</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-amber-500 text-center mb-8">Our Products</h1>
       
       <div className="relative overflow-hidden rounded-lg shadow-lg h-80 sm:h-96">
         <AnimatePresence initial={false}>

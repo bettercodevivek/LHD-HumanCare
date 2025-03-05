@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import {FaWhatsapp, FaPhoneAlt} from "react-icons/fa"
-import CountUp from 'react-countup';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const ImageSlide = [
@@ -30,7 +29,7 @@ const Hero = () => {
 
   return (
     <div className="relative h-full -top-4">
-      <div className="relative mx-auto top-16 z-0 opacity-80 rounded-2xl aspect-video w-11/12 md:w-11/12 sm:w-11/12 lg:w-11/12 xl:w-11/12 2xl:w-11/12">
+      <div className="relative mx-auto top-16 z-0 opacity-80 rounded-2xl aspect-video w-11/12 drop-shadow-lg">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
@@ -38,39 +37,17 @@ const Hero = () => {
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-2xl" />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-2xl">
-              <h2 className="text-white text-2xl md:text-4xl lg:text-4xl font-bold">{headings[index]}</h2>
-              <Link to="/products"> 
-                <button className="mt-4 px-4 py-2 bg-amber-500 text-sm text-white rounded-lg">
-                  Check Our Products
+              <h2 className="text-white text-2xl md:text-4xl font-bold">{headings[index]}</h2>
+              <Link to="/products">
+                <button className="mt-4 px-4 py-2 bg-amber-600 text-sm text-white rounded-lg">
+                  Explore Products
                 </button>
               </Link>
             </div>
           </div>
         ))}
       </div>
-
-      <div className="relative bg-inherit backdrop-blur-lg shadow-lg flex flex-wrap items-center justify-around w-5/6 h-auto mx-auto sm:py-12 left-0 right-0 top-16 md:top-0 lg:top-0 -mt-8 rounded-3xl border-2">
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={17} delay={3} /></span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Years of Experience</span>
-        </div>
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={10000} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Active Clients</span>
-        </div>
-        {/* <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={700} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Employees</span>
-        </div> */}
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={150} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Products</span>
-        </div>
-      </div>
+      
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
         <a href="tel:+919068389292" className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-colors duration-300">
           <FaPhoneAlt size={24} />
