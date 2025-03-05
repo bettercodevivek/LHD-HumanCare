@@ -1,131 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { FaBrain, FaLungs, FaBone, FaFemale, FaPills, FaStethoscope } from 'react-icons/fa';
 
 const Page3 = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 7;
-
-  useEffect(() => {
-    const autoSlide = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-    }, 4000); // Slide interval set to 4 seconds
-    return () => clearInterval(autoSlide);
-  }, []);
-
-  const carouselItems = [
-    {
-      id: 1,
-      image: 'https://i.postimg.cc/s24ZWdM0/brain-upper-view-outline-svgrepo-com.png',
-      title: 'Neurology',
-      description: 'Advancing brain health with innovative treatments and expert neurological care.',
-      link: '/products#'
-    },
-    {
-      id: 3,
-      image: 'https://i.postimg.cc/VsGn48Dx/liver-svgrepo-com.png',
-      title: 'Hepatology',
-      description: 'Leading the way in liver health with advanced treatments and compassionate care.',
-      link: '/products#'
-    },
-    {
-      id: 4,
-      image: 'https://i.postimg.cc/yYD9bbGk/stomach-svgrepo-com.png',
-      title: 'Gastroenterology',
-      description: 'Your partner in digestive health, providing expert care for a healthy gut.',
-      link: '/products#'
-    },
-    {
-      id: 5,
-      image: 'https://i.postimg.cc/htFcwQFh/doctor-female-svgrepo-com.png',
-      title: 'Gynaecology',
-      description: 'Expert care for all stages of women’s reproductive health, from routine exams to advanced treatments.',
-      link: '/products#'
-    },
-    {
-      id: 6,
-      image: 'https://i.postimg.cc/yxd9BQYp/standing-human-body-silhouette-svgrepo-com.png',
-      title: 'Orthopaedics',
-      description: 'Dedicated to restoring mobility and improving quality of life through expert orthopedic care.',
-      link: '/products#'
-    },
-    {
-      id: 7,
-      image: 'https://i.postimg.cc/L6PTJfyG/lungs-organ-svgrepo-com.png',
-      title: 'Respiratory',
-      description: 'Dedicated to restoring breathing and improving quality of life through expert Respiratory care.',
-      link: '/products#'
-    },
-
+  const brands = [
+    { title: 'Neurology', icon: <FaBrain size={40} />, color: 'bg-blue-100', textColor: 'text-blue-800', description: 'Advanced care for brain and nervous system disorders.', link: '/products' },
+    { title: 'Hepatology', icon: <FaPills size={40} />, color: 'bg-red-100', textColor: 'text-red-800', description: 'Specialized treatments for liver health and diseases.', link: '/products' },
+    { title: 'Gastroenterology', icon: <FaStethoscope size={40} />, color: 'bg-green-100', textColor: 'text-green-800', description: 'Comprehensive care for digestive system disorders.', link: '/products' },
+    { title: 'Gynaecology', icon: <FaFemale size={40} />, color: 'bg-yellow-100', textColor: 'text-yellow-800', description: 'Expert solutions for women’s reproductive health.', link: '/products' },
+    { title: 'Orthopaedics', icon: <FaBone size={40} />, color: 'bg-purple-100', textColor: 'text-purple-800', description: 'Innovative treatments for bone and joint care.', link: '/products' },
+    { title: 'Respiratory', icon: <FaLungs size={40} />, color: 'bg-orange-100', textColor: 'text-orange-800', description: 'Advanced therapies for lung and respiratory care.', link: '/products' },
   ];
 
-  const variants = {
-    enter: { opacity: 0, x: 100 },
-    center: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -100 },
-  };
-
   return (
-    <div className="container relative top-16 mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl md:text-4xl font-bold text-amber-500 text-center mb-8">Our Products</h1>
-      
-      <div className="relative overflow-hidden rounded-lg shadow-lg h-80 sm:h-96">
-        <AnimatePresence initial={false}>
-          <motion.div
-            key={currentSlide}
-            className="absolute w-full h-full flex justify-center items-center"
-            initial="enter"
-            animate="center"
-            exit="exit"
-            variants={variants}
-            transition={{ duration: 0.8 }}
-          >
-            {carouselItems.map((item, index) => (
-              index === currentSlide && (
-                <div
-                  key={index}
-                  className="w-full h-full p-4 sm:p-8 flex justify-center items-center bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600"
-                >
-                  <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 text-center transform transition-transform duration-500 hover:scale-105">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover rounded-full mx-auto mb-4 shadow-lg"
-                    />
-                    <h2 className="text-md sm:text-lg md:text-xl font-semibold mb-2">{item.title}</h2>
-                    <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-4">{item.description}</p>
-                    <a
-                      href={item.link}
-                      className="text-orange-500 hover:text-blue-500 text-xs sm:text-sm md:text-base font-medium underline"
-                    >
-                      See Products
-                    </a>
-                  </div>
-                </div>
-              )
-            ))}
-          </motion.div>
-        </AnimatePresence>
-        <button
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-          onClick={() => setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)}
-        >
-          &#10094;
-        </button>
-        <button
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md opacity-75 hover:opacity-100 transition-opacity duration-300"
-          onClick={() => setCurrentSlide((prev) => (prev + 1) % totalSlides)}
-        >
-          &#10095;
-        </button>
-      </div>
-
-      <div className="flex justify-center mt-8 space-x-1 sm:space-x-2">
-        {carouselItems.map((_, index) => (
-          <span
+    <div className="container mx-auto py-12 px-6 mt-12">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+        Strong, Focused Portfolio of Brands Catering to
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {brands.map((brand, index) => (
+          <div
             key={index}
-            className={`w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full cursor-pointer ${currentSlide === index ? 'bg-amber-500' : 'bg-gray-400'}`}
-            onClick={() => setCurrentSlide(index)}
-          />
+            className={`p-6 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 flex flex-col items-center text-center ${brand.color}`}
+          >
+            <div className={`p-4 rounded-full ${brand.textColor}`}>{brand.icon}</div>
+            <h2 className={`text-2xl font-semibold mt-4 ${brand.textColor}`}>{brand.title}</h2>
+            <p className="text-gray-700 mt-2 text-sm">{brand.description}</p>
+            <a
+              href={brand.link}
+              className="mt-4 inline-block bg-amber-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-amber-600 transition"
+            >
+              Explore Products
+            </a>
+          </div>
         ))}
       </div>
     </div>

@@ -1,35 +1,41 @@
 import React from "react";
 import CountUp from "react-countup";
 import { FaUsers, FaBox, FaClock } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Metrics = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-50 p-4 sm:p-6">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 text-center">Our Achievements</h1>
+    <div className="flex flex-col mt-12 items-center justify-center min-h-screen bg-white text-white p-6">
+      <motion.h1 
+        initial={{ opacity: 0, y: -20 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8 }}
+        className="text-3xl sm:text-5xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-red-500"
+      >
+        Our Achievements
+      </motion.h1>
       
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 w-full max-w-5xl">
-        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl text-center flex flex-col items-center">
-          <FaClock size={36} sm:size={48} className="text-amber-600 mb-2 sm:mb-3" />
-          <span className="text-2xl sm:text-3xl font-bold text-gray-800"><CountUp end={17} delay={1} /></span>
-          <p className="text-gray-600 text-sm sm:text-lg">Years of Experience</p>
-        </div>
-        
-        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl text-center flex flex-col items-center">
-          <FaUsers size={36} sm:size={48} className="text-amber-600 mb-2 sm:mb-3" />
-          <span className="text-2xl sm:text-3xl font-bold text-gray-800"><CountUp end={10000} delay={1} />+</span>
-          <p className="text-gray-600 text-sm sm:text-lg">Active Clients</p>
-        </div>
-        
-        <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl text-center flex flex-col items-center">
-          <FaBox size={36} sm:size={48} className="text-amber-600 mb-2 sm:mb-3" />
-          <span className="text-2xl sm:text-3xl font-bold text-gray-800"><CountUp end={150} delay={1} />+</span>
-          <p className="text-gray-600 text-sm sm:text-lg">Products</p>
-        </div>
-        {/* <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl text-center flex flex-col items-center">
-          <FaBox size={36} sm:size={48} className="text-amber-600 mb-2 sm:mb-3" />
-          <span className="text-2xl sm:text-3xl font-bold text-gray-800"><CountUp end={150} delay={1} />+</span>
-          <p className="text-gray-600 text-sm sm:text-lg">Products</p>
-        </div> */}
+      <div className="relative w-full max-w-md sm:max-w-4xl flex flex-wrap justify-center gap-6">
+        {[ 
+          { icon: <FaClock size={40} />, value: 17, label: "Years of Experience" },
+          { icon: <FaUsers size={40} />, value: 10000, label: "Active Clients" },
+          { icon: <FaBox size={40} />, value: 150, label: "Products" }
+        ].map((item, index) => (
+          <motion.div 
+            key={index} 
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6, delay: index * 0.3 }}
+            className="relative bg-gray-800 p-6 rounded-2xl shadow-2xl text-center flex flex-col items-center space-y-4 transform hover:scale-105 transition duration-300 w-72"
+          >
+            <div className="text-amber-500 animate-pulse">{item.icon}</div>
+            <span className="text-4xl font-bold">
+              <CountUp end={item.value} delay={1} />+
+            </span>
+            <p className="text-gray-300 text-lg">{item.label}</p>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-amber-500 rounded-full animate-ping"></div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

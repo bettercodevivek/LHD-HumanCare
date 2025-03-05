@@ -11,10 +11,10 @@ const Hero = () => {
   ];
 
   const headings = [
-    'Welcome to LHD HumanCare',
-    'Experience Innovation',
-    'Quality & Trust',
-    'Excellence in Every Step'
+    { title: 'Welcome to LHD HumanCare', sub: 'Pioneering Pharma Excellence Since 2008' },
+    { title: 'Your Partner in Healthcare', sub: 'Delivering Reliable & Effective Healthcare Solutions!' },
+    { title: 'Quality & Trust', sub: 'Trust. Quality. Care – The Pillars of Our Success!' },
+    { title: 'Excellence in Every Step', sub: 'Dedicated to improving lives through superior care' }
   ];
 
   const [currentIndex, setIndex] = useState(0);
@@ -29,17 +29,18 @@ const Hero = () => {
 
   return (
     <div className="relative h-full -top-4">
-      <div className="relative mx-auto top-16 z-0 opacity-80 rounded-2xl aspect-video w-11/12 drop-shadow-lg">
+      <div className="relative mx-auto top-16 z-0 opacity-90 rounded-2xl h-64 sm:h-3/4 aspect-video w-11/12 drop-shadow-2xl overflow-hidden">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 transition-opacity duration-1000 flex flex-col items-center justify-center text-center ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-2xl" />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center rounded-2xl">
-              <h2 className="text-white text-2xl md:text-4xl font-bold">{headings[index]}</h2>
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-2xl px-4">
+              <h2 className="text-white text-2xl sm:text-4xl font-bold drop-shadow-md">{headings[index].title}</h2>
+              <p className="text-white font-semibold text-sm sm:text-lg mt-2 opacity-90">{headings[index].sub}</p>
               <Link to="/products">
-                <button className="mt-4 px-4 py-2 bg-amber-600 text-sm text-white rounded-lg">
+                <button className="mt-4 px-6 py-3 bg-amber-600 text-sm sm:text-lg text-white rounded-lg shadow-lg hover:bg-amber-700 transition-all duration-300 transform hover:scale-105">
                   Explore Products
                 </button>
               </Link>
@@ -49,10 +50,10 @@ const Hero = () => {
       </div>
       
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-        <a href="tel:+919068389292" className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-colors duration-300">
+        <a href="tel:+919068389292" className="bg-amber-600 text-white p-3 rounded-full shadow-lg hover:bg-amber-700 transition-all duration-300 transform hover:scale-110">
           <FaPhoneAlt size={24} />
         </a>
-        <a href="https://wa.me/919068389292" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+        <a href="https://wa.me/919068389292" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
           <FaWhatsapp size={24} />
         </a>
       </div>
