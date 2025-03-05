@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import { FaUsers, FaBox, FaClock } from "react-icons/fa";
+import { FaUsers, FaBox, FaClock, FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Metrics = () => {
@@ -19,7 +19,8 @@ const Metrics = () => {
         {[ 
           { icon: <FaClock size={40} />, value: 17, label: "Years of Experience" },
           { icon: <FaUsers size={40} />, value: 10000, label: "Active Clients" },
-          { icon: <FaBox size={40} />, value: 150, label: "Products" }
+          { icon: <FaBox size={40} />, value: 150, label: "Products" },
+          { icon: <FaChartLine size={40} />, value: 8, label: "CAGR", suffix: "%" },
         ].map((item, index) => (
           <motion.div 
             key={index} 
@@ -30,10 +31,9 @@ const Metrics = () => {
           >
             <div className="text-amber-500 animate-pulse">{item.icon}</div>
             <span className="text-4xl font-bold">
-              <CountUp end={item.value} delay={1} />+
+              <CountUp end={item.value} delay={1} />{item.suffix || ""}
             </span>
             <p className="text-gray-300 text-lg">{item.label}</p>
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-amber-500 rounded-full animate-ping"></div>
           </motion.div>
         ))}
       </div>

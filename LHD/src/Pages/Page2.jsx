@@ -70,13 +70,13 @@ const Page2 = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="bg-gray-800 p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex flex-col items-center text-center space-y-4"
+            className="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex flex-col items-center text-center space-y-4 hover:bg-gradient-to-r from-amber-400 to-orange-600"
           >
             <div className="bg-white p-4 rounded-full shadow-md">
               <img src={card.image} alt={card.title} className="w-20 h-20 rounded-full sm:w-24 sm:h-24" />
             </div>
-            <h2 className="text-xl sm:text-2xl font-semibold text-amber-400">{card.title}</h2>
-            <p className="text-gray-300 text-sm sm:text-base">{card.description}</p>
+            <h2 className="text-xl sm:text-2xl font-semibold text-black">{card.title}</h2>
+            <p className="text-black text-sm sm:text-base">{card.description}</p>
           </motion.div>
         ))}
       </div>
