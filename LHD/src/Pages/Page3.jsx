@@ -3,12 +3,12 @@ import { FaBrain, FaLungs, FaBone, FaFemale, FaPills, FaStethoscope } from 'reac
 
 const Page3 = () => {
   const brands = [
-    { title: 'Neurology', icon: <FaBrain size={40} />, color: 'bg-blue-100', textColor: 'text-blue-800', description: 'Advanced care for brain and nervous system disorders.', link: '/products' },
-    { title: 'Hepatology', icon: <FaPills size={40} />, color: 'bg-red-100', textColor: 'text-red-800', description: 'Specialized treatments for liver health and diseases.', link: '/products' },
-    { title: 'Gastroenterology', icon: <FaStethoscope size={40} />, color: 'bg-green-100', textColor: 'text-green-800', description: 'Comprehensive care for digestive system disorders.', link: '/products' },
-    { title: 'Gynaecology', icon: <FaFemale size={40} />, color: 'bg-yellow-100', textColor: 'text-yellow-800', description: 'Expert solutions for women’s reproductive health.', link: '/products' },
-    { title: 'Orthopaedics', icon: <FaBone size={40} />, color: 'bg-purple-100', textColor: 'text-purple-800', description: 'Innovative treatments for bone and joint care.', link: '/products' },
-    { title: 'Respiratory', icon: <FaLungs size={40} />, color: 'bg-orange-100', textColor: 'text-orange-800', description: 'Advanced therapies for lung and respiratory care.', link: '/products' },
+    { title: 'Neurology', icon: <FaBrain size={40} />, color: 'bg-blue-100', textColor: 'text-blue-800', description: 'Advanced care for brain and nervous system disorders.', link: '/products?category=Neurology' },
+    { title: 'Hepatology', icon: <FaPills size={40} />, color: 'bg-red-100', textColor: 'text-red-800', description: 'Specialized treatments for liver health and diseases.', link: '/products?category=Hepatology' },
+    { title: 'Gastroenterology', icon: <FaStethoscope size={40} />, color: 'bg-green-100', textColor: 'text-green-800', description: 'Comprehensive care for digestive system disorders.', link: '/products?category=Gastroenterology' },
+    { title: 'Gynaecology', icon: <FaFemale size={40} />, color: 'bg-yellow-100', textColor: 'text-yellow-800', description: 'Expert solutions for women’s reproductive health.', link: '/products?category=Gynaecology' },
+    { title: 'Orthopaedics', icon: <FaBone size={40} />, color: 'bg-purple-100', textColor: 'text-purple-800', description: 'Innovative treatments for bone and joint care.', link: '/products?category=Orthopaedics' },
+    { title: 'Respiratory', icon: <FaLungs size={40} />, color: 'bg-orange-100', textColor: 'text-orange-800', description: 'Advanced therapies for lung and respiratory care.', link: '/products?category=Respiratory' },
   ];
 
   return (
