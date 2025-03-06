@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const productCategories = {
   Neurology: [
@@ -15,7 +16,7 @@ const productCategories = {
     { id: 9, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/hPNtPXHR/IMGL9736-min.webp' },
     { id: 10, title: 'Sylibon-D3', imageUrl: 'https://i.postimg.cc/ZqSYp1bf/IMGL9875-min.webp' },
     { id: 11, title: 'Sylibon-Gold', imageUrl: 'https://i.postimg.cc/fTVbNcqv/IMGL9922-min.webp' },
-    { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/XYF7ZVbG/IMGL9926-min.webp' },
+    // { id: 12, title: 'Penomol-P Syrup', imageUrl: 'https://i.postimg.cc/XYF7ZVbG/IMGL9926-min.webp' },
     { id: 13, title: 'Penomol-P Tablets', imageUrl: 'https://i.postimg.cc/VNWfRD5z/IMGL9970-min.webp' },
   ],
   Gastroenterology: [
@@ -24,6 +25,7 @@ const productCategories = {
     { id: 19, title: 'Penlit-DSR', imageUrl: 'https://i.postimg.cc/WtLCxcfC/IMGL9973-min.webp' },
     { id: 20, title: 'Sathicon-140', imageUrl: 'https://i.postimg.cc/43WCyMmH/IMGL0005-min.webp' },
     { id: 21, title: 'Rentadin-300', imageUrl: 'https://i.postimg.cc/4dyD959L/IMGL0043-min.webp' },
+    { id: 50, title: 'Lacotil Syrup', imageUrl: 'https://i.postimg.cc/PJz0GRsq/IMGL9943-min.webp' },
   ],
   AntiBiotics: [
     { id: 22, title: 'G-XL-250', imageUrl: 'https://i.postimg.cc/cCw0vhqq/IMGL0112-min.webp' },
@@ -100,20 +102,29 @@ const Products = () => {
         Browse our premium selection of pharmaceutical products tailored for various medical fields.
       </p>
       
-      <div className="flex overflow-x-auto space-x-4 p-4 bg-white shadow-md rounded-lg mb-6 scrollbar-hide">
-        {Object.keys(productCategories).map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-6 py-2 whitespace-nowrap font-semibold text-lg rounded-lg transition-all duration-300 shadow-md ${
-              selectedCategory === category
-                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
-                : 'bg-gray-300 text-gray-800 hover:bg-gray-400'
-            }`}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="relative">
+        <p className="text-center text-sm font-semibold text-gray-600 mb-2">Swipe left or right to browse categories</p>
+        <div className="flex overflow-x-auto space-x-4 p-4 bg-white shadow-md rounded-lg mb-6 scrollbar-hide">
+          {Object.keys(productCategories).map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-6 py-2 whitespace-nowrap font-semibold text-lg rounded-lg transition-all duration-300 shadow-md ${
+                selectedCategory === category
+                  ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
+                  : 'bg-gray-300 text-gray-800 hover:bg-gray-400'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md opacity-75 text-gray-700 hidden sm:flex">
+          <FaArrowLeft size={20} />
+        </div>
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md opacity-75 text-gray-700 hidden sm:flex">
+          <FaArrowRight size={20} />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
