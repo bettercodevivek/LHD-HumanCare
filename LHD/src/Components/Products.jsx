@@ -106,19 +106,19 @@ const Products = () => {
   return (
     <div className="container mx-auto px-6 py-12 bg-gradient-to-r from-orange-50 to-amber-100 text-gray-800">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-        <h1 className="text-4xl font-extrabold text-amber-600">Explore Our Products</h1>
+        <h1 className="text-3xl font-semibold text-amber-600">Explore Our Products</h1>
         <div className="flex space-x-4 mt-4 sm:mt-0">
           <button
             onClick={downloadProductList}
             className="px-4 py-2 bg-amber-500 text-white rounded-lg flex items-center space-x-2 hover:bg-amber-600 transition"
           >
-            <FaDownload /> <span>Download List</span>
+            <FaDownload /> <span className='text-sm'>Download List</span>
           </button>
           <button
             onClick={() => productListRef.current.scrollIntoView({ behavior: 'smooth' })}
             className="px-4 py-2 bg-blue-500 text-white rounded-lg flex items-center space-x-2 hover:bg-blue-600 transition"
           >
-            <FaList /> <span>View Product List</span>
+            <FaList /> <span  className='text-sm'>View Product List</span>
           </button>
         </div>
       </div>
