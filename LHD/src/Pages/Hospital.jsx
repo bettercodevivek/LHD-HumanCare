@@ -113,6 +113,16 @@ const TestimonialSlider = ({ testimonials }) => {
 const Hospital = () => {
   const testimonials = [
     {
+      id: 2,
+      image: 'https://i.postimg.cc/TYyk65ZT/logo-icon.png',
+      name: 'Nutema Hospital,Meerut',
+    },
+    {
+      id: 5,
+      image: 'https://i.postimg.cc/rpWXFY3F/logo-medanta.jpg;',
+      name: 'Medanta Hospital,New Delhi',
+    },
+    {
       id: 1,
       image: 'https://i.postimg.cc/FznNJkZ9/fortis-logo.gif',
       name: 'Fortis Delhi',
@@ -123,14 +133,9 @@ const Hospital = () => {
       name: 'VMMC Hospital Safdarjung Delhi',
     },
     {
-      id: 2,
-      image: 'https://i.postimg.cc/TYyk65ZT/logo-icon.png',
-      name: 'Nutema Hospital,Meerut',
-    },
-    {
-      id: 3,
-      image: 'https://i.postimg.cc/kGGTD2GF/yashoda.jpg',
-      name: 'Yashoda Hospital,Ghaziabad',
+      id: 10,
+      image: 'https://i.postimg.cc/VLkY7L7j/oncocare-hospital.webp',
+      name: 'OncoCare Hospital',
     },
     {
       id: 4,
@@ -138,9 +143,9 @@ const Hospital = () => {
       name: 'Healers Hospital,Bijnor',
     },
     {
-      id: 5,
-      image: 'https://i.postimg.cc/rpWXFY3F/logo-medanta.jpg;',
-      name: 'Medanta Hospital,New Delhi',
+      id: 9,
+      image: 'https://i.postimg.cc/WpnN6J7N/hope-care.webp',
+      name: 'Hope Care Hospital, Haridwar',
     },
     {
         id: 6,
@@ -152,6 +157,7 @@ const Hospital = () => {
         image: 'https://i.postimg.cc/kGHfS7tr/rml.jpg',
         name: 'RML Hospital,New Delhi',
       },
+     
   ];
 
   return (
