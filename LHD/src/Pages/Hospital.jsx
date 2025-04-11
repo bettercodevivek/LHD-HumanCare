@@ -134,7 +134,7 @@ const Hospital = () => {
     },
     {
       id: 10,
-      image: 'https://i.postimg.cc/VLkY7L7j/oncocare-hospital.webp',
+      image: 'https://i.postimg.cc/nLR5hpKt/Untitled-design-2-removebg-preview.png',
       name: 'OncoCare Hospital',
     },
     {
