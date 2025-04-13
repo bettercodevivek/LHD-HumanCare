@@ -145,7 +145,7 @@ const Hospital = () => {
     {
       id: 9,
       image: 'https://i.postimg.cc/WpnN6J7N/hope-care.webp',
-      name: 'Hope Care Hospital, Haridwar',
+      name: 'Hope Hospital, Haridwar',
     },
     {
         id: 6,
