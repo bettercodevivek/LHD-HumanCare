@@ -10,9 +10,9 @@ const Home = () => {
     <>
     <Hero/>
     <Metrics/>
+    <OneMgPage/>
     <Page2/>
     <Page3/>
-    <OneMgPage/>
     <Hospital/>
     </>
   );
