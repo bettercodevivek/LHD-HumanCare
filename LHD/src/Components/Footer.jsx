@@ -25,8 +25,8 @@ const Footer = () => {
                     <h3 className="text-lg font-bold mb-4 text-gradient">Contact Us</h3>
                     <ul className="space-y-2 text-white">
                         <li>Email: <a href="mailto:lhdhumancare@gmail.com" className="hover:underline">lhdhumancare@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+919068629292" className="hover:underline">+91 9068629292 </a></li>
                         <li>Phone: <a href="tel:+917454800540" className="hover:underline">+91 7454800540</a></li>
-                        <li>Phone: <a href="tel:+919068389292" className="hover:underline">+91 9068389292 </a></li>
                     </ul>
                 </div>
 
