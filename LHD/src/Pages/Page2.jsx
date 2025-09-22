@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Page2 = () => {
+  const [visibleCards, setVisibleCards] = useState([]);
   const cardRefs = useRef([]);
 
   useEffect(() => {
@@ -9,23 +9,21 @@ const Page2 = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fadeIn');
-            observer.unobserve(entry.target);
+            const index = cardRefs.current.indexOf(entry.target);
+            if (index !== -1) {
+              setVisibleCards(prev => [...new Set([...prev, index])]);
+            }
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     cardRefs.current.forEach((ref) => {
-      if (ref) {
-        observer.observe(ref);
-      }
+      if (ref) observer.observe(ref);
     });
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   const cardData = [
@@ -52,35 +50,69 @@ const Page2 = () => {
   ];
 
   return (
-    <div className="relative top-16 bg-white text-white py-12 px-6 md:px-20 lg:px-32 min-h-screen flex flex-col items-center">
-      <motion.h1 
-        initial={{ opacity: 0, y: -20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8 }}
-        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-600"
-      >
-        Why Choose LHD Human Care?
-      </motion.h1>
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Why Choose{' '}
+            <span className="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
+              LHD Human Care?
+            </span>
+          </h1>
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-6xl">
-        {cardData.map((card, index) => (
-          <motion.div
-            key={index}
-            ref={(el) => (cardRefs.current[index] = el)}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex flex-col items-center text-center space-y-4 hover:bg-gradient-to-r from-amber-400 to-orange-600"
-          >
-            <div className="bg-white p-4 rounded-full shadow-md">
-              <img src={card.image} alt={card.title} className="w-20 h-20 rounded-full sm:w-24 sm:h-24" />
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+          {cardData.map((card, index) => (
+            <div
+              key={index}
+              ref={el => cardRefs.current[index] = el}
+              className="group bg-white rounded-2xl border border-gray-100 hover:border-amber-200 p-6 sm:p-8 transition-all duration-300 hover:shadow-lg"
+              style={{
+                transform: visibleCards.includes(index) ? 'translateY(0)' : 'translateY(20px)',
+                opacity: visibleCards.includes(index) ? 1 : 0,
+                transitionDelay: `${index * 100}ms`,
+                transitionDuration: '500ms',
+                transitionProperty: 'transform, opacity, border-color, box-shadow'
+              }}
+            >
+              {/* Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl flex items-center justify-center border border-amber-100 group-hover:from-amber-100 group-hover:to-orange-100 transition-all duration-300">
+                  <img 
+                    src={card.image} 
+                    alt={card.title} 
+                    className="w-8 h-8 sm:w-10 sm:h-10"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="text-center">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                  {card.title}
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+
+              {/* Bottom accent line */}
+              <div className="flex justify-center mt-6">
+                <div 
+                  className="h-0.5 bg-gradient-to-r from-amber-400 to-orange-400 transition-all duration-500"
+                  style={{
+                    width: visibleCards.includes(index) ? '40px' : '0px',
+                    transitionDelay: `${index * 100 + 200}ms`
+                  }}
+                ></div>
+              </div>
             </div>
-            <h2 className="text-xl sm:text-2xl font-semibold text-black">{card.title}</h2>
-            <p className="text-black text-sm sm:text-base">{card.description}</p>
-          </motion.div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
