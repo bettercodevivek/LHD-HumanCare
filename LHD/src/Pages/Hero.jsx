@@ -37,8 +37,8 @@ const Hero = () => {
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-2xl" />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center rounded-2xl px-4">
-              <h2 className="text-white text-2xl sm:text-4xl font-bold drop-shadow-md">{headings[index].title}</h2>
-              <p className="text-white font-semibold text-sm sm:text-lg mt-2 opacity-90">{headings[index].sub}</p>
+              <h2 className="text-white text-2xl sm:text-4xl font-thin drop-shadow-md">{headings[index].title}</h2>
+              <p className="text-white font-normal text-sm sm:text-lg mt-2 opacity-90">{headings[index].sub}</p>
               <Link to="/products">
                 <button className="mt-4 px-6 py-3 bg-amber-600 text-sm sm:text-lg text-white rounded-lg shadow-lg hover:bg-amber-700 transition-all duration-300 transform hover:scale-105">
                   Explore Products

@@ -13,7 +13,7 @@ const OneMgPage = () => {
           className="w-full h-full object-contain"
         />
       </div>
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 text-center">Explore Our Products on TATA 1mg</h1>
+      <h1 className="text-2xl sm:text-3xl font-normal text-gray-800 mb-4 text-center">Explore Our Products on TATA 1mg</h1>
       
       <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-xl text-center w-full max-w-3xl">
         <p className="text-sm sm:text-lg text-gray-700 mb-4">

@@ -13,7 +13,6 @@ const Home = () => {
     <OneMgPage/>
     <Page2/>
     <Page3/>
-    <Hospital/>
     </>
   );
 };

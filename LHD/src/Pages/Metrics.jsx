@@ -47,33 +47,34 @@ const Metrics = () => {
     return <span>{prefix}{count.toLocaleString()}{suffix}</span>;
   };
 
-  const metrics = [
-    {
-      value: 28,
-      suffix: "",
-      label: "Years in Operation",
-      description: "Established pharmaceutical leader"
-    },
-    {
-      value: 2.4,
-      suffix: "B",
-      prefix: "$",
-      label: "Annual Revenue",
-      description: "Global market presence"
-    },
-    {
-      value: 180,
-      suffix: "+",
-      label: "Markets Served",
-      description: "Worldwide distribution network"
-    },
-    {
-      value: 47,
-      suffix: "%",
-      label: "Market Share",
-      description: "Leading therapeutic areas"
-    }
-  ];
+ const metrics = [
+  {
+    value: 17,
+    suffix: "",
+    label: "Years in Operation",
+    description: "Delivering excellence and trust in pharmaceuticals for over a decade"
+  },
+  {
+    value: 1000,
+    suffix: "",
+    prefix: "",
+    label: "Active Clients",
+    description: "Serving a diverse clientele across multiple markets, delivering tailored pharmaceutical solutions."
+  },
+  {
+    value: 150,
+    suffix: "",
+    label: "Products",
+    description: "A wide-ranging portfolio of innovative pharmaceutical solutions"
+  },
+  {
+    value: 8,
+    suffix: "%",
+    label: "CAGR",
+    description: "Consistently achieving strong annual growth in key therapeutic segments"
+  }
+];
+
 
   return (
     <section 
@@ -92,10 +93,10 @@ const Metrics = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-4">
-            <span className="text-sm font-medium text-slate-500 tracking-wide uppercase letter-spacing-wider">
+            <span className="text-sm font-medium text-amber-500 tracking-wide uppercase letter-spacing-wider">
               Performance Metrics
             </span>
-            <div className="h-px bg-slate-200 mt-2"></div>
+            <div className="h-px bg-slate-500 mt-2"></div>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 tracking-tight">
@@ -145,7 +146,7 @@ const Metrics = () => {
               {/* Subtle indicator line */}
               <div className="mt-8 mx-auto">
                 <div 
-                  className="h-px bg-blue-600 transition-all duration-500"
+                  className="h-px bg-amber-400 transition-all duration-500"
                   style={{
                     width: isVisible ? '24px' : '0px',
                     transitionDelay: `${index * 100 + 400}ms`
@@ -156,7 +157,7 @@ const Metrics = () => {
           ))}
         </div>
 
-        {/* Bottom section */}
+        {/* Bottom section
         <div className="mt-20 text-center">
           <div className="inline-flex items-center space-x-8 text-sm text-slate-500">
             <div className="flex items-center space-x-2">
@@ -172,7 +173,7 @@ const Metrics = () => {
               <span>GMP Certified</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
