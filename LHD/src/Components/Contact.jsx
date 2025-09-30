@@ -1,84 +1,151 @@
-// import React, { useEffect } from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import React from "react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export default function Contact() {
-    // useEffect(() => {
-    //     const companyName = "LHD Human Care";
-    //     let index = 0;
-    //     const element = document.getElementById('company-name'); // Get the element where the name will appear
-
-    //     const intervalId = setInterval(() => {
-    //         element.innerText += companyName[index];
-    //         index += 1;
-    //         if (index === companyName.length) {
-    //             clearInterval(intervalId); // Stop when the full name is typed
-    //         }
-    //     }, 100); // Adjust typing speed (100ms per letter)
-        
-    //     return () => clearInterval(intervalId); // Cleanup on unmount
-    // }, []);
-
     return (
-        <div className="relative min-h-screen flex flex-col items-center justify-center bg-white px-6 py-12">
-            {/* Company Logo and Name with Typewriter Effect */}
-            <div className="flex items-center mb-6">
-                <img 
-                    src="https://i.postimg.cc/1tt2wSYZ/LHD-Human-Care-Logo-1.webp" 
-                    alt="Company Logo" 
-                    className="w-32 h-auto mr-4 animate-bounce"
-                />
-                {/* <h2 id="company-name" className="text-3xl font-semibold text-gray-800"></h2> */}
-            </div>
-            
-            {/* Header */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-8">Get in Touch</h1>
-            <p className="text-lg md:text-xl text-gray-600 text-center mb-12 max-w-2xl">
-                We're here to help. Reach out to us via email, phone, or visit our office.
-            </p>
-            
-            {/* Contact Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
-                {/* Address */}
-                <div className="bg-amber-500 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <FaMapMarkerAlt className="text-4xl text-blue-600 mb-4" />
-                    <h2 className="text-2xl font-semibold mb-2">Our Location</h2>
-                    <p className="text-white"> New Delhi, India</p>
-                </div>
-
-                {/* Email */}
-                <div className="bg-amber-500 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <FaEnvelope className="text-4xl text-green-600 mb-4" />
-                    <h2 className="text-2xl font-semibold mb-2">Email Us</h2>
-                    <a href="mailto:lhdhumancare@gmail.com" className="text-white hover:underline">lhdhumancare@gmail.com</a>
-                </div>
-
-                {/* Phone */}
-                <div className="bg-amber-500 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <FaPhone className="text-4xl text-red-600 mb-4" />
-                    <h2 className="text-2xl font-semibold mb-2">Call Us</h2>
-                    <a href="tel:+917454800540" className="text-white hover:underline">+917454800540</a>
+        <div className="min-h-screen bg-orange-50">
+            {/* Hero Section */}
+            <div className="bg-white border-b border-orange-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                    <div className="text-center">
+                        <div className="flex justify-center mb-8">
+                            <img 
+                                src="https://i.postimg.cc/1tt2wSYZ/LHD-Human-Care-Logo-1.webp" 
+                                alt="LHD Human Care" 
+                                className="h-24 w-auto"
+                            />
+                        </div>
+                        <h1 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight">
+                            Contact <span className="font-semibold">Us</span>
+                        </h1>
+                        <div className="mt-6 h-1 w-24 bg-orange-500 mx-auto"></div>
+                        <p className="mt-8 text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                            Connect with our team for inquiries, partnerships, or information about our pharmaceutical products and services.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            {/* Office Hours */}
-            <div className="mt-12 bg-amber-500 p-6 rounded-xl shadow-lg flex flex-col items-center text-center max-w-md">
-                <FaClock className="text-4xl text-white mb-4" />
-                <h2 className="text-2xl font-semibold mb-2">Office Hours</h2>
-                <p className="text-white">Monday - Friday: 9 AM - 6 PM</p>
-                <p className="text-white">Saturday - Sunday: Closed</p>
+            {/* Contact Information Grid */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    {/* Location */}
+                    <div className="bg-white p-10 shadow-lg border-t-4 border-orange-500 hover:shadow-xl transition-shadow duration-300">
+                        <div className="flex justify-center mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <MapPin className="w-8 h-8 text-orange-600" />
+                            </div>
+                        </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">Corporate Office</h2>
+                        <p className="text-gray-600 text-center leading-relaxed">
+                            New Delhi, India
+                        </p>
+                    </div>
+
+                    {/* Email */}
+                    <div className="bg-white p-10 shadow-lg border-t-4 border-orange-500 hover:shadow-xl transition-shadow duration-300">
+                        <div className="flex justify-center mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <Mail className="w-8 h-8 text-orange-600" />
+                            </div>
+                        </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">Email Address</h2>
+                        <a 
+                            href="mailto:lhdhumancare@gmail.com" 
+                            className="text-orange-600 hover:text-orange-700 text-center block transition-colors duration-300"
+                        >
+                            lhdhumancare@gmail.com
+                        </a>
+                    </div>
+
+                    {/* Phone */}
+                    <div className="bg-white p-10 shadow-lg border-t-4 border-orange-500 hover:shadow-xl transition-shadow duration-300">
+                        <div className="flex justify-center mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <Phone className="w-8 h-8 text-orange-600" />
+                            </div>
+                        </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">Phone Number</h2>
+                        <a 
+                            href="tel:+917454800540" 
+                            className="text-orange-600 hover:text-orange-700 text-center block transition-colors duration-300"
+                        >
+                            +91 74548 00540
+                        </a>
+                    </div>
+                </div>
+
+                {/* Business Hours */}
+                <div className="max-w-2xl mx-auto">
+                    <div className="bg-white p-10 shadow-lg border border-orange-100">
+                        <div className="flex justify-center mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <Clock className="w-8 h-8 text-orange-600" />
+                            </div>
+                        </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 text-center mb-6">Business Hours</h2>
+                        <div className="space-y-3 text-center">
+                            <div className="flex justify-between items-center max-w-md mx-auto border-b border-gray-200 pb-3">
+                                <span className="text-gray-700 font-medium">Monday - Friday</span>
+                                <span className="text-gray-600">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div className="flex justify-between items-center max-w-md mx-auto">
+                                <span className="text-gray-700 font-medium">Saturday - Sunday</span>
+                                <span className="text-gray-600">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            {/* Map */}
-            <div className="mt-12 w-full max-w-4xl">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.89796785527!2d77.04417053579648!3d28.527554410196217!2m3!1f0!2f0!3f0!3m2!1i1024!1i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1719162844062!5m2!1sen!2sin"
-                    width="100%"
-                    height="300"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-lg shadow-lg"
-                ></iframe>
+            {/* Map Section */}
+            <div className="bg-white py-20 border-t border-orange-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-light text-gray-900">
+                            Our <span className="font-semibold">Location</span>
+                        </h2>
+                        <div className="mt-6 h-1 w-24 bg-orange-500 mx-auto"></div>
+                    </div>
+                    <div className="shadow-2xl overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.89796785527!2d77.04417053579648!3d28.527554410196217!2m3!1f0!2f0!3f0!3m2!1i1024!1i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1719162844062!5m2!1sen!2sin"
+                            width="100%"
+                            height="450"
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="border-0"
+                            title="LHD Human Care Location"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            {/* Call to Action Section */}
+            <div className="bg-gradient-to-r from-orange-50 to-white py-20">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-3xl font-light text-gray-900 mb-6">
+                        Ready to <span className="font-semibold">Connect?</span>
+                    </h2>
+                    <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+                        Whether you're a healthcare professional, potential partner, or have inquiries about our pharmaceutical solutions, our team is ready to assist you with expert guidance and support.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a 
+                            href="mailto:lhdhumancare@gmail.com"
+                            className="inline-block px-8 py-3 bg-orange-600 text-white font-medium tracking-wide hover:bg-orange-700 transition-colors duration-300"
+                        >
+                            SEND AN EMAIL
+                        </a>
+                        <a 
+                            href="tel:+917454800540"
+                            className="inline-block px-8 py-3 bg-white text-orange-600 border-2 border-orange-600 font-medium tracking-wide hover:bg-orange-50 transition-colors duration-300"
+                        >
+                            CALL US NOW
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );
