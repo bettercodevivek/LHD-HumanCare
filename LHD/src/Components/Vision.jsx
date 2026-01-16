@@ -113,11 +113,11 @@ const Vision = () => {
               <div className="bg-white border border-orange-200 rounded-xl overflow-hidden shadow-lg mx-4">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
                   <div className="md:col-span-2">
-                    <img
+                    {/* <img
                       src="https://i.postimg.cc/9XtpYKZ4/IMG-9480-1.avif"
                       alt="Late Shri Lallu Singh"
                       className="w-full h-full object-cover"
-                    />
+                    /> */}
                   </div>
                   <div className="md:col-span-3 p-12 flex flex-col justify-center">
                     <div className="mb-6">
@@ -161,11 +161,11 @@ const Vision = () => {
               <div className="bg-white border border-orange-200 rounded-xl overflow-hidden shadow-lg mx-4">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
                   <div className="md:col-span-2">
-                    <img
+                    {/* <img
                       src="https://i.postimg.cc/CK4x9ZtG/IMG-20240617-120514030-BURST000-COVER-page-0001-1.webp"
                       alt="Shri Atul Mishra"
                       className="w-full h-full object-cover"
-                    />
+                    /> */}
                   </div>
                   <div className="md:col-span-3 p-12 flex flex-col justify-center">
                     <div className="mb-6">
